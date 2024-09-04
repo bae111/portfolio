@@ -25,28 +25,36 @@ function classReg( className ) {
 // altho to be fair, the api sucks because it won't accept multiple classes at once
 var hasClass, addClass, removeClass;
 
+function classReg(className) {
+  return new RegExp('(^|\\s)' + className + '(\\s|$)');
+}
 if ( 'classList' in document.documentElement ) {
   hasClass = function( elem, c ) {
-    return elem.classList.contains( c );
+    return elem && elem.classList ? elem.classList.contains( c ) : false;
   };
   addClass = function( elem, c ) {
-    elem.classList.add( c );
+    if ( elem && elem.classList ) {
+      elem.classList.add( c );
+    }
   };
   removeClass = function( elem, c ) {
-    elem.classList.remove( c );
+    if ( elem && elem.classList ) {
+      elem.classList.remove( c );
+    }
   };
-}
-else {
+} else {
   hasClass = function( elem, c ) {
-    return classReg( c ).test( elem.className );
+    return elem && elem.className ? classReg(c).test( elem.className ) : false;
   };
   addClass = function( elem, c ) {
-    if ( !hasClass( elem, c ) ) {
+    if ( elem && elem.className && !hasClass( elem, c ) ) {
       elem.className = elem.className + ' ' + c;
     }
   };
   removeClass = function( elem, c ) {
-    elem.className = elem.className.replace( classReg( c ), ' ' );
+    if ( elem && elem.className ) {
+      elem.className = elem.className.replace( classReg( c ), ' ' ).trim();
+    }
   };
 }
 
