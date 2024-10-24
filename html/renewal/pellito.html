@@ -11,16 +11,21 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/img/renewal/pellito/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="펠리토소파" />
     <link rel="manifest" href="/img/renewal/pellito/favicon/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/font.css">
+    
     <!--cdn-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-    <link rel="stylesheet" href="/css/font.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/scss/main.min.css?var=s<?php echo time(); ?>">
 </head>
 <body>
     <header id="header">
-        <div class="hd-container">
+        <div class="hd-container index-container">
             <h1><a href="/"><img src="/img/renewal/pellito/logo.svg" alt="펠리토소파"><span class="blind">펠리토소파</span></a></h1>
             <nav class="gnb">
                 <ul class="depth-01">
@@ -53,7 +58,187 @@
         </div>
     </header>
 
+    <main id="main">
+        <section id="main-banner">
+            <div id="main-banner-swiper" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/img/renewal/pellito/main-banner-1.jpg" alt="랜돌 소파">
+                        <div class="main-text index-container">
+                            <p class="sub-title">펠리토로 채워가는 새로운 공간</p>
+                            <h2 class="main-title">
+                                RAGDOLL SOFA<br>
+                                COUCH SPOTREADER
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/renewal/pellito/main-banner-2.jpg" alt="랜돌 소파">
+                        <div class="main-text index-container">
+                            <p class="sub-title">레이어드 홈 트랜드에 최적화된 소파</p>
+                            <h2 class="main-title">
+                                CAKE SOFA<br>
+                                COUCH SPOTREADER
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/renewal/pellito/main-banner-3.jpg" alt="랜돌 소파">
+                        <div class="main-text index-container">
+                            <p class="sub-title">나만의 쉼터가 되어줄 소파</p>
+                            <h2 class="main-title">
+                                RAGDOLL SOFA<br>
+                                COUCH PLAIN LEATHER
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section id="info">
+            <p class="accent"><em>Life ON Pellito</em></p>
+            <div class="detail">
+                펠리토는 2002년, 아버지의 노력과 열정이 이어져<br>
+                오늘날 우리는 대를 이어 소파 공장을 직접 운영하고 있습니다.<br>
+                크래프트맨십과 오리지널 소재는 우리의 핵심 가치입니다.<br>
+            </div>
+        </section>
+
+        <section id="collection" class="content">
+            <div class="coll-wrap index-container">
+                <div class="coll-left">
+                    <div class="group-name">
+                        <span class="num"><em>01</em></span>
+                        <span class="line"></span>
+                        <span class="name">Collection</span>
+                    </div>
+                    <div class="title-wrap">
+                        <h3 class="title">
+                            <em>FABRIC<br>
+                            SOFA</em>
+                        </h3>
+                        <p class="sub">
+                            패브릭 소파는 다양한 색상과 패턴으로 인테리어에 활기를 더합니다.<br>
+                            부드러운 촉감과 편안함이 특징이며, 통기성이 좋아 여름철에도 쾌적하게 사용할 수 있습니다.<br>
+                            또한, 다양한 소재로 제작되어 세탁이 가능하거나 쉽게 관리할 수 있는 제품이 많아 실용적입니다.<br>
+                        </p>
+                    </div>
+                    <div class="type-wrap">
+                        <a class="type active" href="#none" data-index="0">FABRIC SOFA</a>
+                        <a class="type" href="#none" data-index="1">LEATHER SOFA</a>
+                        <a class="type" href="#none" data-index="2">DYNAMICA SOFA</a>
+                    </div>
+                </div>
+    
+                <div class="coll-right">
+                    <img src="/img/renewal/pellito/collection-1.jpg" alt="다양한 색의 패브릭 원단">
+                </div>
+            </div>
+        </section>
+
+        <section id="best" class="content index-container">
+            <div class="best-wrap">
+                <div class="group-name">
+                    <span class="num"><em>02</em></span>
+                    <span class="line"></span>
+                    <span class="name">Best</span>
+                </div>
+                <div class="item-wrap">
+                    <ul>
+                        <li class="best-item"><a class="best-01" href="#none"><img src="/img/renewal/pellito/best-1.jpg" alt="패브릭 소파"><span>Fabric</span></a></li>
+                        <li class="best-item"><a class="best-02" href="#none"><img src="/img/renewal/pellito/best-2.jpg" alt="가죽 소파"><span>Leather</span></a></li>
+                        <li class="best-item"><a class="best-03" href="#none"><img src="/img/renewal/pellito/best-3.jpg" alt="디나미카 소파"><span>Dynamica</span></a></li>
+                        <li class="best-item"><a class="best-03" href="#none"><img src="/img/renewal/pellito/best-4.jpg" alt="기타"><span>Etc</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="event">
+            <a href="#none" class="event-text index-container">
+                <span class="event-name">EVENT</span>
+                <span class="event-title">신규 회원가입 혜택</span>
+                <span class="event-sub">중복 사용 가능한 10% 웰컴 쿠폰 지급해드립니다.</span>
+            </a>
+        </section>
+
+        <section id="shop" class="index-container content">
+            <div class="shop-wrap">
+                <div class="group-name">
+                    <span class="num"><em>03</em></span>
+                    <span class="line"></span>
+                    <span class="name">Shop</span>
+                </div>
+                <div id="shop-swiper" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/img/renewal/pellito/shop-1.jpg" alt="미뉴엣소파 4인 레이패브릭">
+                            <div class="shop-text">
+                                <span class="shop-name">미뉴엣소파 4인 레이패브릭</span>
+                                <span class="price">2,800,000원</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/renewal/pellito/shop-2.jpg" alt="랙돌소파 카우치 레이패브릭">
+                            <div class="shop-text">
+                                <span class="shop-name">랙돌소파 카우치 레이패브릭</span>
+                                <span class="price">3,500,000원</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/renewal/pellito/shop-3.jpg" alt="로파이소파 카우치 스포트레더">
+                            <div class="shop-text">
+                                <span class="shop-name">로파이소파 카우치 스포트레더</span>
+                                <span class="price">5,550,000원</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/renewal/pellito/shop-4.jpg" alt="오스틴소파 카우치 스포트레더">
+                            <div class="shop-text">
+                                <span class="shop-name">오스틴소파 카우치 스포트레더</span>
+                                <span class="price">7,450,000원</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/renewal/pellito/shop-5.jpg" alt="골프소파 코너 디나미카">
+                            <div class="shop-text">
+                                <span class="shop-name">골프소파 코너 디나미카</span>
+                                <span class="price">5,600,000원</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/renewal/pellito/shop-6.jpg" alt="체스소파 카우치 디나미카">
+                            <div class="shop-text">
+                                <span class="shop-name">체스소파 카우치 디나미카</span>
+                                <span class="price">3,400,000원</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/renewal/pellito/shop-7.jpg" alt="펫레토 고양이소파 디나미카">
+                            <div class="shop-text">
+                                <span class="shop-name">펫레토 고양이소파 디나미카</span>
+                                <span class="price">500,000원</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/renewal/pellito/shop-8.jpg" alt="플레인쿠션 디나미카">
+                            <div class="shop-text">
+                                <span class="shop-name">플레인쿠션 디나미카</span>
+                                <span class="price">150,000원</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <!--cdn-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js/plugin.js"></script>
     <script src="/js/main.js"></script>
