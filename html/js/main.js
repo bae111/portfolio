@@ -1,57 +1,87 @@
-$(function(){
-    // 스크롤 시 헤더 고정
-    $(window).on('scroll', function(){
-        if($(window).scrollTop() > 0){
-            $('#header').addClass('fix');
-        }else{
-            $('#header').removeClass('fix');
-        }
-    });
+gsap.registerPlugin(ScrollTrigger);
 
-    // 콜렉션 호버 텍스트, 이미지 교체
-    const texts = [
-        {
-            title: "<em>FABRIC<br>SOFA</em>",
-            sub: "패브릭 소파는 다양한 색상과 패턴으로 인테리어에 활기를 더합니다.<br>부드러운 촉감과 편안함이 특징이며, 통기성이 좋아 여름철에도 쾌적하게 사용할 수 있습니다.<br>또한, 다양한 소재로 제작되어 세탁이 가능하거나 쉽게 관리할 수 있는 제품이 많아 실용적입니다.",
-            img: "/img/renewal/pellito/collection-1.jpg"
-        },
-        {
-            title: "<em>LEATHER<br>SOFA</em>",
-            sub: "가죽 소파는 고급스러운 느낌과 내구성을 제공합니다.<br>시간이 지날수록 멋스러운 빈티지 느낌을 가지며, 청소가 용이하여 유지 관리가 간편합니다.<br>견고한 구조 덕분에 오랜 사용이 가능하며, 현대적인 스타일과 잘 어울립니다.",
-            img: "/img/renewal/pellito/collection-2.jpg"
-        },
-        {
-            title: "<em>DYNAMICA<br>SOFA</em>",
-            sub: "디나미카 소파는 고유 3층의 미세 섬유구조로 반려묘가 있는 가정에 특히 좋습니다.<br>중간층의 강력한 스크림 섬유를 중심으로 초극세 섬유가 철망처럼 강하게 얽혀있습니다.<br>독특한 디자인과 실용성을 겸비한 제품으로, 다양한 변형이 가능한 것이 특징입니다.",
-            img: "/img/renewal/pellito/collection-3.jpg"
-        }
-    ];
-    
-    $('.type').hover(function() {
-        let activeIndex = 0; // 현재 활성화된 인덱스 초기화
+// Company Section - Title
+gsap.set("#hard-coding .title, .detail", {
+    opacity: 0,
+    y: -200 
+});
 
-        // 현재 활성화된 요소에서 active 클래스 제거
-        $('.type.active').removeClass('active');
+gsap.to("#hard-coding .title, .detail", {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power2.inOut",
+    scrollTrigger: {
+        trigger: "#hard-coding",
+        start: "top center",
+        end: "center",
+        markers: false 
+    } 
+});
 
-        // 새로 호버한 요소에 active 클래스 추가
-        $(this).addClass('active');
+// Company section - Image
+gsap.set(".hard-box", {
+    opacity: 0,
+    scale: 0 
+});
 
-        const buttonIndex = $(this).data('index');
-        
-        // 텍스트와 이미지 숨기기
-        $('.title, .sub').addClass('hidden');
-        $('.coll-right img').addClass('hidden');
+gsap.to(".hard-box", {
+    duration: 1.6,
+    delay: 0.1,
+    opacity: 1,
+    scale: 1,
+    transformOrigin: "top right",
+    ease: "power2.inOut",
+    scrollTrigger: {
+        trigger: "#hard-coding",
+        start: "top center",
+        end: "center",
+        markers: false 
+    } 
+});
 
-        // 텍스트와 이미지 업데이트
-        setTimeout(() => {
-            $('.title').html(texts[buttonIndex].title);
-            $('.sub').html(texts[buttonIndex].sub);
-            $('.coll-right img').attr('src', texts[buttonIndex].img);
-            
-            // 텍스트와 이미지 다시 보이기
-            $('.title, .sub').removeClass('hidden');
-            $('.coll-right img').removeClass('hidden');
-        }, ); // transition 시간과 일치
-    });
 
+
+
+
+// Project section - content section
+gsap.set("#graphic-design", {
+    x: -200,
+    y: -200,
+    opacity: 0 
+});
+
+gsap.to("#graphic-design", {
+    duration: 1.6,
+    x: 0,
+    y: 0,
+    opacity: 1,
+    delay: 0.2,
+    ease: "power2.inOut",
+    yoyo: true,
+    scrollTrigger: {
+        trigger: "#graphic-design",
+        start: "top center",
+        end: "center",
+        markers: false 
+    } 
+});
+
+
+// Project section - Right
+gsap.set("#about", {  
+    x: 500 
+});
+
+gsap.to("#about", {  
+    duration: 2.2,
+    x: 0,
+    ease: "power2.inOut",
+    yoyo: true,
+    scrollTrigger: {
+        trigger: "#about",
+        start: "top center",
+        end: "center",
+        markers: false 
+    } 
 });

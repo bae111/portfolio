@@ -17,13 +17,17 @@
         <meta name="theme-color" content="#ffffff">
         <!-- favicon 끝 -->
 
-        <!-- V부트스트랩 주석 여기부터 -->
         <!-- Bootstrap Core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
         <!-- Default Fonts (IMPORTANT: Delete these if you are using a different body style!) -->
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 
         <!-- Plugin CSS -->
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -35,20 +39,12 @@
         <link href="vendor/animate.css/animate.min.css" rel="stylesheet" type="text/css">
         <link href="vendor/device-mockups/device-mockups.min.css" rel="stylesheet" type="text/css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        
-        <!-- V 끝 여기까지 -->
-
-        <!-- F -->
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/vitality-red.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="/scss/main.min.css?var=s<?php echo time(); ?>">
 
     </head>
     <body id="page-top">
@@ -57,17 +53,13 @@
             <div class="container">
                 <!-- <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a> -->
                 <a class="navbar-brand" href="#page-top">B.</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="#team-cms">team/cms</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#redesign">redesign</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#hard-coding">hard coding</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#graphic-design">graphic design</a></li>
                     </ul>
                 </div>
             </div>
@@ -80,153 +72,145 @@
                 <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
             </div>
         </header>
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+
+        <!-- 팀플, 카페24 -->
+        <section id="team-cms" class="mx-auto ">
+            <article class="position-relative">
+                <span></span>
+                <div class="d-flex flex-column justify-content-center">
+                    <h3>UNIVERSE</h3>
+                    <h2 class=" title-1">TEAM</h2>
+                    <p>
+                        클래식 디자인은 우리 브랜드의 선구자적 전통을 상징하는 특징이<br> 되었습니다. 최첨단 TV Beovision Harmony의 탄생을 향해 우리를 인도<br><br>
+                        마법같은 동작과 인간 중심적 디자인의 정수를 보여주는
+                        사운드와<br> 비전을 직접 체험하는 시간을 가져보세요.강력한 사운드와 컴팩트한 <br>디자인의 개인 및 휴대용 제품과 공간 음악의 시간을 함께 하는 <br>만나보는 시간을 가지고 유연하고 몰입감 있는 사운드바
+                    </p>
+                    <button>READ MORE</button>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
+            </article>
+            <article class="position-relative">
+                <span></span>
+                <div class="d-flex flex-column justify-content-center">
+                    <h3>카페24</h3>
+                    <h2 class=" title-2">CMS</h2>
+                    <p>
+                        클래식 디자인은 우리 브랜드의 선구자적 전통을 상징하는 특징이<br> 되었습니다. 최첨단 TV Beovision Harmony의 탄생을 향해 우리를 인도<br><br>
+                        마법같은 동작과 인간 중심적 디자인의 정수를 보여주는
+                        사운드와<br> 비전을 직접 체험하는 시간을 가져보세요.강력한 사운드와 컴팩트한 <br>디자인의 개인 및 휴대용 제품과 공간 음악의 시간을 함께 하는 <br>만나보는 시간을 가지고 유연하고 몰입감 있는 사운드바
+                    </p>
+                    <button>READ MORE</button>
                 </div>
-            </div>
+            </article>
         </section>
 
-        <!-- V our work 시작 -->
+        <!-- 리디자인 -->
         <!-- Portfolio Carousel Heading -->
-        <!-- <section id="work" class="bg-gray"> -->
-        <section id="work" class="page-section">
-            <div class="container text-center wow fadeIn">
-                <h2 class="section-heading text-uppercase">Our Work</h2>
-                <!-- <hr class="colored"> -->
-                <h3 class="section-subheading text-muted">Here are some examples of our work.</p>
+        <section id="redesign" class="">
+            <div class="container text-center wow fadeIn position-relative">
+                <h2 class="">REDESIGN</h2>
             </div>
-            <!-- Portfolio Carousel -->
-            <div class="portfolio-carousel wow fadeIn">
-                <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
-                <!-- Carousel Item 1 -->
-                <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-1.jpg')">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-7 col-md-pull-5 hidden-xs">
-                                <div class="device-container">
-                                    <div class="device-mockup macbook portrait black">
-                                        <div class="device">
-                                            <div class="screen">
-                                                <img src="img/agency/portfolio/carousel/screen-1a.jpg" class="img-responsive" alt="">
-                                            </div>
+        </section>
+        <!-- Portfolio Carousel -->
+        <section class="portfolio-carousel wow fadeIn">
+            <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
+            <!-- Carousel Item 1 -->
+            <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-1.jpg')">
+                <div class="container-fluid">
+                    <div class="d-flex flex-row-reverse">
+                        <div class="col-md-5 col-md-push-7">
+                            <div class="project-details">
+                                <span class="project-name">Project Name</span>
+                                <span class="project-description">Branding, Website Design</span>
+                                <hr class="colored">
+                                <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-md-pull-5 hidden-xs">
+                            <div class="device-container">
+                                <div class="device-mockup macbook portrait black">
+                                    <div class="device">
+                                        <div class="screen">
+                                            <img src="img/agency/portfolio/carousel/screen-1a.jpg" class="img-responsive" alt="">
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-md-push-7">
-                                <div class="project-details">
-                                    <span class="project-name">Project Name</span>
-                                    <span class="project-description">Branding, Website Design</span>
-                                    <hr class="colored">
-                                    <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Carousel Item 2 -->
-                <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-2.jpg')">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-7 col-md-pull-5 hidden-xs">
-                                <div class="device-container">
-                                    <div class="device-mockup macbook portrait black">
-                                        <div class="device">
-                                            <div class="screen">
-                                                <img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-responsive" alt="">
-                                            </div>
+            </div>
+            <!-- Carousel Item 2 -->
+            <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-2.jpg')">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5 col-md-push-7">
+                            <div class="project-details">
+                                <span class="project-name">Project Name</span>
+                                <span class="project-description">Branding, Website Design</span>
+                                <hr class="colored">
+                                <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-md-pull-5 hidden-xs">
+                            <div class="device-container">
+                                <div class="device-mockup macbook portrait black">
+                                    <div class="device">
+                                        <div class="screen">
+                                            <img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-responsive" alt="">
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-md-push-7">
-                                <div class="project-details">
-                                    <span class="project-name">Project Name</span>
-                                    <span class="project-description">Branding, Website Design</span>
-                                    <hr class="colored">
-                                    <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Carousel Item 3 -->
-                <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-3.jpg')">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-7 col-md-pull-5 hidden-xs">
-                                <div class="device-container">
-                                    <div class="device-mockup macbook portrait black">
-                                        <div class="device">
-                                            <div class="screen">
-                                                <img src="img/agency/portfolio/carousel/screen-3a.jpg" class="img-responsive" alt="">
-                                            </div>
+            </div>
+            <!-- Carousel Item 3 -->
+            <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-3.jpg')">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5 col-md-push-7">
+                            <div class="project-details">
+                                <span class="project-name">Project Name</span>
+                                <span class="project-description">Branding, Website Design</span>
+                                <hr class="colored">
+                                <a href="#portfolioModal3" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-md-pull-5 hidden-xs">
+                            <div class="device-container">
+                                <div class="device-mockup macbook portrait black">
+                                    <div class="device">
+                                        <div class="screen">
+                                            <img src="img/agency/portfolio/carousel/screen-3a.jpg" class="img-responsive" alt="">
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-md-push-7">
-                                <div class="project-details">
-                                    <span class="project-name">Project Name</span>
-                                    <span class="project-description">Branding, Website Design</span>
-                                    <hr class="colored">
-                                    <a href="#portfolioModal3" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Carousel Item 4 -->
-                <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-4.jpg')">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-7 col-md-pull-5 hidden-xs">
-                                <div class="device-container">
-                                    <div class="device-mockup macbook portrait black">
-                                        <div class="device">
-                                            <div class="screen">
-                                                <img src="img/agency/portfolio/carousel/screen-4.jpg" class="img-responsive" alt="">
-                                            </div>
+            </div>
+            <!-- Carousel Item 4 -->
+            <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-4.jpg')">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5 col-md-push-7">
+                            <div class="project-details">
+                                <span class="project-name">Project Name</span>
+                                <span class="project-description">Branding, Website Design</span>
+                                <hr class="colored">
+                                <a href="#portfolioModal4" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-md-pull-5 hidden-xs">
+                            <div class="device-container">
+                                <div class="device-mockup macbook portrait black">
+                                    <div class="device">
+                                        <div class="screen">
+                                            <img src="img/agency/portfolio/carousel/screen-4.jpg" class="img-responsive" alt="">
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-md-push-7">
-                                <div class="project-details">
-                                    <span class="project-name">Project Name</span>
-                                    <span class="project-description">Branding, Website Design</span>
-                                    <hr class="colored">
-                                    <a href="#portfolioModal4" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -234,118 +218,38 @@
                 </div>
             </div>
         </section>
-        <!-- V our work 끝 -->
 
-        <!-- F Portfolio 시작 -->
-        <!-- Portfolio Grid-->
-        <!-- <section class="page-section bg-light" id="portfolio">
+        <!-- 개인페이지 -->
+        <section id="hard-coding" class="white-bg position-relative overflow-hidden">
+            <h2 class=" text-center">HARD CODING</h2>
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <div class="row align-items-stretch">
+                    <div class="col-md-6 align-self-center pb-4 pb-md-5 pb-lg-0">
+                        <div class="py-lg-5 detail">
+                            <div class="pb-md-3 paragraph">
+                                <p>We are proud of our history, our esteemed faculty, and our dedicated professionals, who, year after year, provide the environment and support to help our students realize their dreams.</p>
+                                <p>School of Interior Design is a private, not-for-profit college devoted to the design of the interior environment. Our guiding principle is that the successful design of an interior space improves human welfare, and that the interior design profession assumes an important role in ensuring that spaces are beautiful, functional, healthy, safe, and built in a socially and environmentally conscientious way.</p>
+                            </div>
+                            <a href="javascript:void(0)" class="common-btn">read more <img src="https://www.yudiz.com/codepen/interior-design/arrow-right.svg" class="img-fluid" alt="Arrow"></a>
+                        </div>
+                    </div>
+                    <!-- col -->
+                    <div class="col-md-6">
+                        <div class="hard-box mt-4 my-md-0 position-relative">
+                            <img src="https://www.yudiz.com/codepen/interior-design/company-bg.png" class="img-fluid" alt="Company">
+                        </div>
+                    </div>
+                    <!-- col -->
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4"> -->
-                        <!-- Portfolio item 1-->
-                        <!-- <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4"> -->
-                        <!-- Portfolio item 2-->
-                        <!-- <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4"> -->
-                        <!-- Portfolio item 3-->
-                        <!-- <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0"> -->
-                        <!-- Portfolio item 4-->
-                        <!-- <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0"> -->
-                        <!-- Portfolio item 5-->
-                        <!-- <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6"> -->
-                        <!-- Portfolio item 6-->
-                        <!-- <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-            <!-- </div>
-        </section> -->
-        <!-- F Portfolio 끝 -->
-        
-        <!-- V Portfolio 시작 -->
+                <!-- row -->
+            </div>
+        </section>
+
+        <!-- 갤러리 -->
         <!-- Portfolio Grid Section -->
-        <section class="page-section" id="portfolio">
+        <section id="graphic-design" class="position-relative">
             <div class="container text-center wow fadeIn">
-                <h2 class="section-heading text-uppercase">Portfolio</h2>
-                <h3 class="section-subheading text-muted">Here are some other projects that we've worked on.</h3>
+                <h2 class=" section-heading text-uppercase">GRAPHIC DESIGN</h2>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="portfolio-filter">
@@ -492,114 +396,128 @@
                 </div>
             </div>
         </section>
-        <!-- V Portfolio 끝 -->
 
-        <!-- About-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+        <!-- 스킬 -->
+        <!-- About Section -->
+        <section id="about">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                        <h1>A Theme for Creatives &amp; Agencies</h1>
+                        <p>Vitality is the perfect theme for a freelance professional or an agency.</p>
+                        <hr class="colored">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                <div class="row text-center content-row">
+                    <div class="col-md-3 col-sm-6" data-wow-delay=".4s">
+                        <div class="about-content">
+                            <i class="fa fa-eye fa-4x"></i>
+                            <h3>Retina Ready</h3>
+                            <p>This theme includes the retina.js plugin for easy retina image support so your images and graphics will look great on mobile devices!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6" data-wow-delay=".8s">
+                        <div class="about-content">
+                            <i class="fa fa-edit fa-4x"></i>
+                            <h3>Easy to Edit</h3>
+                            <p>Vitality is built using Bootstrap 3, and is easy to edit and customize. LESS files are included as well for deeper customization.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6" data-wow-delay="1.2s">
+                        <div class="about-content">
+                            <i class="fa fa-tablet fa-4x"></i>
+                            <h3>Responsive</h3>
+                            <p>When building this theme, we've paid close attention to how it looks on various screen sizes. Try it out on a phone or tablet!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6" data-wow-delay="1.4s">
+                        <div class="about-content">
+                            <i class="fa fa-heart fa-4x"></i>
+                            <h3>Built with Love</h3>
+                            <p>All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- 간략소개 -->
+        <!-- Testomonials Section 코멘트 -->
+        <!-- 제목 차라락 내용 아래에서 위로 하나씩-->
+        <section class="testimonials bg-gray">
+            <div class="container wow fadeIn">
+                <div class="d-flex justify-content-center">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="testimonials-carousel">
+                            <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
+                            <!-- Testimonial Item 1 -->
+                            <div class="item">
+                                <div class="">
+                                    <div class="col-lg-12">
+                                        <p class="lead">"Working with Vitality was both a valuable and rewarding
+                                            experience."</p>
+                                        <hr class="colored">
+                                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias
+                                            nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero
+                                            ipsam aut fugit?</p>
+                                        <div class="testimonial-info">
+                                            <div class="testimonial-img">
+                                                <img src="img/agency/testimonials/1.jpg" class="img-circle img-responsive"
+                                                    alt="">
+                                            </div>
+                                            <div class="testimonial-author">
+                                                <span class="name">Jim Walker</span>
+                                                <p class="small">CEO of Company Name</p>
+                                                <div class="stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial Item 2 -->
+                            <div class="item">
+                                <div class="d-flex justify-content-center">
+                                    <div class="col-lg-12">
+                                        <p class="lead">"Vitality is a well coded, well documented, and easy to use theme!"
+                                        </p>
+                                        <hr class="colored">
+                                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                                            amet rem minus dolorum, facere in soluta explicabo, unde eveniet illo vel, nemo
+                                            nostrum atque nesciunt facilis quaerat quasi reprehenderit dicta.</p>
+                                        <div class="testimonial-info">
+                                            <div class="testimonial-img">
+                                                <img src="img/agency/testimonials/2.jpg" class="img-circle img-responsive"
+                                                    alt="">
+                                            </div>
+                                            <div class="testimonial-author">
+                                                <span class="name">Ashley Creadle</span>
+                                                <p class="small">Creative Director of Company Name</p>
+                                                <div class="stars">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 로고 모음 -->
         <!-- Clients-->
         <div class="py-5">
             <div class="container">
@@ -619,72 +537,6 @@
                 </div>
             </div>
         </div>
-        <!-- F Contact 시작 -->
-        <!-- Contact-->
-        <!-- <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div> -->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <!-- <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group"> -->
-                                <!-- Name input-->
-                                <!-- <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group"> -->
-                                <!-- Email address input-->
-                                <!-- <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0"> -->
-                                <!-- Phone number input-->
-                                <!-- <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0"> -->
-                                <!-- Message input-->
-                                <!-- <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <!-- <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
-                    </div> -->
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <!-- <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div> -->
-                    <!-- Submit Button-->
-                    <!-- <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
-                </form>
-            </div>
-        </section> -->
-        <!-- F Contact 끝 -->
 
         <!-- V Footer 시작 -->
         <footer class="footer" style="background-image: url('img/agency/backgrounds/bg-footer.jpg')">
@@ -973,6 +825,8 @@
         <script src="vendor/mixitup/jquery.mixitup.js"></script>
         <script src="vendor/wow/wow.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js'></script>
     
         <!-- Contact Form Scripts -->
         <script src="js/contact_me.js"></script>
@@ -992,5 +846,7 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
         <!-- F 스크립트 끝 -->
+
+        <script src="/js/main.js"></script>
     </body>
 </html>
