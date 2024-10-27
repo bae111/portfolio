@@ -12053,5 +12053,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
 
 /*# sourceMappingURL=bootstrap.css.map */

@@ -18,13 +18,15 @@
         <!-- favicon 끝 -->
 
         <!-- Bootstrap Core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 
+        <link rel="stylesheet" href="/css/font.css">
         <!-- Default Fonts (IMPORTANT: Delete these if you are using a different body style!) -->
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -41,9 +43,8 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet">
         <link href="css/vitality-red.css" rel="stylesheet" type="text/css">
-
         <link rel="stylesheet" href="/scss/main.min.css?var=s<?php echo time(); ?>">
 
     </head>
@@ -51,54 +52,104 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <!-- <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a> -->
-                <a class="navbar-brand" href="#page-top">B.</a>
+                <h1><a class="navbar-brand" href="#page-top">B.</a></h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#team-cms">team/cms</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#redesign">redesign</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#hard-coding">hard coding</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#graphic-design">graphic design</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#header">home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team-cms">portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#graphic-design">design</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">about</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase wow fadeIn">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+        <header id="header" class="masthead">
+            <div class="hd-container">
+                <div class="hd-title text-uppercase poppins-extrabold" contenteditable>
+                    portfolio
+                </div>
+                <div class="hd-title lg text-uppercase poppins-regular" contenteditable>
+                    bae ha eun
+                </div>
+                <div class="hd-title sm text-uppercase poppins-light" contenteditable>
+                    <span class="fall">w</span><span class="fall">e</span><span class="fall">b</span> <span class="fall">p</span><span class="fall">u</span><span class="fall">b</span><span class="fall">l</span><span class="fall">s</span><span class="fall">h</span><span class="fall">e</span><span class="fall">r</span>
+                </div>
+            </div>
+
+            <div class="hd-background">
+                <div class="gradient">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="150%" height="150%" x="-65%" y="-65%" fill="url(#gradient1a)"></rect>
+                        <rect width="200%" height="200%" x="10%" y="-80%" fill="url(#gradient1b)"></rect>
+                        <rect width="200%" height="150%" x="-50%" y="30%" fill="url(#gradient1c)"></rect>
+                        <defs>
+                            <radialGradient id="gradient1a">
+                                <stop offset="0%" stop-color="#efebe7">
+                                    <animate attributeName="stop-color" values="#efebe7;#ffffff;#bed6c0;#bed6c0;#ffffff;#bed6c0;#efebe7" dur="20s" repeatCount="indefinite">
+                                    </animate>
+                                </stop>
+                                <stop offset="100%" stop-color="#ffffff"></stop>
+                            </radialGradient>
+                            <radialGradient id="gradient1b">
+                                <stop offset="0%" stop-color="#d2e3c8">
+                                    <animate attributeName="stop-color" values="#d2e3c8;#bed6c0;#ffffff;#d2e3c8;#bed6c0;#ffffff;#d2e3c8" dur="20s" repeatCount="indefinite">
+                                    </animate>
+                                </stop>
+                                <stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+                            </radialGradient>
+                            <radialGradient id="gradient1c">
+                                <stop offset="0%" stop-color="#ffffff">
+                                    <animate attributeName="stop-color" values="#ffffff;#bed6c0;#efebe7;#ffffff;#d2e3c8;#efebe7;#ffffff" dur="20s" repeatCount="indefinite">
+                                    </animate>
+                                </stop>
+                                <stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </div>
             </div>
         </header>
 
+        <div class="parallax__progress">
+            <progress max="100" value="0"></progress>
+        </div>
+
         <!-- 팀플, 카페24 -->
-        <section id="team-cms" class="mx-auto ">
+        <section id="team-cms" class="mx-auto">
             <article class="position-relative">
                 <span></span>
                 <div class="d-flex flex-column justify-content-center">
-                    <h3>UNIVERSE</h3>
-                    <h2 class=" title-1">TEAM</h2>
+                    <h3>TEAM</h3>
+                    <h2 class="title-1">UNIVERSE ENT.</h2>
                     <p>
                         클래식 디자인은 우리 브랜드의 선구자적 전통을 상징하는 특징이<br> 되었습니다. 최첨단 TV Beovision Harmony의 탄생을 향해 우리를 인도<br><br>
                         마법같은 동작과 인간 중심적 디자인의 정수를 보여주는
                         사운드와<br> 비전을 직접 체험하는 시간을 가져보세요.강력한 사운드와 컴팩트한 <br>디자인의 개인 및 휴대용 제품과 공간 음악의 시간을 함께 하는 <br>만나보는 시간을 가지고 유연하고 몰입감 있는 사운드바
                     </p>
-                    <button>READ MORE</button>
+                    <div class="btn-wrap">
+                        <button class="more-btn">Sever</button>
+                        <button class="more-btn">Notion</button>
+                        <button class="more-btn">Figma</button>
+                    </div>
                 </div>
             </article>
             <article class="position-relative">
                 <span></span>
                 <div class="d-flex flex-column justify-content-center">
-                    <h3>카페24</h3>
-                    <h2 class=" title-2">CMS</h2>
+                    <h3>CMS</h3>
+                    <h2 class="title-2">카페24</h2>
                     <p>
                         클래식 디자인은 우리 브랜드의 선구자적 전통을 상징하는 특징이<br> 되었습니다. 최첨단 TV Beovision Harmony의 탄생을 향해 우리를 인도<br><br>
                         마법같은 동작과 인간 중심적 디자인의 정수를 보여주는
                         사운드와<br> 비전을 직접 체험하는 시간을 가져보세요.강력한 사운드와 컴팩트한 <br>디자인의 개인 및 휴대용 제품과 공간 음악의 시간을 함께 하는 <br>만나보는 시간을 가지고 유연하고 몰입감 있는 사운드바
                     </p>
-                    <button>READ MORE</button>
+                    <div class="btn-wrap">
+                        <button class="more-btn">Sever</button>
+                        <button class="more-btn">Figma</button>
+                    </div>
                 </div>
             </article>
         </section>
@@ -221,7 +272,7 @@
 
         <!-- 개인페이지 -->
         <section id="hard-coding" class="white-bg position-relative overflow-hidden">
-            <h2 class=" text-center">HARD CODING</h2>
+            <h2 class=" text-center"></h2>
             <div class="container">
                 <div class="row align-items-stretch">
                     <div class="col-md-6 align-self-center pb-4 pb-md-5 pb-lg-0">
@@ -249,7 +300,7 @@
         <!-- Portfolio Grid Section -->
         <section id="graphic-design" class="position-relative">
             <div class="container text-center wow fadeIn">
-                <h2 class=" section-heading text-uppercase">GRAPHIC DESIGN</h2>
+                <h2 class=" section-heading text-uppercase">DESIGN</h2>
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="portfolio-filter">
@@ -443,7 +494,6 @@
 
         <!-- 간략소개 -->
         <!-- Testomonials Section 코멘트 -->
-        <!-- 제목 차라락 내용 아래에서 위로 하나씩-->
         <section class="testimonials bg-gray">
             <div class="container wow fadeIn">
                 <div class="d-flex justify-content-center">
@@ -826,8 +876,9 @@
         <script src="vendor/wow/wow.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js'></script>
-    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js'></script>
+        <script src="https://unpkg.com/split-type"></script>
+
         <!-- Contact Form Scripts -->
         <script src="js/contact_me.js"></script>
         <script src="js/jqBootstrapValidation.js"></script>
