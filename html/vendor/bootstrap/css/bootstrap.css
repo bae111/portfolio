@@ -214,13 +214,13 @@ hr {
   opacity: 0.25;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+/* h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
   color: var(--bs-heading-color);
-}
+} */
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
@@ -348,7 +348,7 @@ sup {
   top: -0.5em;
 }
 
-a {
+/* a {
   color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
   text-decoration: underline;
 }
@@ -359,7 +359,7 @@ a:hover {
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 pre,
 code,
@@ -12058,5 +12058,3 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-
-/*# sourceMappingURL=bootstrap.css.map */

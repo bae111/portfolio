@@ -42,18 +42,18 @@ gsap.to(".hd-title", {
 });
 
 // Company Section - Title
-gsap.set("#hard-coding .title, .detail", {
+gsap.set("#personal .title, .detail", {
     opacity: 0,
     y: -200 
 });
 
-gsap.to("#hard-coding .title, .detail", {
+gsap.to("#personal .title, .detail", {
     opacity: 1,
     y: 0,
     duration: 1,
     ease: "power2.inOut",
     scrollTrigger: {
-        trigger: "#hard-coding",
+        trigger: "#personal",
         start: "top center",
         end: "center",
         markers: false 
@@ -74,7 +74,7 @@ gsap.to(".hard-box", {
     transformOrigin: "top right",
     ease: "power2.inOut",
     scrollTrigger: {
-        trigger: "#hard-coding",
+        trigger: "#personal",
         start: "top center",
         end: "center",
         markers: false 
@@ -82,13 +82,13 @@ gsap.to(".hard-box", {
 });
 
 // Project section - content section
-gsap.set("#graphic-design", {
+gsap.set("#design", {
     x: -200,
     y: -200,
     opacity: 0 
 });
 
-gsap.to("#graphic-design", {
+gsap.to("#design", {
     duration: 1.6,
     x: 0,
     y: 0,
@@ -97,7 +97,7 @@ gsap.to("#graphic-design", {
     ease: "power2.inOut",
     yoyo: true,
     scrollTrigger: {
-        trigger: "#graphic-design",
+        trigger: "#design",
         start: "top center",
         end: "center",
         markers: false 
