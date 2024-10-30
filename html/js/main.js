@@ -1,15 +1,16 @@
 $(function () {
     var mouseX, mouseY;
-    var ww = $(window).width();
-    var wh = $(window).height();
     var traX, traY;
+
     $(document).mousemove(function (e) {
         mouseX = e.pageX;
         mouseY = e.pageY;
-        traX = 4 * mouseX / 350 + 10;
-        traY = 4 * mouseY / 350 + 20;
-        $(".hd-title ").css({ "background-position": traX + "%" + traY + "%" });
-        $(".hd-title span").css({ "background-position": traY + "%" + traX + "%" });
+        traX = 4 * mouseX / $(window).width() + 10; // 비율에 맞게 수정
+        traY = 4 * mouseY / $(window).height() + 20; // 비율에 맞게 수정
+        
+        $(".hd-title").css({ "background-position": traX + "%" + traY + "%" });
+        $(".hd-title span").css({ "background-position": traX + "%" + traY + "%" }); // 동일한 비율 적용
+        $(".hd-line").css({ "background-position": traX + "%" + traY + "%" }); // 동일한 비율 적용
     });
 
     $('.fall').each(function(index) {
@@ -42,12 +43,12 @@ gsap.to(".hd-title", {
 });
 
 // Company Section - Title
-gsap.set("#personal .title, .detail", {
+gsap.set("#personal .project-detail", {
     opacity: 0,
     y: -200 
 });
 
-gsap.to("#personal .title, .detail", {
+gsap.to("#personal .project-detail", {
     opacity: 1,
     y: 0,
     duration: 1,
@@ -61,12 +62,12 @@ gsap.to("#personal .title, .detail", {
 });
 
 // Company section - Image
-gsap.set(".hard-box", {
+gsap.set(".personal-box", {
     opacity: 0,
     scale: 0 
 });
 
-gsap.to(".hard-box", {
+gsap.to(".personal-box", {
     duration: 1.6,
     delay: 0.1,
     opacity: 1,

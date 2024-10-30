@@ -16,8 +16,6 @@
         <link rel="manifest" href="/img/favicon/site.webmanifest" />
         <!-- favicon 끝 -->
 
-        <!-- Bootstrap Core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
 
         <link rel="stylesheet" href="/css/font.css">
         <!-- Default Fonts (IMPORTANT: Delete these if you are using a different body style!) -->
@@ -29,6 +27,10 @@
 
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+
 
         <!-- Plugin CSS -->
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -69,6 +71,9 @@
         <!-- Masthead-->
         <header id="header" class="masthead">
             <div class="hd-container">
+                <div class="hd-title">
+                    <div class="hd-line"></div>
+                </div>
                 <div class="hd-title text-uppercase poppins-extrabold" contenteditable>
                     portfolio
                 </div>
@@ -77,6 +82,9 @@
                 </div>
                 <div class="hd-title sm text-uppercase poppins-light"  contenteditable>
                     <span class="fall">w</span><span class="fall">e</span><span class="fall">b</span> <span class="fall">p</span><span class="fall">u</span><span class="fall">b</span><span class="fall">l</span><span class="fall">s</span><span class="fall">h</span><span class="fall">e</span><span class="fall">r</span>
+                </div>
+                <div class="hd-title">
+                    <div class="hd-line"></div>
                 </div>
             </div>
 
@@ -119,8 +127,8 @@
         </div>
 
         <!-- 팀플, 카페24 -->
-        <section id="project" class="mx-auto ">
-            <article class="project-1 position-relative wow fadeInLeft">
+        <section id="project" class="mx-auto">
+            <article class="project-wrap position-relative wow fadeInLeft">
                 <span class="project-img team-img"></span>
                 <div class="project-detail d-flex flex-column justify-content-center">
                     <h3><em>team project</em></h3>
@@ -129,70 +137,78 @@
                         <span class="date">사이트 제작기간 5주</span>
                         <div class="accent-wrap d-flex flex-column">
                             <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 80%</span></span>
-                            <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">sub 아티스트</span><span class="sub sub-2">sub 스케줄</span><span class="sub sub-2">sub 회원가입</span></span>    
+                            <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">sub 아티스트</span><span class="sub sub-2">sub 스케줄</span><span class="sub sub-2">sub 회원가입</span><span class="sub sub-2">sub 장바구니</span></span>    
                         </div>
-                        <p class="text-2">
-                            DOTHOME 호스팅 이용<br>
-                            Git Hub 개별 branches 사용<br>
-                            UNIVERSE ENTERTAINMENT 제작
-                        </p>
+                        <div class="text-2 d-flex flex-column">
+                            <span>DOTHOME 호스팅 이용</span>
+                            <span>Git Hub 개별 branches 사용</span>
+                            <span>UNIVERSE ENTERTAINMENT 제작</span>
+                        </div>
                     </div>
                     <div class="more-wrap">
-                        <a href="http://universe.dothome.co.kr/" target="_blank" class="more-btn">website</a>
-                        <a href="https://www.notion.so/bf247e6e2188478795e4efd5527ae9af?pvs=4" target="_blank" class="more-btn">notion</a>
-                        <a href="https://github.com/docarry/universe" target="_blank" class="more-btn">git</a>
-                        <a href="https://www.figma.com/design/3eGegNFFww0lEfavfz73qu/UNI-ent.?node-id=0-1&t=giUrsTY1633mkPCT-1" target="_blank" class="more-btn">figma</a>
+                        <a href="http://universe.dothome.co.kr/" target="_blank" class="more-btn more-w">website</a>
+                        <a href="https://buly.kr/Awe4hhA" target="_blank" class="more-btn more-n">notion</a>
+                        <a href="https://github.com/docarry/universe" target="_blank" class="more-btn more-g">git</a>
+                        <a href="https://buly.kr/FLX1E5W" target="_blank" class="more-btn more-f">figma</a>
                     </div>
                 </div>
             </article>
 
             <div class="line"></div>
 
-            <article class="project-1 position-relative flex-row-reverse wow fadeInRight">
+            <article class="project-wrap position-relative flex-row-reverse wow fadeInRight">
                 <span class="project-img cafe-img"></span>
                 <div class="project-detail d-flex flex-column justify-content-center">
-                    <h3><em>cms</em></h3>
-                    <h2>cafe24</h2>
+                    <h3><em>cms solution cafe24</em></h3>
+                    <h2>mlb</h2>
                     <div class="detail-text d-flex flex-column">
                         <span class="date">사이트 제작기간 5일</span>
                         <div class="accent-wrap d-flex flex-column">
-                            <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span></span>
+                            <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 100%</span></span>
                             <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span></span>    
                         </div>
-                        <p class="text-2">
-                            cafe24 쇼핑몰 호스팅 이용<br>
-                            cafe24 베이직 테마 사용<br>
-                            MLB 모자 쇼핑몰 제작
-                        </p>
+                        <div class="text-2 d-flex flex-column">
+                            <span>cafe24 쇼핑몰 호스팅 이용</span>
+                            <span>cafe24 베이직 테마 사용</span>
+                            <span>MLB 모자 쇼핑몰 제작</span>
+                        </div>
                     </div>
                     <div class="more-wrap">
-                        <a href="#none" class="more-btn">website</a>
-                        <a href="#none" class="more-btn">figma</a>
+                        <a href="#none" target="_blank" class="more-btn more-w">website</a>
+                        <a href="https://buly.kr/8TpSyHl" target="_blank" class="more-btn more-f">figma</a>
                     </div>
                 </div>
             </article>
         </section>
 
         <!-- 리뉴얼 -->
-        <!-- Portfolio Carousel Heading -->
-        <section id="renewal" class="">
-            <div class="container text-center wow fadeIn position-relative">
-                <h2 class="">renewal</h2>
-            </div>
-        </section>
         <!-- Portfolio Carousel -->
-        <section class="portfolio-carousel wow fadeIn">
+        <section id="renewal" class="portfolio-carousel wow fadeIn">
             <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
-            <!-- Carousel Item 1 -->
-            <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-1.jpg')">
+            <!-- item 1 -->
+            <div class="item project-wrap">
                 <div class="container-fluid">
                     <div class="d-flex flex-row-reverse">
                         <div class="col-md-5 col-md-push-7">
-                            <div class="project-details">
-                                <span class="project-name">Project Name</span>
-                                <span class="project-description">Branding, Website Design</span>
-                                <hr class="colored">
-                                <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                            <div class="project-details project-detail d-flex flex-column">
+                                <h3><em>renewal</em></h3>
+                                <h2>pellito</h2>
+                                <div class="detail-text d-flex flex-column">
+                                    <span class="date">사이트 제작기간 2일</span>
+                                    <div class="accent-wrap d-flex flex-column">
+                                        <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 100%</span></span>
+                                        <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span></span>    
+                                    </div>
+                                    <div class="text-2 d-flex flex-column">
+                                        <span>DOTHOME 호스팅 이용</span>
+                                        <span>pellito index renewal</span>
+                                    </div>
+                                </div>
+                                <div class="more-wrap">
+                                    <a href="/renewal/pellito.html" target="_blank" class="more-btn more-w">website</a>
+                                    <a href="https://buly.kr/15Ndm10" target="_blank" class="more-btn more-f">figma</a>
+                                    <a href="https://pellitosofa.com/" target="_blank" class="more-btn more-o">original</a>
+                                </div>                            
                             </div>
                         </div>
                         <div class="col-md-7 col-md-pull-5 hidden-xs">
@@ -200,7 +216,7 @@
                                 <div class="device-mockup macbook portrait black">
                                     <div class="device">
                                         <div class="screen">
-                                            <img src="img/agency/portfolio/carousel/screen-1a.jpg" class="img-responsive" alt="">
+                                            <img src="/img/main/renewal-img-1.jpg" class="img-responsive" alt="pellito">
                                         </div>
                                     </div>
                                 </div>
@@ -209,16 +225,30 @@
                     </div>
                 </div>
             </div>
-            <!-- Carousel Item 2 -->
-            <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-2.jpg')">
+            <!-- item 2 -->
+            <div class="item project-wrap">
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="d-flex flex-row-reverse">
                         <div class="col-md-5 col-md-push-7">
-                            <div class="project-details">
-                                <span class="project-name">Project Name</span>
-                                <span class="project-description">Branding, Website Design</span>
-                                <hr class="colored">
-                                <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                            <div class="project-details project-detail d-flex flex-column">
+                                <h3><em>renewal</em></h3>
+                                <h2>pellito</h2>
+                                <div class="detail-text d-flex flex-column">
+                                    <span class="date">사이트 제작기간 2일</span>
+                                    <div class="accent-wrap d-flex flex-column">
+                                        <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 100%</span></span>
+                                        <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span></span>    
+                                    </div>
+                                    <div class="text-2 d-flex flex-column">
+                                        <span>DOTHOME 호스팅 이용</span>
+                                        <span>pellito index renewal</span>
+                                    </div>
+                                </div>
+                                <div class="more-wrap">
+                                    <a href="/renewal/pellito.html" target="_blank" class="more-btn more-w">website</a>
+                                    <a href="#none" target="_blank" class="more-btn more-f">figma</a>
+                                    <a href="https://pellitosofa.com/" target="_blank" class="more-btn more-o">original</a>
+                                </div>                            
                             </div>
                         </div>
                         <div class="col-md-7 col-md-pull-5 hidden-xs">
@@ -226,7 +256,7 @@
                                 <div class="device-mockup macbook portrait black">
                                     <div class="device">
                                         <div class="screen">
-                                            <img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-responsive" alt="">
+                                            <img src="/img/main/renewal-img-1.jpg" class="img-responsive" alt="pellito">
                                         </div>
                                     </div>
                                 </div>
@@ -235,42 +265,30 @@
                     </div>
                 </div>
             </div>
-            <!-- Carousel Item 3 -->
-            <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-3.jpg')">
+            <!-- item 3 -->
+            <div class="item project-wrap">
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="d-flex flex-row-reverse">
                         <div class="col-md-5 col-md-push-7">
-                            <div class="project-details">
-                                <span class="project-name">Project Name</span>
-                                <span class="project-description">Branding, Website Design</span>
-                                <hr class="colored">
-                                <a href="#portfolioModal3" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-md-pull-5 hidden-xs">
-                            <div class="device-container">
-                                <div class="device-mockup macbook portrait black">
-                                    <div class="device">
-                                        <div class="screen">
-                                            <img src="img/agency/portfolio/carousel/screen-3a.jpg" class="img-responsive" alt="">
-                                        </div>
+                            <div class="project-details project-detail d-flex flex-column">
+                                <h3><em>renewal</em></h3>
+                                <h2>pellito</h2>
+                                <div class="detail-text d-flex flex-column">
+                                    <span class="date">사이트 제작기간 2일</span>
+                                    <div class="accent-wrap d-flex flex-column">
+                                        <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 100%</span></span>
+                                        <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span></span>    
+                                    </div>
+                                    <div class="text-2 d-flex flex-column">
+                                        <span>DOTHOME 호스팅 이용</span>
+                                        <span>pellito index renewal</span>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Carousel Item 4 -->
-            <div class="item" style="background-image: url('img/agency/portfolio/carousel/bg-4.jpg')">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-5 col-md-push-7">
-                            <div class="project-details">
-                                <span class="project-name">Project Name</span>
-                                <span class="project-description">Branding, Website Design</span>
-                                <hr class="colored">
-                                <a href="#portfolioModal4" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
+                                <div class="more-wrap">
+                                    <a href="/renewal/pellito.html" target="_blank" class="more-btn more-w">website</a>
+                                    <a href="#none" target="_blank" class="more-btn more-f">figma</a>
+                                    <a href="https://pellitosofa.com/" target="_blank" class="more-btn more-o">original</a>
+                                </div>                            
                             </div>
                         </div>
                         <div class="col-md-7 col-md-pull-5 hidden-xs">
@@ -278,7 +296,7 @@
                                 <div class="device-mockup macbook portrait black">
                                     <div class="device">
                                         <div class="screen">
-                                            <img src="img/agency/portfolio/carousel/screen-4.jpg" class="img-responsive" alt="">
+                                            <img src="/img/main/renewal-img-1.jpg" class="img-responsive" alt="pellito">
                                         </div>
                                     </div>
                                 </div>
@@ -290,29 +308,33 @@
         </section>
 
         <!-- 개인페이지 -->
-        <section id="personal" class="white-bg position-relative overflow-hidden">
-            <h2 class=" text-center"></h2>
-            <div class="container">
-                <div class="row align-items-stretch">
-                    <div class="col-md-6 align-self-center pb-4 pb-md-5 pb-lg-0">
-                        <div class="py-lg-5 detail">
-                            <div class="pb-md-3 paragraph">
-                                <p>We are proud of our history, our esteemed faculty, and our dedicated professionals, who, year after year, provide the environment and support to help our students realize their dreams.</p>
-                                <p>School of Interior Design is a private, not-for-profit college devoted to the design of the interior environment. Our guiding principle is that the successful design of an interior space improves human welfare, and that the interior design profession assumes an important role in ensuring that spaces are beautiful, functional, healthy, safe, and built in a socially and environmentally conscientious way.</p>
-                            </div>
-                            <a href="javascript:void(0)" class="common-btn">read more <img src="https://www.yudiz.com/codepen/interior-design/arrow-right.svg" class="img-fluid" alt="Arrow"></a>
+        <section id="personal" class="position-relative overflow-hidden">
+            <article class="project-wrap position-relative">
+                <div class="project-detail d-flex flex-column justify-content-center">
+                    <h3><em>personal</em></h3>
+                    <h2>FESTIRART</h2>
+                    <div class="detail-text d-flex flex-column">
+                        <span class="date">사이트 제작기간 1달</span>
+                        <div class="accent-wrap d-flex flex-column">
+                            <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">기획 100%</span><span class="sub sub-1">디자인 100%</span></span>
+                            <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span><span class="sub sub-2">sub 13page</span></span>    
+                        </div>
+                        <div class="text-2 d-flex flex-column">
+                            <span>DOTHOME 호스팅 이용</span>
+                            <span>축제 정보 통합 사이트</span>
+                            <span>FESTIRART 페스티러리 제작</span>
                         </div>
                     </div>
-                    <!-- col -->
-                    <div class="col-md-6">
-                        <div class="hard-box mt-4 my-md-0 position-relative">
-                            <img src="https://www.yudiz.com/codepen/interior-design/company-bg.png" class="img-fluid" alt="Company">
-                        </div>
+                    <div class="more-wrap">
+                        <a href="http://tutwo.dothome.co.kr/" target="_blank" class="more-btn more-w">website</a>
+                        <a href="https://github.com/bae111/festirary" target="_blank" class="more-btn more-g">git</a>
+                        <a href="https://buly.kr/2qXDaA0" target="_blank" class="more-btn more-f">figma</a>
                     </div>
-                    <!-- col -->
                 </div>
-                <!-- row -->
-            </div>
+                <div class="personal-box mt-4 my-md-0 position-relative col-md-6">
+                    <img src="/img/main/personal-img.jpg" class="img-fluid" alt="festirary 사이트">
+                </div>
+            </article>
         </section>
 
         <!-- 갤러리 -->
@@ -473,7 +495,7 @@
             <div class="container-fluid">
                 <div class="row text-center">
                     <div class="col-lg-12">
-                        <h1>A Theme for Creatives &amp; Agencies</h1>
+                        <h2>A Theme for Creatives &amp; Agencies</h2>
                         <p>Vitality is the perfect theme for a freelance professional or an agency.</p>
                         <hr class="colored">
                     </div>
@@ -580,32 +602,13 @@
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 로고 모음 -->
-        <!-- Clients-->
-        <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- V Footer 시작 -->
         <footer id="contact" class="footer" style="background-image: url('img/agency/backgrounds/bg-footer.jpg')">
@@ -637,7 +640,7 @@
                 </div>
                 <div class="row copyright">
                     <div class="col-lg-12">
-                        <p class="small">&copy; 2016 Start Bootstrap Themes</p>
+                        <p class="small">&copy; 2024 BAE HA EUN All Rights Reserved</p>
                     </div>
                 </div>
             </div>
