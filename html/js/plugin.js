@@ -1,5 +1,5 @@
 // 메인배너 슬라이드
-var main_swiper = new Swiper("#main-banner-swiper", {
+var main_swiper = new Swiper("#pellito-main-banner-swiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
@@ -17,7 +17,7 @@ var main_swiper = new Swiper("#main-banner-swiper", {
 });
 
 // 샵 슬라이드
-var main_swiper = new Swiper("#shop-swiper", {
+var main_shop_swiper = new Swiper("#pellito-shop-swiper", {
     slidesPerView: 5,
     spaceBetween: 20,
     loop: true,

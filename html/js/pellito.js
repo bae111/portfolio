@@ -2,9 +2,9 @@ $(function(){
     // 스크롤 시 헤더 고정
     $(window).on('scroll', function(){
         if($(window).scrollTop() > 0){
-            $('#header').addClass('fix');
+            $('#pellito-header').addClass('fix');
         }else{
-            $('#header').removeClass('fix');
+            $('#pellito-header').removeClass('fix');
         }
     });
 

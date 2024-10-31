@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="/scss/pellito.min.css?var=s<?php echo time(); ?>">
 </head>
 <body>
-    <header id="header">
+    <header id="pellito-header">
         <div class="hd-container index-container">
             <h1><a href="/"><img src="/img/renewal/pellito/logo.svg" alt="펠리토소파"><span class="blind">펠리토소파</span></a></h1>
             <nav class="gnb">
@@ -58,9 +58,9 @@
         </div>
     </header>
 
-    <main id="main">
-        <section id="main-banner">
-            <div id="main-banner-swiper" class="swiper mySwiper">
+    <main id="pellito-main">
+        <section id="pellito-main-banner">
+            <div id="pellito-main-banner-swiper" class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="/img/renewal/pellito/main-banner-1.jpg" alt="랜돌 소파">
@@ -97,7 +97,7 @@
             </div>
         </section>
 
-        <section id="info">
+        <section id="pellito-info">
             <p class="accent"><em>Life ON Pellito</em></p>
             <div class="detail">
                 펠리토는 2002년, 아버지의 노력과 열정이 이어져<br>
@@ -106,9 +106,9 @@
             </div>
         </section>
 
-        <section id="collection" class="content">
+        <section id="pellito-collection" class="content">
             <div class="coll-wrap index-container">
-                <div class="coll-left">
+                <div class="title-left coll-left">
                     <div class="group-name">
                         <span class="num"><em>01</em></span>
                         <span class="line"></span>
@@ -138,7 +138,7 @@
             </div>
         </section>
 
-        <section id="best" class="content index-container">
+        <section id="pellito-best" class="content index-container">
             <div class="best-wrap">
                 <div class="group-name">
                     <span class="num"><em>02</em></span>
@@ -156,22 +156,25 @@
             </div>
         </section>
 
-        <section id="event">
-            <a href="#none" class="event-text index-container">
-                <span class="event-name">EVENT</span>
-                <span class="event-title">신규 회원가입 혜택</span>
-                <span class="event-sub">중복 사용 가능한 10% 웰컴 쿠폰 지급해드립니다.</span>
-            </a>
+        <section id="pellito-event">
+            <div class="title-left index-container">
+                <div class="event-text">
+                    <span class="event-name">EVENT</span>
+                    <span class="event-title">신규 회원가입 혜택</span>
+                    <span class="event-sub">중복 사용 가능한 10% 웰컴 쿠폰 지급해드립니다.</span>
+                </div>
+                <a class="more-btn" href="#none">more</a>
+            </div>
         </section>
 
-        <section id="shop" class="index-container content">
+        <section id="pellito-shop" class="index-container content">
             <div class="shop-wrap">
                 <div class="group-name">
                     <span class="num"><em>03</em></span>
                     <span class="line"></span>
                     <span class="name">Shop</span>
                 </div>
-                <div id="shop-swiper" class="swiper mySwiper">
+                <div id="pellito-shop-swiper" class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="/img/renewal/pellito/shop-1.jpg" alt="미뉴엣소파 4인 레이패브릭">
@@ -235,7 +238,89 @@
             </div>
         </section>
 
+        <section id="pellito-community">
+            <div class="community-wrap index-container content">
+                <div class="title-left comm-left">
+                    <div class="group-name">
+                        <span class="num"><em>04</em></span>
+                        <span class="line"></span>
+                        <span class="name">Community</span>
+                    </div>
+                    <div class="title-wrap">
+                        <h3 class="title">
+                            <em>With Pelltio</em>
+                        </h3>
+                    </div>
+                    <a class="more-btn" href="#none">more</a>
+                </div>
+
+                <div class="item-wrap">
+                    <ul>
+                        <li class="review-item"><a class="review-01" href="#none"><img src="/img/renewal/pellito/review-1.jpg" alt="폴로소파"></a></li>
+                        <li class="review-item"><a class="review-02" href="#none"><img src="/img/renewal/pellito/review-2.jpg" alt="랙돌소파 코너"></a></li>
+                        <li class="review-item"><a class="review-03" href="#none"><img src="/img/renewal/pellito/review-3.jpg" alt="오스틴소파 카우치"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="pellito-show-room">
+            <div class="show-room-wrap index-container content">
+                <div class="title-left show-left">
+                    <div class="group-name">
+                        <span class="num"><em>05</em></span>
+                        <span class="line"></span>
+                        <span class="name">Showroom</span>
+                    </div>
+                    <div class="title-wrap">
+                        <h3 class="title">
+                            <em>Store</em>
+                        </h3>
+                        <p class="sub">
+                            경기도 고양시 일산동구 성현로 98-1<br>
+                            031-968-1403<br>
+                            평일 11AM - 6PM 주말 11AM - 7PM<br>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="map" style="width:922px;height:350px;"></div>
+                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a03b6dbdf0c31ba61784e7038701e4c3"></script>
+                <script>
+                   var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                        mapOption = { 
+                            center: new kakao.maps.LatLng(37.706722, 126.797237), // 지도의 중심좌표
+                            level: 4 // 지도의 확대 레벨
+                        };
+
+                    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+                    var imageSrc = '/img/renewal/pellito/map-icon.svg', // 마커이미지의 주소입니다    
+                        imageSize = new kakao.maps.Size(64, 69), // 마커이미지의 크기입니다
+                        imageOption = {offset: new kakao.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+                        
+                    // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+                    var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+                        markerPosition = new kakao.maps.LatLng(37.706722, 126.797237); // 마커가 표시될 위치입니다
+
+                    // 마커를 생성합니다
+                    var marker = new kakao.maps.Marker({
+                        position: markerPosition, 
+                        image: markerImage // 마커이미지 설정 
+                    });
+
+                    // 마커가 지도 위에 표시되도록 설정합니다
+                    marker.setMap(map);  
+                </script>
+            </div>
+        </section>
     </main>
+
+    <footer id="pellito-footer">
+        <div class="footer-left">
+            <h3><a href="/"><img src="/img/renewal/pellito/logo.svg" alt="펠리토소파"><span class="blind">펠리토소파</span></a></h3>
+        </div>
+    </footer>
 
     <!--cdn-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
