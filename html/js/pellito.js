@@ -39,17 +39,17 @@ $(function(){
         const buttonIndex = $(this).data('index');
         
         // 텍스트와 이미지 숨기기
-        $('.title, .sub').addClass('hidden');
+        $('.coll-title, .coll-sub').addClass('hidden');
         $('.coll-right img').addClass('hidden');
 
         // 텍스트와 이미지 업데이트
         setTimeout(() => {
-            $('.title').html(texts[buttonIndex].title);
-            $('.sub').html(texts[buttonIndex].sub);
+            $('.coll-title').html(texts[buttonIndex].title);
+            $('.coll-sub').html(texts[buttonIndex].sub);
             $('.coll-right img').attr('src', texts[buttonIndex].img);
             
             // 텍스트와 이미지 다시 보이기
-            $('.title, .sub').removeClass('hidden');
+            $('.coll-title, .coll-sub').removeClass('hidden');
             $('.coll-right img').removeClass('hidden');
         }, ); // transition 시간과 일치
     });
