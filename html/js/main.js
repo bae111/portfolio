@@ -17,7 +17,37 @@ $(function () {
         $(this).css('--delay', `${index * 0.1}s`); // CSS 변수를 설정
         $(this).addClass('fall'); // CSS 클래스를 추가하여 애니메이션 적용
     });
+
+    $('.nav-link').on('click', function() {
+        $('.nav-link').removeClass('active'); 
+        $(this).addClass('active');           
+    });
+
+    // var $html = $("html, body");
+    // var page = 1;  
+    // var lastPage = $(".container_rol").length;
+    
+    // $(window).on("wheel", function(e) {
+    //     if ($html.is(":animated")) return; // 애니메이션 진행 중일 때 추가 스크롤 방지
+
+    //     // 휠 방향에 따라 페이지 증가/감소
+    //     if (e.originalEvent.deltaY > 0) {
+    //         if (page < lastPage) {
+    //             page++;
+    //         }
+    //     } else if (e.originalEvent.deltaY < 0) {
+    //         if (page > 1) {
+    //             page--;
+    //         }
+    //     }
+
+    //     // 목표 위치 계산
+    //     var posTop = (page - 1) * $(window).height();
+    //     $html.animate({ scrollTop: posTop }, 200); // 부드러운 스크롤 애니메이션
+    //     e.preventDefault(); // 기본 스크롤 동작 방지
+    // });
 });
+
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -123,9 +153,25 @@ gsap.to("#design", {
 //     } 
 // });
 
-gsap.to("progress", {
-    value: 100,
-    ease: "none",
-    scrollTrigger: {scrub: 0.3}
-});
+// gsap.to("progress", {
+//     value: 100,
+//     ease: "none",
+//     scrollTrigger: {scrub: 0.3}
+// });
 
+document.querySelector(".progress-bar-one").style.width = "0%";
+
+window.addEventListener("scroll", function () {
+    
+    const scrollTop = document.querySelector("html").scrollTop;
+    const scrollHeight = document.querySelector("html").scrollHeight;
+    const clientHeight = document.querySelector("html").clientHeight;
+
+    console.log("scrollTop: ", scrollTop);
+    console.log("clientHeight: ", clientHeight);
+    console.log("scrollHeight: ", scrollHeight);
+
+    const progress = (scrollTop / (scrollHeight - clientHeight)) * 100;
+    
+    document.querySelector(".progress-bar-one").style.width = progress + "%";
+});

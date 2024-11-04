@@ -42,14 +42,16 @@
         <link href="vendor/animate.css/animate.min.css" rel="stylesheet" type="text/css">
         <link href="vendor/device-mockups/device-mockups.min.css" rel="stylesheet" type="text/css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/vitality-red.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="/scss/main.min.css?var=s<?php echo time(); ?>">
 
     </head>
-    <body id="page-top">
+    <body id="page-top fullpage" class="wrap">
+        <div class="progress-bar-one">
+        </div>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -69,7 +71,7 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header id="header" class="masthead">
+        <header id="header" class="masthead container_rol">
             <div class="hd-container">
                 <div class="hd-title">
                     <div class="hd-line"></div>
@@ -122,101 +124,99 @@
             </div>
         </header>
 
-        <div class="parallax__progress">
-            <progress max="100" value="0"></progress>
-        </div>
-
-        <!-- 팀플, 카페24 -->
-        <section id="project" class="mx-auto">
-            <article class="project-wrap position-relative wow fadeInLeft">
-                <span class="project-img team-img"></span>
-                <div class="project-detail d-flex flex-column justify-content-center">
-                    <h3><em>team project</em></h3>
-                    <h2>UNIVERSE ENT.</h2>
-                    <div class="detail-text d-flex flex-column">
-                        <span class="date">사이트 제작기간 5주</span>
-                        <div class="accent-wrap d-flex flex-column">
-                            <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 80%</span></span>
-                            <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">sub 아티스트</span><span class="sub sub-2">sub 스케줄</span><span class="sub sub-2">sub 회원가입</span><span class="sub sub-2">sub 장바구니</span></span>    
-                        </div>
-                        <div class="text-2 d-flex flex-column">
-                            <span>DOTHOME 호스팅 이용</span>
-                            <span>Git Hub 개별 branches 사용</span>
-                            <span>UNIVERSE ENTERTAINMENT 제작</span>
-                        </div>
-                    </div>
-                    <div class="more-wrap">
-                        <a href="http://universe.dothome.co.kr/" target="_blank" class="more-btn more-w">website</a>
-                        <a href="https://buly.kr/Awe4hhA" target="_blank" class="more-btn more-n">notion</a>
-                        <a href="https://github.com/docarry/universe" target="_blank" class="more-btn more-g">git</a>
-                        <a href="https://buly.kr/FLX1E5W" target="_blank" class="more-btn more-f">figma</a>
-                    </div>
-                </div>
-            </article>
-
-            <div class="line"></div>
-
-            <article class="project-wrap position-relative flex-row-reverse wow fadeInRight">
-                <span class="project-img cafe-img"></span>
-                <div class="project-detail d-flex flex-column justify-content-center">
-                    <h3><em>cms solution cafe24</em></h3>
-                    <h2>mlb</h2>
-                    <div class="detail-text d-flex flex-column">
-                        <span class="date">사이트 제작기간 5일</span>
-                        <div class="accent-wrap d-flex flex-column">
-                            <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 100%</span></span>
-                            <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span></span>    
-                        </div>
-                        <div class="text-2 d-flex flex-column">
-                            <span>cafe24 쇼핑몰 호스팅 이용</span>
-                            <span>cafe24 베이직 테마 사용</span>
-                            <span>MLB 모자 쇼핑몰 제작</span>
-                        </div>
-                    </div>
-                    <div class="more-wrap">
-                        <a href="#none" target="_blank" class="more-btn more-w">website</a>
-                        <a href="https://buly.kr/8TpSyHl" target="_blank" class="more-btn more-f">figma</a>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <!-- 리뉴얼 -->
-        <!-- Portfolio Carousel -->
-        <section id="renewal" class="portfolio-carousel wow fadeIn">
-            <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
-            <!-- item 1 -->
-            <div class="item project-wrap">
-                <div class="container-fluid">
-                    <div class="d-flex flex-row-reverse">
-                        <div class="col-md-5 col-md-push-7">
-                            <div class="project-details project-detail d-flex flex-column">
-                                <h3><em>renewal</em></h3>
-                                <h2>pellito</h2>
-                                <div class="detail-text d-flex flex-column">
-                                    <span class="date">사이트 제작기간 2일</span>
-                                    <div class="accent-wrap d-flex flex-column">
-                                        <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 100%</span></span>
-                                        <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span></span>    
-                                    </div>
-                                    <div class="text-2 d-flex flex-column">
-                                        <span>DOTHOME 호스팅 이용</span>
-                                        <span>pellito index renewal</span>
-                                    </div>
-                                </div>
-                                <div class="more-wrap">
-                                    <a href="/renewal/pellito.html" target="_blank" class="more-btn more-w">website</a>
-                                    <a href="https://buly.kr/15Ndm10" target="_blank" class="more-btn more-f">figma</a>
-                                    <a href="https://pellitosofa.com/" target="_blank" class="more-btn more-o">original</a>
-                                </div>                            
+        
+            <!-- 팀플, 카페24 -->
+            <section id="project" class="mx-auto">
+                <article class="project-wrap position-relative wow fadeInLeft container_rol">
+                    <span class="project-img team-img"></span>
+                    <div class="project-detail d-flex flex-column justify-content-center">
+                        <h3><em>team project</em></h3>
+                        <h2>UNIVERSE ENT.</h2>
+                        <div class="detail-text d-flex flex-column">
+                            <span class="date">사이트 제작기간 5주</span>
+                            <div class="accent-wrap d-flex flex-column">
+                                <span class="text-1 d-flex align-items-center">참여도(전체)<span class="sub sub-1">퍼블리싱 25%</span><span class="sub sub-1">기획/디자인 15%</span></span>
+                                <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">sub 아티스트</span><span class="sub sub-2">sub 스케줄</span><span class="sub sub-2">sub 회원가입</span><span class="sub sub-2">sub 장바구니</span></span>    
+                            </div>
+                            <div class="text-2 d-flex flex-column">
+                                <span>DOTHOME 호스팅 이용</span>
+                                <span>Git Hub 개별 branches 사용</span>
+                                <span>UNIVERSE ENTERTAINMENT 제작</span>
                             </div>
                         </div>
-                        <div class="col-md-7 col-md-pull-5 hidden-xs">
-                            <div class="device-container">
-                                <div class="device-mockup macbook portrait black">
-                                    <div class="device">
-                                        <div class="screen">
-                                            <img src="/img/main/renewal-img-1.jpg" class="img-responsive" alt="pellito">
+                        <div class="more-wrap">
+                            <a href="http://universe.dothome.co.kr/" target="_blank" class="more-btn more-w">website</a>
+                            <a href="https://buly.kr/Awe4hhA" target="_blank" class="more-btn more-n">notion</a>
+                            <a href="https://github.com/docarry/universe" target="_blank" class="more-btn more-g">git</a>
+                            <a href="https://buly.kr/FLX1E5W" target="_blank" class="more-btn more-f">figma</a>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="line"></div>
+
+                <article class="project-wrap position-relative flex-row-reverse wow fadeInRight container_rol">
+                    <span class="project-img cafe-img"></span>
+                    <div class="project-detail d-flex flex-column justify-content-center">
+                        <h3><em>cms solution cafe24</em></h3>
+                        <h2>mlb</h2>
+                        <div class="detail-text d-flex flex-column">
+                            <span class="date">사이트 제작기간 5일</span>
+                            <div class="accent-wrap d-flex flex-column">
+                                <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 100%</span></span>
+                                <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span></span>    
+                            </div>
+                            <div class="text-2 d-flex flex-column">
+                                <span>cafe24 쇼핑몰 호스팅 이용</span>
+                                <span>cafe24 베이직 테마 사용</span>
+                                <span>MLB 모자 쇼핑몰 제작</span>
+                            </div>
+                        </div>
+                        <div class="more-wrap">
+                            <a href="#none" target="_blank" class="more-btn more-w">website</a>
+                            <a href="https://buly.kr/8TpSyHl" target="_blank" class="more-btn more-f">figma</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 리뉴얼 -->
+            <!-- Portfolio Carousel -->
+            <section id="renewal" class="section sec2 portfolio-carousel wow fadeIn container_rol">
+                <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
+                <!-- item 1 -->
+                <div class="item project-wrap">
+                    <div class="container-fluid">
+                        <div class="d-flex flex-row-reverse">
+                            <div class="col-md-5 col-md-push-7">
+                                <div class="project-details project-detail d-flex flex-column">
+                                    <h3><em>renewal</em></h3>
+                                    <h2>pellito</h2>
+                                    <div class="detail-text d-flex flex-column">
+                                        <span class="date">사이트 제작기간 2일</span>
+                                        <div class="accent-wrap d-flex flex-column">
+                                            <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 100%</span></span>
+                                            <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span></span>    
+                                        </div>
+                                        <div class="text-2 d-flex flex-column">
+                                            <span>DOTHOME 호스팅 이용</span>
+                                            <span>pellito index renewal</span>
+                                        </div>
+                                    </div>
+                                    <div class="more-wrap">
+                                        <a href="/renewal/pellito.html" target="_blank" class="more-btn more-w">website</a>
+                                        <a href="https://buly.kr/15Ndm10" target="_blank" class="more-btn more-f">figma</a>
+                                        <a href="https://pellitosofa.com/" target="_blank" class="more-btn more-o">original</a>
+                                    </div>                            
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-md-pull-5 hidden-xs">
+                                <div class="device-container">
+                                    <div class="device-mockup macbook portrait black">
+                                        <div class="device">
+                                            <div class="screen">
+                                                <img src="/img/main/renewal-img-1.jpg" class="img-responsive" alt="pellito">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -224,39 +224,39 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- item 2 -->
-            <div class="item project-wrap">
-                <div class="container-fluid">
-                    <div class="d-flex flex-row-reverse">
-                        <div class="col-md-5 col-md-push-7">
-                            <div class="project-details project-detail d-flex flex-column">
-                                <h3><em>renewal</em></h3>
-                                <h2>pellito</h2>
-                                <div class="detail-text d-flex flex-column">
-                                    <span class="date">사이트 제작기간 2일</span>
-                                    <div class="accent-wrap d-flex flex-column">
-                                        <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 100%</span></span>
-                                        <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span></span>    
+                <!-- item 2 -->
+                <div class="item project-wrap">
+                    <div class="container-fluid">
+                        <div class="d-flex flex-row-reverse">
+                            <div class="col-md-5 col-md-push-7">
+                                <div class="project-details project-detail d-flex flex-column">
+                                    <h3><em>renewal</em></h3>
+                                    <h2>pellito</h2>
+                                    <div class="detail-text d-flex flex-column">
+                                        <span class="date">사이트 제작기간 2일</span>
+                                        <div class="accent-wrap d-flex flex-column">
+                                            <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 100%</span></span>
+                                            <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span></span>    
+                                        </div>
+                                        <div class="text-2 d-flex flex-column">
+                                            <span>DOTHOME 호스팅 이용</span>
+                                            <span>pellito index renewal</span>
+                                        </div>
                                     </div>
-                                    <div class="text-2 d-flex flex-column">
-                                        <span>DOTHOME 호스팅 이용</span>
-                                        <span>pellito index renewal</span>
-                                    </div>
+                                    <div class="more-wrap">
+                                        <a href="/renewal/pellito.html" target="_blank" class="more-btn more-w">website</a>
+                                        <a href="#none" target="_blank" class="more-btn more-f">figma</a>
+                                        <a href="https://pellitosofa.com/" target="_blank" class="more-btn more-o">original</a>
+                                    </div>                            
                                 </div>
-                                <div class="more-wrap">
-                                    <a href="/renewal/pellito.html" target="_blank" class="more-btn more-w">website</a>
-                                    <a href="#none" target="_blank" class="more-btn more-f">figma</a>
-                                    <a href="https://pellitosofa.com/" target="_blank" class="more-btn more-o">original</a>
-                                </div>                            
                             </div>
-                        </div>
-                        <div class="col-md-7 col-md-pull-5 hidden-xs">
-                            <div class="device-container">
-                                <div class="device-mockup macbook portrait black">
-                                    <div class="device">
-                                        <div class="screen">
-                                            <img src="/img/main/renewal-img-1.jpg" class="img-responsive" alt="pellito">
+                            <div class="col-md-7 col-md-pull-5 hidden-xs">
+                                <div class="device-container">
+                                    <div class="device-mockup macbook portrait black">
+                                        <div class="device">
+                                            <div class="screen">
+                                                <img src="/img/main/renewal-img-1.jpg" class="img-responsive" alt="pellito">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -264,39 +264,39 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- item 3 -->
-            <div class="item project-wrap">
-                <div class="container-fluid">
-                    <div class="d-flex flex-row-reverse">
-                        <div class="col-md-5 col-md-push-7">
-                            <div class="project-details project-detail d-flex flex-column">
-                                <h3><em>renewal</em></h3>
-                                <h2>pellito</h2>
-                                <div class="detail-text d-flex flex-column">
-                                    <span class="date">사이트 제작기간 2일</span>
-                                    <div class="accent-wrap d-flex flex-column">
-                                        <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 100%</span></span>
-                                        <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span></span>    
+                <!-- item 3 -->
+                <div class="item project-wrap">
+                    <div class="container-fluid">
+                        <div class="d-flex flex-row-reverse">
+                            <div class="col-md-5 col-md-push-7">
+                                <div class="project-details project-detail d-flex flex-column">
+                                    <h3><em>renewal</em></h3>
+                                    <h2>pellito</h2>
+                                    <div class="detail-text d-flex flex-column">
+                                        <span class="date">사이트 제작기간 2일</span>
+                                        <div class="accent-wrap d-flex flex-column">
+                                            <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">디자인 100%</span></span>
+                                            <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span></span>    
+                                        </div>
+                                        <div class="text-2 d-flex flex-column">
+                                            <span>DOTHOME 호스팅 이용</span>
+                                            <span>pellito index renewal</span>
+                                        </div>
                                     </div>
-                                    <div class="text-2 d-flex flex-column">
-                                        <span>DOTHOME 호스팅 이용</span>
-                                        <span>pellito index renewal</span>
-                                    </div>
+                                    <div class="more-wrap">
+                                        <a href="/renewal/pellito.html" target="_blank" class="more-btn more-w">website</a>
+                                        <a href="#none" target="_blank" class="more-btn more-f">figma</a>
+                                        <a href="https://pellitosofa.com/" target="_blank" class="more-btn more-o">original</a>
+                                    </div>                            
                                 </div>
-                                <div class="more-wrap">
-                                    <a href="/renewal/pellito.html" target="_blank" class="more-btn more-w">website</a>
-                                    <a href="#none" target="_blank" class="more-btn more-f">figma</a>
-                                    <a href="https://pellitosofa.com/" target="_blank" class="more-btn more-o">original</a>
-                                </div>                            
                             </div>
-                        </div>
-                        <div class="col-md-7 col-md-pull-5 hidden-xs">
-                            <div class="device-container">
-                                <div class="device-mockup macbook portrait black">
-                                    <div class="device">
-                                        <div class="screen">
-                                            <img src="/img/main/renewal-img-1.jpg" class="img-responsive" alt="pellito">
+                            <div class="col-md-7 col-md-pull-5 hidden-xs">
+                                <div class="device-container">
+                                    <div class="device-mockup macbook portrait black">
+                                        <div class="device">
+                                            <div class="screen">
+                                                <img src="/img/main/renewal-img-1.jpg" class="img-responsive" alt="pellito">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -304,292 +304,384 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- 개인페이지 -->
-        <section id="personal" class="position-relative overflow-hidden">
-            <article class="project-wrap position-relative">
-                <div class="project-detail d-flex flex-column justify-content-center">
-                    <h3><em>personal</em></h3>
-                    <h2>FESTIRART</h2>
-                    <div class="detail-text d-flex flex-column">
-                        <span class="date">사이트 제작기간 1달</span>
-                        <div class="accent-wrap d-flex flex-column">
-                            <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">기획 100%</span><span class="sub sub-1">디자인 100%</span></span>
-                            <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span><span class="sub sub-2">sub 13page</span></span>    
+            <!-- 개인페이지 -->
+            <section id="personal" class="section sec3 position-relative overflow-hidden container_rol">
+                <article class="project-wrap position-relative">
+                    <div class="project-detail d-flex flex-column justify-content-center">
+                        <h3><em>personal</em></h3>
+                        <h2>FESTIRART</h2>
+                        <div class="detail-text d-flex flex-column">
+                            <span class="date">사이트 제작기간 1달</span>
+                            <div class="accent-wrap d-flex flex-column">
+                                <span class="text-1 d-flex align-items-center">참여도<span class="sub sub-1">퍼블리싱 100%</span><span class="sub sub-1">기획 100%</span><span class="sub sub-1">디자인 100%</span></span>
+                                <span class="text-1 d-flex align-items-center">작업범위<span class="sub sub-2">index</span><span class="sub sub-2">sub 13page</span></span>    
+                            </div>
+                            <div class="text-2 d-flex flex-column">
+                                <span>DOTHOME 호스팅 이용</span>
+                                <span>축제 정보 통합 사이트</span>
+                                <span>FESTIRART 페스티러리 제작</span>
+                            </div>
                         </div>
-                        <div class="text-2 d-flex flex-column">
-                            <span>DOTHOME 호스팅 이용</span>
-                            <span>축제 정보 통합 사이트</span>
-                            <span>FESTIRART 페스티러리 제작</span>
+                        <div class="more-wrap">
+                            <a href="http://tutwo.dothome.co.kr/" target="_blank" class="more-btn more-w">website</a>
+                            <a href="https://github.com/bae111/festirary" target="_blank" class="more-btn more-g">git</a>
+                            <a href="https://buly.kr/2qXDaA0" target="_blank" class="more-btn more-f">figma</a>
                         </div>
                     </div>
-                    <div class="more-wrap">
-                        <a href="http://tutwo.dothome.co.kr/" target="_blank" class="more-btn more-w">website</a>
-                        <a href="https://github.com/bae111/festirary" target="_blank" class="more-btn more-g">git</a>
-                        <a href="https://buly.kr/2qXDaA0" target="_blank" class="more-btn more-f">figma</a>
+                    <div class="personal-box mt-4 my-md-0 position-relative col-md-6">
+                        <img src="/img/main/personal-img.jpg" class="img-fluid" alt="festirary 사이트">
+                    </div>
+                </article>
+            </section>
+
+            <!-- 갤러리 -->
+            <!-- Portfolio Grid Section -->
+            <section id="design" class="section sec4 position-relative container_rol">
+                <div class="container text-center wow fadeIn">
+                    <h2 class=" section-heading text-uppercase">DESIGN</h2>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="portfolio-filter">
+                                    <ul id="filters" class="clearfix">
+                                    <li>
+                                        <span class="filter active" data-filter="all">All</span>
+                                    </li>
+                                    <li>
+                                        <span class="filter" data-filter=".identity">Identity</span>
+                                    </li>
+                                    <li>
+                                        <span class="filter" data-filter=".graphic">Graphic</span>
+                                    </li>
+                                    <li>
+                                        <span class="filter" data-filter=".web">Web</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div id="portfoliolist">
+                                <!-- NOTE: You can add more items to the grid, or remove items you don't need! -->
+                                <!-- Grid Item 1 -->
+                                <div class="mix identity" href="img/agency/portfolio/grid/grid-1.jpg" title="Client Name">
+                                    <div class="portfolio-wrapper">
+                                        <img src="img/agency/portfolio/grid/grid-1.jpg" alt="">
+                                        <div class="caption">
+                                            <div class="caption-text">
+                                                <a class="text-title">Client Name</a>
+                                                <span class="text-category">Brand Identity</span>
+                                            </div>
+                                            <div class="caption-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Grid Item 2 -->
+                                <div class="mix web" href="img/agency/portfolio/grid/grid-2.jpg" title="Client Name">
+                                    <div class="portfolio-wrapper">
+                                        <img src="img/agency/portfolio/grid/grid-2.jpg" alt="">
+                                        <div class="caption">
+                                            <div class="caption-text">
+                                                <a class="text-title">Client Name</a>
+                                                <span class="text-category">Web Development</span>
+                                            </div>
+                                            <div class="caption-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Grid Item 3 -->
+                                <div class="mix web" href="img/agency/portfolio/grid/grid-3.jpg" title="Client Name">
+                                    <div class="portfolio-wrapper">
+                                        <img src="img/agency/portfolio/grid/grid-3.jpg" alt="">
+                                        <div class="caption">
+                                            <div class="caption-text">
+                                                <a class="text-title">Client Name</a>
+                                                <span class="text-category">Web Development</span>
+                                            </div>
+                                            <div class="caption-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Grid Item 4 -->
+                                <div class="mix identity" href="img/agency/portfolio/grid/grid-4.jpg" title="Client Name">
+                                    <div class="portfolio-wrapper">
+                                        <img src="img/agency/portfolio/grid/grid-4.jpg" alt="">
+                                        <div class="caption">
+                                            <div class="caption-text">
+                                                <a class="text-title">Client Name</a>
+                                                <span class="text-category">Brand Identity</span>
+                                            </div>
+                                            <div class="caption-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Grid Item 5 -->
+                                <div class="mix web" href="img/agency/portfolio/grid/grid-5.jpg" title="Client Name">
+                                    <div class="portfolio-wrapper">
+                                        <img src="img/agency/portfolio/grid/grid-5.jpg" alt="">
+                                        <div class="caption">
+                                            <div class="caption-text">
+                                                <a class="text-title">Client Name</a>
+                                                <span class="text-category">Web Development</span>
+                                            </div>
+                                            <div class="caption-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Grid Item 6 -->
+                                <div class="mix graphic" href="img/agency/portfolio/grid/grid-6.jpg" title="Client Name">
+                                    <div class="portfolio-wrapper">
+                                        <img src="img/agency/portfolio/grid/grid-6.jpg" alt="">
+                                        <div class="caption">
+                                            <div class="caption-text">
+                                                <a class="text-title">Client Name</a>
+                                                <span class="text-category">Graphic Design</span>
+                                            </div>
+                                            <div class="caption-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Grid Item 7 -->
+                                <div class="mix graphic" href="img/agency/portfolio/grid/grid-7.jpg" title="Client Name">
+                                    <div class="portfolio-wrapper">
+                                        <img src="img/agency/portfolio/grid/grid-7.jpg" alt="">
+                                        <div class="caption">
+                                            <div class="caption-text">
+                                                <a class="text-title">Client Name</a>
+                                                <span class="text-category">Graphic Design</span>
+                                            </div>
+                                            <div class="caption-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Grid Item 8 -->
+                                <div class="mix web" href="img/agency/portfolio/grid/grid-8.jpg" title="Client Name">
+                                    <div class="portfolio-wrapper">
+                                        <img src="img/agency/portfolio/grid/grid-8.jpg" alt="">
+                                        <div class="caption">
+                                            <div class="caption-text">
+                                                <a class="text-title">Client Name</a>
+                                                <span class="text-category">Web Development</span>
+                                            </div>
+                                            <div class="caption-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Grid Item 9 -->
+                                <div class="mix identity" href="img/agency/portfolio/grid/grid-9.jpg" title="Client Name">
+                                    <div class="portfolio-wrapper">
+                                        <img src="img/agency/portfolio/grid/grid-9.jpg" alt="">
+                                        <div class="caption">
+                                            <div class="caption-text">
+                                                <a class="text-title">Client Name</a>
+                                                <span class="text-category">Brand Identity</span>
+                                            </div>
+                                            <div class="caption-bg"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="personal-box mt-4 my-md-0 position-relative col-md-6">
-                    <img src="/img/main/personal-img.jpg" class="img-fluid" alt="festirary 사이트">
-                </div>
-            </article>
-        </section>
+            </section>
 
-        <!-- 갤러리 -->
-        <!-- Portfolio Grid Section -->
-        <section id="design" class="position-relative">
-            <div class="container text-center wow fadeIn">
-                <h2 class=" section-heading text-uppercase">DESIGN</h2>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="portfolio-filter">
-                                <ul id="filters" class="clearfix">
-                                <li>
-                                    <span class="filter active" data-filter="all">All</span>
-                                </li>
-                                <li>
-                                    <span class="filter" data-filter=".identity">Identity</span>
-                                </li>
-                                <li>
-                                    <span class="filter" data-filter=".graphic">Graphic</span>
-                                </li>
-                                <li>
-                                    <span class="filter" data-filter=".web">Web</span>
-                                </li>
+            <!-- 스킬 -->
+            <!-- About Section -->
+            <section id="about" class="container_rol">
+                <div class="container-fluid">
+                    <div class="row text-center">
+                        <div class="col-lg-12">
+                            <h2>A Theme for Creatives &amp; Agencies</h2>
+                            <p>Vitality is the perfect theme for a freelance professional or an agency.</p>
+                            <hr class="colored">
+                        </div>
+                    </div>
+                    <div class="row text-center content-row">
+                        <div class="col-md-3 col-sm-6" data-wow-delay=".4s">
+                            <div class="about-content">
+                                <i class="fa fa-eye fa-4x"></i>
+                                <h3>Retina Ready</h3>
+                                <p>This theme includes the retina.js plugin for easy retina image support so your images and graphics will look great on mobile devices!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" data-wow-delay=".8s">
+                            <div class="about-content">
+                                <i class="fa fa-edit fa-4x"></i>
+                                <h3>Easy to Edit</h3>
+                                <p>Vitality is built using Bootstrap 3, and is easy to edit and customize. LESS files are included as well for deeper customization.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" data-wow-delay="1.2s">
+                            <div class="about-content">
+                                <i class="fa fa-tablet fa-4x"></i>
+                                <h3>Responsive</h3>
+                                <p>When building this theme, we've paid close attention to how it looks on various screen sizes. Try it out on a phone or tablet!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6" data-wow-delay="1.4s">
+                            <div class="about-content">
+                                <i class="fa fa-heart fa-4x"></i>
+                                <h3>Built with Love</h3>
+                                <p>All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 간략소개 -->
+            <!-- Testomonials Section 코멘트 -->
+            <section class="section sec6 testimonials bg-gray container_rol" >
+                <div class="container wow fadeIn">
+                    <div class="d-flex justify-content-center">
+                        <div class="col-lg-10 col-lg-offset-1 d-flex xol d-fle">
+                            <div class="testimonials-carousel">
+                                <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
+                                <!-- Testimonial Item 1 -->
+                                <div class="item">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="col-lg-12">
+                                            <p class="lead">"Working with Vitality was both a valuable and rewarding experience."</p>
+                                            <hr class="colored">
+                                            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
+                                            <div class="testimonial-info">
+                                                <div class="testimonial-img">
+                                                    <img src="img/agency/testimonials/1.jpg" class="img-circle img-responsive" alt="">
+                                                </div>
+                                                <div class="testimonial-author">
+                                                    <span class="name">Jim Walker</span>
+                                                    <p class="small">CEO of Company Name</p>
+                                                    <div class="stars">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Testimonial Item 2 -->
+                                <div class="item">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="col-lg-12">
+                                            <p class="lead">"Vitality is a well coded, well documented, and easy to use theme!"</p>
+                                            <hr class="colored">
+                                            <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem amet rem minus dolorum, facere in soluta explicabo, unde eveniet illo vel, nemo nostrum atque nesciunt facilis quaerat quasi reprehenderit dicta.</p>
+                                            <div class="testimonial-info">
+                                                <div class="testimonial-img">
+                                                    <img src="img/agency/testimonials/2.jpg" class="img-circle img-responsive" alt="">
+                                                </div>
+                                                <div class="testimonial-author">
+                                                    <span class="name">Ashley Creadle</span>
+                                                    <p class="small">Creative Director of Company Name</p>
+                                                    <div class="stars">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- V Footer 시작 -->
+            <!-- <footer id="contact" class="footer container_rol" style="background-image: url('img/agency/backgrounds/bg-footer.jpg')">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-4 contact-details">
+                            <h4><i class="fa fa-phone"></i> Call</h4>
+                            <p>555-213-4567</p>
+                        </div>8
+                        <div class="col-md-4 contact-details">
+                            <h4><i class="fa fa-map-marker"></i> Visit</h4>
+                            <p>3481 Melrose Place
+                                <br>Beverly Hills, CA 90210</p>
+                        </div>
+                        <div class="col-md-4 contact-details">
+                            <h4><i class="fa fa-envelope"></i> Email</h4>
+                            <p><a href="mailto:mail@example.com">mail@example.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row social">
+                        <div class="col-lg-12">
+                            <ul class="list-inline">
+                                <a class="btn btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter fa-fw fa-2x"></i></a>
+                                <a class="btn btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f fa-fw fa-2x"></i></a>
+                                <a class="btn btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in fa-fw fa-2x"></i></a>
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div id="portfoliolist">
-                            <!-- NOTE: You can add more items to the grid, or remove items you don't need! -->
-                            <!-- Grid Item 1 -->
-                            <div class="mix identity" href="img/agency/portfolio/grid/grid-1.jpg" title="Client Name">
-                                <div class="portfolio-wrapper">
-                                    <img src="img/agency/portfolio/grid/grid-1.jpg" alt="">
-                                    <div class="caption">
-                                        <div class="caption-text">
-                                            <a class="text-title">Client Name</a>
-                                            <span class="text-category">Brand Identity</span>
-                                        </div>
-                                        <div class="caption-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Grid Item 2 -->
-                            <div class="mix web" href="img/agency/portfolio/grid/grid-2.jpg" title="Client Name">
-                                <div class="portfolio-wrapper">
-                                    <img src="img/agency/portfolio/grid/grid-2.jpg" alt="">
-                                    <div class="caption">
-                                        <div class="caption-text">
-                                            <a class="text-title">Client Name</a>
-                                            <span class="text-category">Web Development</span>
-                                        </div>
-                                        <div class="caption-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Grid Item 3 -->
-                            <div class="mix web" href="img/agency/portfolio/grid/grid-3.jpg" title="Client Name">
-                                <div class="portfolio-wrapper">
-                                    <img src="img/agency/portfolio/grid/grid-3.jpg" alt="">
-                                    <div class="caption">
-                                        <div class="caption-text">
-                                            <a class="text-title">Client Name</a>
-                                            <span class="text-category">Web Development</span>
-                                        </div>
-                                        <div class="caption-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Grid Item 4 -->
-                            <div class="mix identity" href="img/agency/portfolio/grid/grid-4.jpg" title="Client Name">
-                                <div class="portfolio-wrapper">
-                                    <img src="img/agency/portfolio/grid/grid-4.jpg" alt="">
-                                    <div class="caption">
-                                        <div class="caption-text">
-                                            <a class="text-title">Client Name</a>
-                                            <span class="text-category">Brand Identity</span>
-                                        </div>
-                                        <div class="caption-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Grid Item 5 -->
-                            <div class="mix web" href="img/agency/portfolio/grid/grid-5.jpg" title="Client Name">
-                                <div class="portfolio-wrapper">
-                                    <img src="img/agency/portfolio/grid/grid-5.jpg" alt="">
-                                    <div class="caption">
-                                        <div class="caption-text">
-                                            <a class="text-title">Client Name</a>
-                                            <span class="text-category">Web Development</span>
-                                        </div>
-                                        <div class="caption-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Grid Item 6 -->
-                            <div class="mix graphic" href="img/agency/portfolio/grid/grid-6.jpg" title="Client Name">
-                                <div class="portfolio-wrapper">
-                                    <img src="img/agency/portfolio/grid/grid-6.jpg" alt="">
-                                    <div class="caption">
-                                        <div class="caption-text">
-                                            <a class="text-title">Client Name</a>
-                                            <span class="text-category">Graphic Design</span>
-                                        </div>
-                                        <div class="caption-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Grid Item 7 -->
-                            <div class="mix graphic" href="img/agency/portfolio/grid/grid-7.jpg" title="Client Name">
-                                <div class="portfolio-wrapper">
-                                    <img src="img/agency/portfolio/grid/grid-7.jpg" alt="">
-                                    <div class="caption">
-                                        <div class="caption-text">
-                                            <a class="text-title">Client Name</a>
-                                            <span class="text-category">Graphic Design</span>
-                                        </div>
-                                        <div class="caption-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Grid Item 8 -->
-                            <div class="mix web" href="img/agency/portfolio/grid/grid-8.jpg" title="Client Name">
-                                <div class="portfolio-wrapper">
-                                    <img src="img/agency/portfolio/grid/grid-8.jpg" alt="">
-                                    <div class="caption">
-                                        <div class="caption-text">
-                                            <a class="text-title">Client Name</a>
-                                            <span class="text-category">Web Development</span>
-                                        </div>
-                                        <div class="caption-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Grid Item 9 -->
-                            <div class="mix identity" href="img/agency/portfolio/grid/grid-9.jpg" title="Client Name">
-                                <div class="portfolio-wrapper">
-                                    <img src="img/agency/portfolio/grid/grid-9.jpg" alt="">
-                                    <div class="caption">
-                                        <div class="caption-text">
-                                            <a class="text-title">Client Name</a>
-                                            <span class="text-category">Brand Identity</span>
-                                        </div>
-                                        <div class="caption-bg"></div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="row copyright">
+                        <div class="col-lg-12">
+                            <p class="small">&copy; 2024 BAE HA EUN All Rights Reserved</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </footer> -->
+            <!-- V Footer 끝 -->
 
-        <!-- 스킬 -->
-        <!-- About Section -->
-        <section id="about">
-            <div class="container-fluid">
-                <div class="row text-center">
-                    <div class="col-lg-12">
-                        <h2>A Theme for Creatives &amp; Agencies</h2>
-                        <p>Vitality is the perfect theme for a freelance professional or an agency.</p>
-                        <hr class="colored">
+            <!-- F Footer 시작 -->
+            <footer id="footer" class="footer py-4">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="copy">Copyright &copy; 2024 BAE HA EUN All Rights Reserved</div>
+                        <!-- <div class="col-lg-4 my-3 my-lg-0">
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="col-lg-4 text-lg-end">
+                            <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                        </div> -->
                     </div>
                 </div>
-                <div class="row text-center content-row">
-                    <div class="col-md-3 col-sm-6" data-wow-delay=".4s">
-                        <div class="about-content">
-                            <i class="fa fa-eye fa-4x"></i>
-                            <h3>Retina Ready</h3>
-                            <p>This theme includes the retina.js plugin for easy retina image support so your images and graphics will look great on mobile devices!</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6" data-wow-delay=".8s">
-                        <div class="about-content">
-                            <i class="fa fa-edit fa-4x"></i>
-                            <h3>Easy to Edit</h3>
-                            <p>Vitality is built using Bootstrap 3, and is easy to edit and customize. LESS files are included as well for deeper customization.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6" data-wow-delay="1.2s">
-                        <div class="about-content">
-                            <i class="fa fa-tablet fa-4x"></i>
-                            <h3>Responsive</h3>
-                            <p>When building this theme, we've paid close attention to how it looks on various screen sizes. Try it out on a phone or tablet!</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6" data-wow-delay="1.4s">
-                        <div class="about-content">
-                            <i class="fa fa-heart fa-4x"></i>
-                            <h3>Built with Love</h3>
-                            <p>All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 간략소개 -->
-        <!-- Testomonials Section 코멘트 -->
-        <section class="testimonials bg-gray">
-            <div class="container wow fadeIn">
-                <div class="d-flex justify-content-center">
-                    <div class="col-lg-10 col-lg-offset-1 d-flex xol d-fle">
-                        <div class="testimonials-carousel">
-                            <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
-                            <!-- Testimonial Item 1 -->
-                            <div class="item">
-                                <div class="d-flex justify-content-center">
-                                    <div class="col-lg-12">
-                                        <p class="lead">"Working with Vitality was both a valuable and rewarding experience."</p>
-                                        <hr class="colored">
-                                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
-                                        <div class="testimonial-info">
-                                            <div class="testimonial-img">
-                                                <img src="img/agency/testimonials/1.jpg" class="img-circle img-responsive" alt="">
-                                            </div>
-                                            <div class="testimonial-author">
-                                                <span class="name">Jim Walker</span>
-                                                <p class="small">CEO of Company Name</p>
-                                                <div class="stars">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Testimonial Item 2 -->
-                            <div class="item">
-                                <div class="d-flex justify-content-center">
-                                    <div class="col-lg-12">
-                                        <p class="lead">"Vitality is a well coded, well documented, and easy to use theme!"</p>
-                                        <hr class="colored">
-                                        <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem amet rem minus dolorum, facere in soluta explicabo, unde eveniet illo vel, nemo nostrum atque nesciunt facilis quaerat quasi reprehenderit dicta.</p>
-                                        <div class="testimonial-info">
-                                            <div class="testimonial-img">
-                                                <img src="img/agency/testimonials/2.jpg" class="img-circle img-responsive" alt="">
-                                            </div>
-                                            <div class="testimonial-author">
-                                                <span class="name">Ashley Creadle</span>
-                                                <p class="small">Creative Director of Company Name</p>
-                                                <div class="stars">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
+            </footer>
+            <!-- F Footer 끝 -->
+            <!-- Portfolio Modals-->
+            <!-- Portfolio item 1 modal popup-->
+            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+                                        <h2 class="text-uppercase">Project Name</h2>
+                                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <strong>Client:</strong>
+                                                Threads
+                                            </li>
+                                            <li>
+                                                <strong>Category:</strong>
+                                                Illustration
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                            <i class="fas fa-xmark me-1"></i>
+                                            Close Project
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -597,275 +689,181 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- V Footer 시작 -->
-        <footer id="contact" class="footer" style="background-image: url('img/agency/backgrounds/bg-footer.jpg')">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-4 contact-details">
-                        <h4><i class="fa fa-phone"></i> Call</h4>
-                        <p>555-213-4567</p>
-                    </div>
-                    <div class="col-md-4 contact-details">
-                        <h4><i class="fa fa-map-marker"></i> Visit</h4>
-                        <p>3481 Melrose Place
-                            <br>Beverly Hills, CA 90210</p>
-                    </div>
-                    <div class="col-md-4 contact-details">
-                        <h4><i class="fa fa-envelope"></i> Email</h4>
-                        <p><a href="mailto:mail@example.com">mail@example.com</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="row social">
-                    <div class="col-lg-12">
-                        <ul class="list-inline">
-                            <a class="btn btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter fa-fw fa-2x"></i></a>
-                            <a class="btn btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f fa-fw fa-2x"></i></a>
-                            <a class="btn btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in fa-fw fa-2x"></i></a>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row copyright">
-                    <div class="col-lg-12">
-                        <p class="small">&copy; 2024 BAE HA EUN All Rights Reserved</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- V Footer 끝 -->
-
-        <!-- F Footer 시작 -->
-        <!-- <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
-                </div>
-            </div>
-        </footer> -->
-        <!-- F Footer 끝 -->
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+            <!-- Portfolio item 2 modal popup-->
+            <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+                                        <h2 class="text-uppercase">Project Name</h2>
+                                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <strong>Client:</strong>
+                                                Explore
+                                            </li>
+                                            <li>
+                                                <strong>Category:</strong>
+                                                Graphic Design
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                            <i class="fas fa-xmark me-1"></i>
+                                            Close Project
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+            <!-- Portfolio item 3 modal popup-->
+            <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+                                        <h2 class="text-uppercase">Project Name</h2>
+                                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <strong>Client:</strong>
+                                                Finish
+                                            </li>
+                                            <li>
+                                                <strong>Category:</strong>
+                                                Identity
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                            <i class="fas fa-xmark me-1"></i>
+                                            Close Project
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Identity
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+            <!-- Portfolio item 4 modal popup-->
+            <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+                                        <h2 class="text-uppercase">Project Name</h2>
+                                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <strong>Client:</strong>
+                                                Lines
+                                            </li>
+                                            <li>
+                                                <strong>Category:</strong>
+                                                Branding
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                            <i class="fas fa-xmark me-1"></i>
+                                            Close Project
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Lines
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Branding
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+            <!-- Portfolio item 5 modal popup-->
+            <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+                                        <h2 class="text-uppercase">Project Name</h2>
+                                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <strong>Client:</strong>
+                                                Southwest
+                                            </li>
+                                            <li>
+                                                <strong>Category:</strong>
+                                                Website Design
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                            <i class="fas fa-xmark me-1"></i>
+                                            Close Project
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Southwest
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Website Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
+            <!-- Portfolio item 6 modal popup-->
+            <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+                                        <h2 class="text-uppercase">Project Name</h2>
+                                        <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                        <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <strong>Client:</strong>
+                                                Window
+                                            </li>
+                                            <li>
+                                                <strong>Category:</strong>
+                                                Photography
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                            <i class="fas fa-xmark me-1"></i>
+                                            Close Project
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Window
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Photography
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- V 스크립트 시작 -->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -889,6 +887,7 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js'></script>
         <script src="https://unpkg.com/split-type"></script>
+
 
         <!-- Contact Form Scripts -->
         <script src="js/contact_me.js"></script>
