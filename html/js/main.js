@@ -18,10 +18,83 @@ $(function () {
         $(this).addClass('fall'); // CSS 클래스를 추가하여 애니메이션 적용
     });
 
-    $('.nav-link').on('click', function() {
-        $('.nav-link').removeClass('active'); 
-        $(this).addClass('active');           
+    
+
+    // 윈도우 스크롤 이벤트 리스너
+    window.addEventListener('scroll', function() {
+        let currentScroll = window.scrollY;
+        
+        // 모든 섹션의 ID 가져오기
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // 각 섹션을 확인하여 스크롤 위치에 따라 active 클래스를 변경
+        let sectionInView = false;  // 현재 보고 있는 섹션 플래그
+        sections.forEach(function(section) {
+            const sectionTop = section.offsetTop - 200; // 섹션의 상단 위치
+            const sectionBottom = sectionTop + section.offsetHeight; // 섹션의 하단 위치
+
+            // 현재 스크롤 위치가 섹션 범위 내에 있으면
+            if (currentScroll >= sectionTop && currentScroll < sectionBottom) {
+                sectionInView = true;
+                navLinks.forEach(function(link) {
+                    link.classList.remove('active');
+                });
+                const activeLink = document.querySelector(`.nav-link[href="#${section.id}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+        });
+
+        // 만약 어떤 섹션도 보이지 않으면 첫 번째 섹션에 active 클래스를 추가
+        if (!sectionInView) {
+            navLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+            const firstLink = document.querySelector('.nav-link[href="#header"]'); // 첫 번째 섹션
+            if (firstLink) {
+                firstLink.classList.add('active');
+            }
+        }
+
+        $('.nav-link').on('click', function() {
+            $('.nav-link').removeClass('active'); 
+            $(this).addClass('active');           
+        });
     });
+
+    // const sections = document.querySelectorAll('section');
+    // const navLinks = document.querySelectorAll('.nav-link');
+
+    // let currentScroll = window.scrollY;
+    // let sectionInView = false;
+    // sections.forEach(function(section) {
+    //     const sectionTop = section.offsetTop - 50; 
+
+    //     if (currentScroll >= sectionTop && currentScroll < (sectionTop + section.offsetHeight)) {
+    //         sectionInView = true;
+    //         navLinks.forEach(function(link) {
+    //             link.classList.remove('active');
+    //         });
+    //         const activeLink = document.querySelector(`.nav-link[href="#${section.id}"]`);
+    //         if (activeLink) {
+    //             activeLink.classList.add('active');
+    //         }
+    //     }
+    // });
+
+    // if (!sectionInView) {
+    //     navLinks.forEach(function(link) {
+    //         link.classList.remove('active');
+    //     });
+    //     const firstLink = document.querySelector('.nav-link[href="#header"]');
+    //     if (firstLink) {
+    //         firstLink.classList.add('active');
+    //     }
+    // }
+
+
 
     // var $html = $("html, body");
     // var page = 1;  
@@ -152,7 +225,7 @@ gsap.to("#design", {
 //         markers: false 
 //     } 
 // });
-
+// 
 // gsap.to("progress", {
 //     value: 100,
 //     ease: "none",
@@ -167,9 +240,9 @@ window.addEventListener("scroll", function () {
     const scrollHeight = document.querySelector("html").scrollHeight;
     const clientHeight = document.querySelector("html").clientHeight;
 
-    console.log("scrollTop: ", scrollTop);
-    console.log("clientHeight: ", clientHeight);
-    console.log("scrollHeight: ", scrollHeight);
+    // console.log("scrollTop: ", scrollTop);
+    // console.log("clientHeight: ", clientHeight);
+    // console.log("scrollHeight: ", scrollHeight);
 
     const progress = (scrollTop / (scrollHeight - clientHeight)) * 100;
     
