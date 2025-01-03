@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Cafe24ClassicType-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+html,body{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.en-f{
+    font-family: 'Cafe24ClassicType-Regular';
+    font-weight: normal;
+    font-style: normal;
+}
+@scope (#hollys-header){
+    :scope{
+        position: fixed;
+        background: transparent;
+        z-index: 999;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 1.25rem 5rem 0;
+    }
+    .hd-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        h1{
+            z-index: 99;
+            .blind{
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                clip: rect(0 0 0 0);
+                margin: -1px;
+                overflow: hidden;
+            }
+        }
+        .gnb:hover ~ .header-bg{
+            opacity: 1;
+            height: 330px;
+        }
+        .gnb{
+            width: 60%;
+            text-align: center;
+            z-index: 99;
+            .depth-01{
+                display: flex;
+                justify-content: space-between;
+                transition: all .3s ease-in-out;
+                &:hover .depth-02{
+                    height: 260px;
+                }
+                > li{
+                    position: relative;
+                    padding: 0 2rem;
+                    > a{
+                        display: block;
+                        line-height: 3;
+                        font-size: 1.125rem;
+                        font-weight: 500;
+                        color: #4f4c4b;
+                    }
+                    .depth-02{
+                        position: absolute;
+                        width: 100%;
+                        top: 100%;
+                        left: 0;
+                        height: 0;
+                        overflow: hidden;
+                        z-index: 99;
+                        transition: all 0.4s ease-in-out;
+                        li{
+                            a{
+                                display: block;
+                                line-height: 3;
+                                font-size: .875rem;
+                                color: #4f4c4b;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .util-list{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            z-index: 99;
+            li:last-child{
+                a{
+                    font-size: 1.125rem;
+                    font-weight: 500;
+                    color: #fff;
+                    background: #ba000c;
+                    padding: 0.625rem;
+                    border-radius: 30px;
+                }
+            }
+        }
+        .header-bg{
+            background: #fff;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            z-index: 98;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}
+
+@scope (#fullpage){
+    :scope{
+        width: 100%;
+        height: 100%;
+    }
+    section.sec1{
+        background: url('/img/renewal/hollys/banner.jpg');
+    }
+    section.sec2{
+        background: #FEF4F6;
+
+    }
+    section.sec3{
+        background: #e5e5e5;
+
+    }
+}
