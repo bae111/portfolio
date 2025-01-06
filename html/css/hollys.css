@@ -125,8 +125,122 @@ html,body{
         background: url('/img/renewal/hollys/banner.jpg');
     }
     section.sec2{
-        background: #FEF4F6;
-
+        background: #fef4f6;
+        padding: 2rem 5rem;
+        .con-box{
+            display: flex;
+            justify-content: space-between;
+            .left{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                justify-content: center;
+                .con-title-wrap{
+                    position: relative;
+                    .con-title{
+                        margin-bottom: 7.5rem;
+                        h2{
+                            font-size: 5rem;
+                            color: #eca69a;
+                            line-height: 1;
+                            span{
+                                color: #ba000d;
+                            }
+                        }
+                        p{
+                            font-size: 1.5rem;
+                            font-weight: 500;
+                            color: #383838;
+                        }
+                    }
+                    .info{
+                        font-size: 2.5rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem;
+                        line-height: 1.4;
+                    }
+                    .price-box{
+                        position: relative;
+                        z-index: 0;
+                        font-size: 1.5rem;
+                        font-weight: 500;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            background: #eca69a;
+                            padding: 0px;
+                            width: 100%;
+                            height: 60%;
+                            z-index: -1;
+                            bottom: 0;
+                            left: 0;
+                        }
+                        .price{
+                            font-size: 2.5rem;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .con-text-wrap{
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+                        margin-bottom: 2rem;
+                        .one{
+                            font-size: 1.25rem;
+                        }
+                        .two{
+                            font-size: 1rem;
+                        }
+                    }
+                    .go-to{
+                        font-size: 1.25rem;
+                        background: #eca69a;
+                        border: none;
+                        padding: .5rem;
+                    }
+                }
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                .img{
+                    position: relative;
+                    width: 800px;
+                    height: 600px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: url('/img/renewal/hollys/coffee-b.png') no-repeat center / cover;
+                        opacity: 0.7;
+                    }
+                    span{
+                        position: absolute;
+                    }
+                    .left{
+                        left: 5%;
+                        bottom: 0;
+                    }
+                    .right{
+                        right: 5%;
+                        top: 10%;
+                    }
+                }
+                .tel{
+                    display: flex;
+                    gap: 1.5rem;
+                    justify-content: center;
+                    font-size: 5rem;
+                    color: #ba000d;
+                }
+            }
+        }
     }
     section.sec3{
         background: #e5e5e5;
