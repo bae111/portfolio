@@ -198,7 +198,27 @@ html,body{
                         font-size: 1.25rem;
                         background: #eca69a;
                         border: none;
-                        padding: .5rem;
+                        padding: .5rem 1.4rem .5rem 1rem;
+                        transition: all .2s ease;
+                        &:hover{
+                            background: #ba000d;
+                            color: #fff;
+                        }
+                        &:hover::after{
+                            transform: rotate(45deg) translate(3px, -3px);
+                            border-color: #fff;
+                        }
+                        &::after{
+                            content: '';
+                            border-top: solid 1px #000;
+                            border-right: solid 1px #000;
+                            transform: rotate(45deg) translateX(0);
+                            display: inline-block;
+                            width: 14px;
+                            height: 14px;
+                            margin-left: .5rem;
+                            transition: all .2s ease;
+                        }
                     }
                 }
             }
@@ -226,11 +246,18 @@ html,body{
                     .left{
                         left: 5%;
                         bottom: 0;
+                        img{
+                            filter: drop-shadow(-3px 9px 8px #333);
+                        }
                     }
                     .right{
                         right: 5%;
                         top: 10%;
+                        img{
+                            filter: drop-shadow(4px 9px 8px #333);
+                        }
                     }
+
                 }
                 .tel{
                     display: flex;
