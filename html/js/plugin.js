@@ -34,3 +34,22 @@ var main_shop_swiper = new Swiper("#pellito-shop-swiper", {
         },
         
 });
+
+var hollys_season_swiper = new Swiper(".hollys-season-swiper", {
+    slidesPerView: 4,
+    spaceBetween: 50,
+    loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnlnteraction: false,
+    },
+});
+
+$(".hollys-swiper").each(function() {
+    var swp = this.swiper;
+    $(this).hover(function() {
+        swp.autoplay.stop();
+    }, function() {
+        swp.autoplay.start();
+    });
+});
