@@ -319,7 +319,68 @@ html,body{
                 display: none;
                 gap: 3rem;
                 align-items: center;
-                opacity: 0;
+            }
+        }
+    }
+    section.sec4{
+        h2{
+            font-size: 5rem;
+            color: #383838;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        .h-tab-wrap{
+            justify-content: space-between;
+            margin: 0 5rem;
+            .h-tab-name{
+                justify-content: space-between;
+                .nav-link.active{
+                    background: #383838;
+                    color: #fff;
+                }
+                .nav-link{
+                    color: #383838;
+                    border-radius: 40px;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+            }
+            .h-tab-box{
+                width: 80%;
+                .swiper-slide{
+                    text-align: center;
+                    background: #f5ede5;
+                    .product{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 2rem;
+                        gap: 1rem;
+                        color: #000;
+                        align-items: center;
+                        img{
+                            transform: scale(1) translateY(0);
+                            transition: all 0.3s ease;
+                            &:hover{
+                                transform: scale(1.1) translateY(-10px);
+                            }
+                        }
+                        .nb-info{
+                            font-size: 1.25rem;
+                            color: #fff;
+                            font-weight: 500;
+                            background: #ba000d;
+                            padding: .5rem 2rem;
+                            border-top-left-radius: 100px;
+                            border-top-right-radius: 100px;
+                        }
+                        .name{
+                            font-weight: 500;
+                        }
+                        .text{
+                            font-size: .875rem;
+                        }
+                    }
+                }
             }
         }
     }

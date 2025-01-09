@@ -45,6 +45,16 @@ var hollys_season_swiper = new Swiper(".hollys-season-swiper", {
     },
 });
 
+var hollys_tab_swiper = new Swiper(".hollys-tab-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 40,
+    loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnlnteraction: false,
+    },
+});
+
 $(".hollys-swiper").each(function() {
     var swp = this.swiper;
     $(this).hover(function() {
