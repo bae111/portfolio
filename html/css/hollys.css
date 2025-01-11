@@ -471,4 +471,48 @@ html,body{
             
         }
     }
+    section.sec6{
+        background: #fcdce1;
+        padding: 0 5rem;
+        h3{
+            margin-bottom: 2rem;
+            a{
+                font-size: 2.5rem;
+                color: #383838;
+            }
+        }
+        .sns{
+            display: flex;
+            gap: 5px;
+            .right{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+        }
+        .left{
+            min-width: 600px;
+        }
+        .sns-box{
+            position: relative;
+            overflow: hidden;
+            &:hover .in-go{
+                bottom: 0;
+            }
+        }
+        .in-go{
+            position: absolute;
+            bottom: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all .3s ease;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(5px);
+            color: #383838;
+            padding: 1rem 2rem;
+            width: 100%;
+            text-align: center;
+            font-weight: 600;
+        }
+    }
 }
