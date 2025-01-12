@@ -515,4 +515,63 @@ html,body{
             font-weight: 600;
         }
     }
+    section.sec7{
+        background: url('/img/renewal/hollys/news-bg.jpg');
+        h2{
+            font-size: 5rem;
+            text-align: center;
+            color: #383838;
+            margin: 3rem;
+        }
+        .news{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5rem;
+            dl{
+                min-width: 800px;
+                dt{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    padding: 2rem;
+                    border-bottom: solid 2px #ba000d;
+                }
+                dd{
+                    margin: 0;
+                    overflow: hidden;
+                    position: relative;
+                    &:before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        left: -20px;
+                        width: 0;
+                        transform: skewX(19deg);
+                        transition: width .5s;
+                        bottom: 0;
+                        top: 0;
+                        background: rgba(186,0,13,0.1);
+                    }
+                    &:hover::before{
+                        width: calc(100% + 40px);
+                    }
+                    a{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 1.25rem;
+                        font-weight: 500;
+                        padding: 1.5rem 2rem;
+                        border-bottom: solid 1px #4f4c4b;
+                        color: #000;
+                        .date{
+                            font-size: .875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
