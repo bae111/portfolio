@@ -574,4 +574,59 @@ html,body{
             }
         }
     }
+    #hollys-footer{
+        background: #2e2f2e;
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem;
+        max-height: 400px;
+        flex-direction: row;
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .left{
+            gap: 2rem;
+            ul{
+                display: flex;
+                gap: .5rem;
+                li{
+                    a{
+                        padding: .5rem;
+                        color: #fff;
+                    }
+                }
+            }
+            .menu{
+                li{
+                    a{
+                        font-weight: 500;
+                    }
+                }
+            }
+            .info{
+                flex-direction: column;
+                li{
+                    span{
+                        font-size: .875rem;
+                        color: #fff;
+                        padding: .5rem;
+                    }
+                }
+            }
+        }
+        .right{
+            li, a{
+                color: #fff;
+            }
+            li{
+                font-size: .875rem;
+            }
+            a{
+                font-size: 2.25rem;
+                font-weight: 600;
+            }
+        }
+    }
 }
