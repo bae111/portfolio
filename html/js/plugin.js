@@ -3,10 +3,10 @@ var main_swiper = new Swiper("#pellito-main-banner-swiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnlnteraction: false,
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnlnteraction: false,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -21,10 +21,10 @@ var main_shop_swiper = new Swiper("#pellito-shop-swiper", {
     slidesPerView: 5,
     spaceBetween: 20,
     loop: true,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnlnteraction: false,
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnlnteraction: false,
+    },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
