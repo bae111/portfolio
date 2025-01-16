@@ -85,11 +85,15 @@ section.active .masked-text-ani-ff{
         width: 100%;
         top: 0;
         left: 0;
-        padding: 1.25rem 5rem 0;
+        padding: 0 5rem;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            background: #fff;
+        }
     }
     .hd-container{
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
         justify-content: space-between;
         h1{
             z-index: 99;
@@ -104,7 +108,7 @@ section.active .masked-text-ani-ff{
         }
         .gnb:hover ~ .header-bg{
             opacity: 1;
-            height: 330px;
+            height: 260px;
         }
         .gnb{
             width: 60%;
@@ -119,7 +123,7 @@ section.active .masked-text-ani-ff{
                 }
                 > li{
                     position: relative;
-                    padding: 0 2rem;
+                    padding: 1rem 2rem;
                     > a{
                         display: block;
                         line-height: 3;
@@ -167,14 +171,14 @@ section.active .masked-text-ani-ff{
         .header-bg{
             background: #fff;
             width: 100%;
-            top: 0;
+            top: 100%;
             left: 0;
             position: absolute;
             opacity: 0;
             height: 0;
             overflow: hidden;
             z-index: 98;
-            transition: all 0.5s ease-in-out;
+            transition: all .5s ease-in-out;
         }
     }
 }
