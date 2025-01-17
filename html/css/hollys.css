@@ -747,9 +747,13 @@ section.active .masked-text-ani-ff{
             }
             .info{
                 flex-direction: column;
+                .portfolio-note{
+                    margin-top: .5rem;
+                    font-size: .75rem;
+                }
                 li{
+                    font-size: .875rem;
                     span{
-                        font-size: .875rem;
                         color: #fff;
                         padding: .5rem;
                     }
