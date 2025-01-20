@@ -193,15 +193,17 @@ section.active .masked-text-ani-ff{
     }
     section.sec2{
         background: #fef4f6;
-        padding: 2rem 5rem;
+        padding: 0 5rem;
         .con-box{
             display: flex;
             justify-content: space-between;
+            li{
+                justify-content: space-around;
+            }
             .left{
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
-                justify-content: center;
                 .con-title-wrap{
                     position: relative;
                     overflow: hidden;
@@ -278,6 +280,7 @@ section.active .masked-text-ani-ff{
                         border: none;
                         padding: .5rem 1.4rem .5rem 1rem;
                         transition: all .2s ease;
+                        border-radius: 30px;
                         &:hover{
                             background: #ba000d;
                             color: #fff;
