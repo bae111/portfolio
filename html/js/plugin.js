@@ -63,3 +63,10 @@ $(".hollys-swiper").each(function() {
         swp.autoplay.start();
     });
 });
+
+var main_banner_swiper = new Swiper(".hanyul-main-banner-swiper", {
+    // autoplay: {
+    //     delay: 3000
+    // },
+    loop: true
+});
