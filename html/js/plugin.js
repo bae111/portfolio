@@ -70,3 +70,12 @@ var main_banner_swiper = new Swiper(".hanyul-main-banner-swiper", {
     // },
     loop: true
 });
+
+var main_banner_swiper = new Swiper(".hanyul-best-swiper", {
+    // autoplay: {
+    //     delay: 3000
+    // },
+    slidesPerView: 1.5,
+    loop: true,
+    centeredSlides: true,
+});
