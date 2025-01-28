@@ -89,3 +89,12 @@ var hanyul_info_swiper = new Swiper(".hanyul-info-swiper", {
         el: ".swiper-pagination",
     },
 });
+
+var hanyul_new_swiper = new Swiper(".hanyul-new-swiper", {
+    slidesPerView: "auto",
+    loop: false,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
+});
