@@ -98,3 +98,11 @@ var hanyul_new_swiper = new Swiper(".hanyul-new-swiper", {
     //     disableOnInteraction: false,
     // },
 });
+
+var hanyul_sns_swiper = new Swiper(".hanyul-sns-i-swiper", {
+    loop: true,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
+});
