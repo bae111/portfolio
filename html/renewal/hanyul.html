@@ -16,6 +16,8 @@
     <!--cdn-->
     <link href="/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/scss/hanyul.min.css?var=s<?php echo time(); ?>">
 </head>
 <body>
@@ -99,139 +101,166 @@
                 <div class="swiper-slide slide-1">
                     <img src="/img/renewal/hanyul/banner-1.jpg" alt="어린쑥 수분진정 크림">
                     <div class="banner-text">
-                        <h2>물 타지 않은 쑥 100% X시카로<br>속건조 잡고 트러블 종결</h2>
-                        <p>어린쑥 수분진정 크림</p>
-                        <a href="#none" class="preR-f">MORE</a>
+                        <h2 class="title">
+                            <div class="t-box">
+                                <span class="slide-txt">물 타지 않은 쑥 100% X시카로</span>
+                            </div>
+                            <div class="t-box">
+                                <span class="slide-txt">속건조 잡고 트러블 종결</span>
+                            </div>
+                        </h2>
+                        <div class="t-box"><p class="slide-txt-2">어린쑥 수분진정 크림</p></div>
+                        <div class="t-box"><a href="#none" class="preR-f slide-txt-2">MORE</a></div>
                     </div>
                 </div>
                 <div class="swiper-slide slide-2">
                     <img src="/img/renewal/hanyul/banner-2.jpg" alt="보들은행잎 모공핏 세럼">
                     <div class="banner-text">
-                        <h2>8시간만에 -45% 반쪽모공<br>속-벽-결 3명 3중 입체케어</h2>
-                        <p>보들은행잎 모공핏 세럼</p>
-                        <a href="#none" class="preR-f">MORE</a>
+                        <h2 class="title">
+                            <div class="t-box">
+                                <span class="slide-txt">8시간만에 -45% 반쪽모공</span>
+                            </div>
+                            <div class="t-box">
+                                <span class="slide-txt">속-벽-결 3명 3중 입체케어</span>
+                            </div>
+                        </h2>
+                        <div class="t-box"><p class="slide-txt-2">보들은행잎 모공핏 세럼</p></div>
+                        <div class="t-box"><a href="#none" class="preR-f slide-txt-2">MORE</a></div>
                     </div>
                 </div>
                 <div class="swiper-slide slide-3">
                     <img src="/img/renewal/hanyul/banner-3.jpg" alt="극진 크림">
                     <div class="banner-text">
-                        <h2>생인삼탄력캡슐을 담아<br>60배 더 강해진 인삼의 힘</h2>
-                        <p>극진 크림</p>
-                        <a href="#none" class="preR-f">MORE</a>
+                        <h2 class="title">
+                            <div class="t-box">
+                                <span class="slide-txt">생인삼탄력캡슐을 담아</span>
+                            </div>
+                            <div class="t-box">
+                                <span class="slide-txt">60배 더 강해진 인삼의 힘</span>
+                            </div>
+                        </h2>
+                        <div class="t-box"><p class="slide-txt-2">극진 크림</p></div>
+                        <div class="t-box"><a href="#none" class="preR-f slide-txt-2">MORE</a></div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="hanyul-best">
-            <h3 class="hanyul-title">BEST SELLER</h3>
-            <div class="swiper mySwiper hanyul-best-swiper">
+            <h3 class="hanyul-title" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">BEST SELLER</h3>
+            <div class="swiper mySwiper hanyul-best-swiper" data-aos="zoom-in" data-aos-duration="800" data-aos-once="true">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide-1">
                         <div class="left">
                             <img src="/img/renewal/hanyul/best-bg-1.jpg" alt="어린쑥 수분진정 크림">
                         </div>
                         <div class="left-text">
-                            <p>BEST01</p>
-                            <h4>PURE ARTEMISIA<br>CALMING WATER CREAM</h4>
+                            <div class="t-box"><p class="slide-txt">BEST01</p></div>
+                            <h4 class="t-box"><span class="slide-txt">PURE ARTEMISIA</span><span class="slide-txt">CALMING WATER CREAM</span></h4>
                         </div>
                         <div class="right">
-                            <div class="right-text">
-                                <h4>어린쑥 수분진정 크림</h4>
-                                <p>트러블 원인부터 증상까지 쑥으로 한 번에 싹!<br>
-                                속건조 잡고 트러블 진정까지 해결하는<br>
-                                #트러블 종결크림</p>
-                            </div>
-                            <div class="right-img">
-                                <img src="/img/renewal/hanyul/best-1.png" alt="어린쑥 수분진정 크림">
-                                <a href="#none" class="preR-f">자세히 보기<img src="/img/renewal/hanyul/icon/arr-right.svg" alt="오른쪽 화살표"></a>
+                            <div class="r-wrap">
+                                <div class="right-text">
+                                    <h4>어린쑥 수분진정 크림</h4>
+                                    <p>트러블 원인부터 증상까지 쑥으로 한 번에 싹!<br>
+                                    속건조 잡고 트러블 진정까지 해결하는<br>
+                                    #트러블 종결크림</p>
+                                </div>
+                                <div class="right-img">
+                                    <img src="/img/renewal/hanyul/best-1.png" alt="어린쑥 수분진정 크림">
+                                    <a href="#none" class="preR-f">자세히 보기<img src="/img/renewal/hanyul/icon/arr-right.svg" alt="오른쪽 화살표"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide slide-2">
                         <div class="left">
                             <img src="/img/renewal/hanyul/best-bg-2.jpg" alt="빨간쌀 보습탄력 에센스">
-
                         </div>
                         <div class="left-text">
-                            <p>BEST02</p>
-                            <h4>RED RICE MOISTURE<br>FIRMING ESSENCE</h4>
+                            <div class="t-box"><p class="slide-txt">BEST02</p></div>
+                            <h4 class="t-box"><span  class="slide-txt">RED RICE MOISTURE</span><span  class="slide-txt">FIRMING ESSENCE</span></h4>
                         </div>
                         <div class="right">
-                            <div class="right-text">
-                                <h4>빨간쌀 보습탄력 에센스</h4>
-                                <p>내 피부를 닮은 보습 특효 성분<br>
-                                    쌀 비건 세라마이드를 담아 1초 만에 10층까지<br>
-                                    압도적인 보습을 채워주는 1단계 에센스</p>
-                            </div>
-                            <div class="right-img">
-                                <img src="/img/renewal/hanyul/best-2.png" alt="빨간쌀 보습탄력 에센스">
-                                <a href="#none" class="preR-f">자세히 보기<img src="/img/renewal/hanyul/icon/arr-right.svg" alt="오른쪽 화살표"></a>
+                            <div class="r-wrap">
+                                <div class="right-text">
+                                    <h4>빨간쌀 보습탄력 에센스</h4>
+                                    <p>내 피부를 닮은 보습 특효 성분<br>
+                                        쌀 비건 세라마이드를 담아 1초 만에 10층까지<br>
+                                        압도적인 보습을 채워주는 1단계 에센스</p>
+                                </div>
+                                <div class="right-img">
+                                    <img src="/img/renewal/hanyul/best-2.png" alt="빨간쌀 보습탄력 에센스">
+                                    <a href="#none" class="preR-f">자세히 보기<img src="/img/renewal/hanyul/icon/arr-right.svg" alt="오른쪽 화살표"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide slide-3">
                         <div class="left">
                             <img src="/img/renewal/hanyul/best-bg-3.jpg" alt="달빛유자 수면팩">
-
                         </div>
                         <div class="left-text">
-                            <p>BEST03</p>
-                            <h4>YUJA VITA-C<br>SLEEPING MASK</h4>
+                            <div class="t-box"><p class="slide-txt">BEST03</p></div>
+                            <h4 class="t-box"><span class="slide-txt">YUJA VITA-C</span><span class="slide-txt">SLEEPING MASK</span></h4>
                         </div>
                         <div class="right">
-                            <div class="right-text">
-                                <h4>달빛유자 수면팩</h4>
-                                <p>유자 유래 비타민P로<br>
-                                    브라이트닝부터 항산화 케어까지<br>
-                                    통유자 6개 듬뿍 들어있는 수면팩</p>
-                            </div>
-                            <div class="right-img">
-                                <img src="/img/renewal/hanyul/best-3.png" alt="달빛유자 수면팩">
-                                <a href="#none" class="preR-f">자세히 보기<img src="/img/renewal/hanyul/icon/arr-right.svg" alt="오른쪽 화살표"></a>
+                            <div class="r-wrap">
+                                <div class="right-text">
+                                    <h4>달빛유자 수면팩</h4>
+                                    <p>유자 유래 비타민P로<br>
+                                        브라이트닝부터 항산화 케어까지<br>
+                                        통유자 6개 듬뿍 들어있는 수면팩</p>
+                                </div>
+                                <div class="right-img">
+                                    <img src="/img/renewal/hanyul/best-3.png" alt="달빛유자 수면팩">
+                                    <a href="#none" class="preR-f">자세히 보기<img src="/img/renewal/hanyul/icon/arr-right.svg" alt="오른쪽 화살표"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide slide-4">
                         <div class="left">
                             <img src="/img/renewal/hanyul/best-bg-4.jpg" alt="흰감국 광채 선크림">
-
                         </div>
                         <div class="left-text">
-                            <p>BEST04</p>
-                            <h4>HANYUL WHITE<br>SUNSCREEN CREAM</h4>
+                            <div class="t-box"><p class="slide-txt">BEST04</p></div>
+                            <h4 class="t-box"><span class="slide-txt">HANYUL WHITE</span><span class="slide-txt">SUNSCREEN CREAM</span></h4>
                         </div>
                         <div class="right">
-                            <div class="right-text">
-                                <h4>흰감국 광채 선크림</h4>
-                                <p>강력한 자외선 차단과 미백케어로<br>
-                                    맑고 건강한 투명 광채 피부로 가꾸어주는<br>
-                                    미맥 기능성 데일리 선크림</p>
-                            </div>
-                            <div class="right-img">
-                                <img src="/img/renewal/hanyul/best-4.png" alt="흰감국 광채 선크림">
-                                <a href="#none" class="preR-f">자세히 보기<img src="/img/renewal/hanyul/icon/arr-right.svg" alt="오른쪽 화살표"></a>
+                            <div class="r-wrap">
+                                <div class="right-text">
+                                    <h4>흰감국 광채 선크림</h4>
+                                    <p>강력한 자외선 차단과 미백케어로<br>
+                                        맑고 건강한 투명 광채 피부로 가꾸어주는<br>
+                                        미맥 기능성 데일리 선크림</p>
+                                </div>
+                                <div class="right-img">
+                                    <img src="/img/renewal/hanyul/best-4.png" alt="흰감국 광채 선크림">
+                                    <a href="#none" class="preR-f">자세히 보기<img src="/img/renewal/hanyul/icon/arr-right.svg" alt="오른쪽 화살표"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide slide-5">
                         <div class="left">
                             <img src="/img/renewal/hanyul/best-bg-5.jpg" alt="백화고 기미탄력 크림">
-
                         </div>
                         <div class="left-text">
-                            <p>BEST05</p>
-                            <h4>REBLOOM RADIANCE<br>BRIGHTENING CREAM</h4>
+                            <div class="t-box"><p class="slide-txt">BEST05</p></div>
+                            <h4 class="t-box"><span class="slide-txt">REBLOOM RADIANCE</span><span class="slide-txt">BRIGHTENING CREAM</span></h4>
                         </div>
                         <div class="right">
-                            <div class="right-text">
-                                <h4>백화고 기미탄력 크림</h4>
-                                <p>겉‧속‧잠재 기미까지 단절하는 멜라솔브 기미컷과<br>
-                                    백화고 글루타치온을 담아 탄탄한 광채 피부를 만드는<br>
-                                    기미 생태계 종결 크림</p>
-                            </div>
-                            <div class="right-img">
-                                <img src="/img/renewal/hanyul/best-5.png" alt="백화고 기미탄력 크림">
-                                <a href="#none" class="preR-f">자세히 보기<img src="/img/renewal/hanyul/icon/arr-right.svg" alt="오른쪽 화살표"></a>
+                            <div class="r-wrap">
+                                <div class="right-text">
+                                    <h4>백화고 기미탄력 크림</h4>
+                                    <p>겉‧속‧잠재 기미까지 단절하는 멜라솔브 기미컷과<br>
+                                        백화고 글루타치온을 담아 탄탄한 광채 피부를 만드는<br>
+                                        기미 생태계 종결 크림</p>
+                                </div>
+                                <div class="right-img">
+                                    <img src="/img/renewal/hanyul/best-5.png" alt="백화고 기미탄력 크림">
+                                    <a href="#none" class="preR-f">자세히 보기<img src="/img/renewal/hanyul/icon/arr-right.svg" alt="오른쪽 화살표"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -239,14 +268,14 @@
             </div>
         </section>
         <section class="hanyul-membership-store">
-            <article class="membership">
+            <article class="membership" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
                 <div class="text">
                     <h4 class="ariSB-f">BEAUTY POINT</h4>
                     <p>쌓을수록 아름다워지는 아모레퍼시픽 통합 멤버십을 만나보세요.</p>
                     <a href="#none" class="preR-f">MORE<img src="/img/renewal/hanyul/icon/arr-right-w.svg" alt="오른쪽 화살표"></a>    
                 </div>
             </article>
-            <article class="store">
+            <article class="store" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
                 <div class="text">
                     <h4 class="ariSB-f">HANYUL STORE</h4>
                     <p>오프라인 매장에서도 한국 자연을 담은 한율의 모든 제품을 만나보세요.</p>
@@ -256,43 +285,43 @@
         </section>
         <section class="hanyul-for">
             <ul class="nav" id="hanyul-for-tab" role="tablist">
-                <li class="nav-item" role="presentation">
+                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-duration="100" data-aos-once="true">
                     <button class="nav-link active preR-f" id="hanyul-for-1-tab" data-bs-toggle="tab" data-bs-target="#hanyul-for-1" type="button" role="tab" aria-controls="hanyul-for-1" aria-selected="true">어린쑥</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-duration="200" data-aos-once="true">
                     <button class="nav-link preR-f" id="hanyul-for-2-tab" data-bs-toggle="tab" data-bs-target="#hanyul-for-2" type="button" role="tab" aria-controls="hanyul-for-2" aria-selected="false">세살쑥</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-duration="300" data-aos-once="true">
                     <button class="nav-link preR-f" id="hanyul-for-3-tab" data-bs-toggle="tab" data-bs-target="#hanyul-for-3" type="button" role="tab" aria-controls="hanyul-for-3" aria-selected="false">빨간쌀</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-duration="400" data-aos-once="true">
                     <button class="nav-link preR-f" id="hanyul-for-4-tab" data-bs-toggle="tab" data-bs-target="#hanyul-for-4" type="button" role="tab" aria-controls="hanyul-for-4" aria-selected="false">달빛유자</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-duration="500" data-aos-once="true">
                     <button class="nav-link preR-f" id="hanyul-for-5-tab" data-bs-toggle="tab" data-bs-target="#hanyul-for-5" type="button" role="tab" aria-controls="hanyul-for-5" aria-selected="false">부들밤</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-duration="600" data-aos-once="true">
                     <button class="nav-link preR-f" id="hanyul-for-6-tab" data-bs-toggle="tab" data-bs-target="#hanyul-for-6" type="button" role="tab" aria-controls="hanyul-for-6" aria-selected="false">흰감국</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-duration="700" data-aos-once="true">
                     <button class="nav-link preR-f" id="hanyul-for-7-tab" data-bs-toggle="tab" data-bs-target="#hanyul-for-7" type="button" role="tab" aria-controls="hanyul-for-7" aria-selected="false">자연을 닮은</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-duration="800" data-aos-once="true">
                     <button class="nav-link preR-f" id="hanyul-for-8-tab" data-bs-toggle="tab" data-bs-target="#hanyul-for-8" type="button" role="tab" aria-controls="hanyul-for-8" aria-selected="false">보들은행잎</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-duration="900" data-aos-once="true">
                     <button class="nav-link preR-f" id="hanyul-for-9-tab" data-bs-toggle="tab" data-bs-target="#hanyul-for-9" type="button" role="tab" aria-controls="hanyul-for-9" aria-selected="false">극진</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-once="true">
                     <button class="nav-link preR-f" id="hanyul-for-10-tab" data-bs-toggle="tab" data-bs-target="#hanyul-for-10" type="button" role="tab" aria-controls="hanyul-for-10" aria-selected="false">백화고</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <li class="nav-item" role="presentation" data-aos="zoom-out-down" data-aos-duration="1100" data-aos-once="true">
                     <button class="nav-link preR-f" id="hanyul-for-11-tab" data-bs-toggle="tab" data-bs-target="#hanyul-for-11" type="button" role="tab" aria-controls="hanyul-for-11" aria-selected="false">송담</button>
                 </li>
             </ul>
-            <div class="tab-content" id="hanyul-tabContent">
+            <div class="tab-content" id="hanyul-tabContent" data-aos="zoom-out-down" data-aos-duration="1200" data-aos-once="true">
 
-                <div class="tab-pane  show active" id="hanyul-for-1" role="tabpanel" aria-labelledby="hanyul-for-1-tab" tabindex="0">
+                <div class="tab-pane show active" id="hanyul-for-1" role="tabpanel" aria-labelledby="hanyul-for-1-tab" tabindex="0">
                     <div class="left"><img src="/img/renewal/hanyul/for-1.jpg" alt="어린쑥"></div>
                     <div class="right">
                         <div class="text">
@@ -310,7 +339,7 @@
                     </div>
                 </div>
 
-                <div class="tab-pane " id="hanyul-for-2" role="tabpanel" aria-labelledby="hanyul-for-2-tab" tabindex="0">
+                <div class="tab-pane" id="hanyul-for-2" role="tabpanel" aria-labelledby="hanyul-for-2-tab" tabindex="0">
                     <div class="left"><img src="/img/renewal/hanyul/for-2.jpg" alt="세살쑥"></div>
                     <div class="right">
                         <div class="text">
@@ -328,7 +357,7 @@
                     </div>
                 </div>
 
-                <div class="tab-pane " id="hanyul-for-3" role="tabpanel" aria-labelledby="hanyul-for-3-tab" tabindex="0">
+                <div class="tab-pane" id="hanyul-for-3" role="tabpanel" aria-labelledby="hanyul-for-3-tab" tabindex="0">
                     <div class="left"><img src="/img/renewal/hanyul/for-3.jpg" alt="빨간쌀"></div>
                     <div class="right">
                         <div class="text">
@@ -346,7 +375,7 @@
                     </div>
                 </div>
 
-                <div class="tab-pane " id="hanyul-for-4" role="tabpanel" aria-labelledby="hanyul-for-4-tab" tabindex="0">
+                <div class="tab-pane" id="hanyul-for-4" role="tabpanel" aria-labelledby="hanyul-for-4-tab" tabindex="0">
                     <div class="left"><img src="/img/renewal/hanyul/for-4.jpg" alt="달빛유자"></div>
                     <div class="right">
                         <div class="text">
@@ -364,7 +393,7 @@
                     </div>
                 </div>
 
-                <div class="tab-pane " id="hanyul-for-5" role="tabpanel" aria-labelledby="hanyul-for-5-tab" tabindex="0">
+                <div class="tab-pane" id="hanyul-for-5" role="tabpanel" aria-labelledby="hanyul-for-5-tab" tabindex="0">
                     <div class="left"><img src="/img/renewal/hanyul/for-5.jpg" alt="부들밤"></div>
                     <div class="right">
                         <div class="text">
@@ -382,7 +411,7 @@
                     </div>
                 </div>
 
-                <div class="tab-pane " id="hanyul-for-6" role="tabpanel" aria-labelledby="hanyul-for-6-tab" tabindex="0">
+                <div class="tab-pane" id="hanyul-for-6" role="tabpanel" aria-labelledby="hanyul-for-6-tab" tabindex="0">
                     <div class="left"><img src="/img/renewal/hanyul/for-6.jpg" alt="흰감국"></div>
                     <div class="right">
                         <div class="text">
@@ -398,7 +427,7 @@
                     </div>
                 </div>
 
-                <div class="tab-pane " id="hanyul-for-7" role="tabpanel" aria-labelledby="hanyul-for-7-tab" tabindex="0">
+                <div class="tab-pane" id="hanyul-for-7" role="tabpanel" aria-labelledby="hanyul-for-7-tab" tabindex="0">
                     <div class="left"><img src="/img/renewal/hanyul/for-7.jpg" alt="자연을 닮은"></div>
                     <div class="right">
                         <div class="text">
@@ -416,7 +445,7 @@
                     </div>
                 </div>
 
-                <div class="tab-pane " id="hanyul-for-8" role="tabpanel" aria-labelledby="hanyul-for-8-tab" tabindex="0">
+                <div class="tab-pane" id="hanyul-for-8" role="tabpanel" aria-labelledby="hanyul-for-8-tab" tabindex="0">
                     <div class="left"><img src="/img/renewal/hanyul/for-8.jpg" alt="보들은행잎"></div>
                     <div class="right">
                         <div class="text">
@@ -433,7 +462,7 @@
                     </div>
                 </div>
 
-                <div class="tab-pane " id="hanyul-for-9" role="tabpanel" aria-labelledby="hanyul-for-9-tab" tabindex="0">
+                <div class="tab-pane" id="hanyul-for-9" role="tabpanel" aria-labelledby="hanyul-for-9-tab" tabindex="0">
                     <div class="left"><img src="/img/renewal/hanyul/for-9.jpg" alt="극진"></div>
                     <div class="right">
                         <div class="text">
@@ -451,7 +480,7 @@
                     </div>
                 </div>
 
-                <div class="tab-pane " id="hanyul-for-10" role="tabpanel" aria-labelledby="hanyul-for-10-tab" tabindex="0">
+                <div class="tab-pane" id="hanyul-for-10" role="tabpanel" aria-labelledby="hanyul-for-10-tab" tabindex="0">
                     <div class="left"><img src="/img/renewal/hanyul/for-10.jpg" alt="백화고"></div>
                     <div class="right">
                         <div class="text">
@@ -469,7 +498,7 @@
                     </div>
                 </div>
 
-                <div class="tab-pane " id="hanyul-for-11" role="tabpanel" aria-labelledby="hanyul-for-11-tab" tabindex="0">
+                <div class="tab-pane" id="hanyul-for-11" role="tabpanel" aria-labelledby="hanyul-for-11-tab" tabindex="0">
                     <div class="left"><img src="/img/renewal/hanyul/for-10.jpg" alt="송담"></div>
                     <div class="right">
                         <div class="text">
@@ -497,18 +526,19 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide-1">
                         <img class="bg" src="/img/renewal/hanyul/info-1.jpg" alt="한국의 이로움으로 전하는 균형 잡힌 아름다움">
-                        <div class="text">
-                            <img class="logo" src="/img/renewal/hanyul/logo-en-w.svg" alt="영문로고">
-                            <h4 class="info-title">한국의 이로움으로 전하는 균형 잡힌 아름다움, 한율</h4>
-                            <p class="info-text">근본을 관리하는 건강한 피부와 생활 태도로<br>
+                        <div class="text t-box">
+                            <img class="logo slide-txt" src="/img/renewal/hanyul/logo-en-w.svg" alt="영문로고">
+                            <h4 class="info-title slide-txt">한국의 이로움으로 전하는 균형 잡힌 아름다움, 한율</h4>
+                            <p class="info-text slide-txt">근본을 관리하는 건강한 피부와 생활 태도로<br>
                                 균형 잡힌 아름다움을 전하는 K-heritage 클린 기능성 브랜드</p>
+
                         </div>
                     </div>
                     <div class="swiper-slide slide-2">
                         <img class="bg" src="/img/renewal/hanyul/info-2.jpg" alt="한국 로컬 원료의 이로움">
-                        <div class="text">
-                            <h4 class="info-title">한국 로컬 원료의 이로움</h4>
-                            <p class="info-text">한국의 로컬 성분이 가진 힘을 극대화 하고 더 효과적으로 쓰일 수<br>
+                        <div class="text t-box">
+                            <h4 class="info-title slide-txt">한국 로컬 원료의 이로움</h4>
+                            <p class="info-text slide-txt">한국의 로컬 성분이 가진 힘을 극대화 하고 더 효과적으로 쓰일 수<br>
                                 있도록 발전시키는 것,이것이 바로 한율의 시작입니다.<br>
                                 쑥, 쌀, 콩. 일상에서 흔히 볼 수 있는 원료, 한율에게는 귀한 보물입니다.<br>
                                 과거부터 전해온 선조들의 노하우가 현대의 우리에게도 뛰어난<br>
@@ -522,9 +552,9 @@
                     </div>
                     <div class="swiper-slide slide-3">
                         <img class="bg" src="/img/renewal/hanyul/info-3.jpg" alt="피부 스스로 강해질 수 있는 힘">
-                        <div class="text">
-                            <h4 class="info-title">피부 스스로 강해질 수 있는 힘,<br>마이크로바이옴 과학</h4>
-                            <p class="info-text">한국의 발효 식문화에는 자연스러운 미생물 반응으로 유익한 유기물을 발생시켜<br>
+                        <div class="text t-box">
+                            <h4 class="info-title slide-txt">피부 스스로 강해질 수 있는 힘,<br>마이크로바이옴 과학</h4>
+                            <p class="info-text slide-txt">한국의 발효 식문화에는 자연스러운 미생물 반응으로 유익한 유기물을 발생시켜<br>
                                 풍부한 영양을 담아내는 과학적 지혜가 담겨져 있습니다.<br>
                                 한국의 발효 식문화에서 마이크로바이옴 과학의 실마리를 찾아 개발한<br>
                                 독자적 성분으로 피부 장벽을 강화하여 외부 자극에 맞서 스스로<br>
@@ -534,9 +564,9 @@
                     </div>
                     <div class="swiper-slide slide-4">
                         <img class="bg" src="/img/renewal/hanyul/info-4.jpg" alt="균형 잡힌 아름다움">
-                        <div class="text">
-                            <h4 class="info-title">균형 잡힌 아름다움,<br>Active Balanced Beauty</h4>
-                            <p class="info-text">건강한 피부 균형과 내면의 단단함을 통해 어떤 문제에도<br>
+                        <div class="text t-box">
+                            <h4 class="info-title slide-txt">균형 잡힌 아름다움,<br>Active Balanced Beauty</h4>
+                            <p class="info-text slide-txt">건강한 피부 균형과 내면의 단단함을 통해 어떤 문제에도<br>
                                 쉽게 무너지지 않는 균형 잡힌 아름다움에 진정으로 가까워 집니다.<br>
                                 로컬 원료에서 찾은 고효능 성분으로 피부 표면의 문제를 즉시 해결함과<br>
                                 동시에 근본의 힘을 길러 내외면의 균형을 이루게 합니다.<br>
@@ -551,71 +581,71 @@
             </div>
         </section>
         <section class="hanyul-new">
-            <h3 class="hanyul-title">NEW ARRIVALS</h3>
+            <div class="t-box"><h3 class="hanyul-title slide-txt">NEW ARRIVALS</h3></div>
             <div class="swiper mySwiper hanyul-new-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide-type-a">
-                        <div class="img"><img src="/img/renewal/hanyul/new-1.png" alt="보들은행잎 모공핏 세럼"></div>
+                        <a href="#none" class="img"><img src="/img/renewal/hanyul/new-1.png" alt="보들은행잎 모공핏 세럼"></a>
                         <div class="text">
-                            <h4 class="new-name">보들은행잎 모공핏 세럼</h4>
-                            <p class="new-en-name">HANYUL GINKGO LEAF PORE RESURFACING SERUM</p>
-                            <span class="tag preR-f">#8시간만에 -45% 반쪽모공세럼</span>
+                            <div class="t-box"><h4 class="new-name slide-txt">보들은행잎 모공핏 세럼</h4></div>
+                            <div class="t-box"><p class="new-en-name slide-txt">HANYUL GINKGO LEAF PORE RESURFACING SERUM</p></div>
+                            <div class="t-box"><span class="tag preR-f slide-txt">#8시간만에 -45% 반쪽모공세럼</span></div>
                         </div>
                     </div>
                     <div class="swiper-slide slide-type-b">
-                        <div class="img"><img src="/img/renewal/hanyul/new-2.png" alt="보들은행잎 모공핏 마스크"></div>
+                        <a href="#none" class="img"><img src="/img/renewal/hanyul/new-2.png" alt="보들은행잎 모공핏 마스크"></a>
                         <div class="text">
-                            <h4 class="new-name">보들은행잎 모공핏 마스크</h4>
-                            <p class="new-en-name">HANYUL GINKGO LEAF PORE RESURFACING MASK</p>
-                            <span class="tag preR-f">#1회만에 -41% 반쪽모공마스크</span>
+                            <div class="t-box"><h4 class="new-name slide-txt">보들은행잎 모공핏 마스크</h4></div>
+                            <div class="t-box"><p class="new-en-name slide-txt">HANYUL GINKGO LEAF PORE RESURFACING MASK</p></div>
+                            <div class="t-box"><span class="tag preR-f slide-txt">#1회만에 -41% 반쪽모공마스크</span></div>
                         </div>
                     </div>
                     <div class="swiper-slide slide-type-a">
-                        <div class="img"><img src="/img/renewal/hanyul/new-3.png" alt="달빛유자 비타톤업 애플존 패드"></div>
+                        <a href="#none" class="img"><img src="/img/renewal/hanyul/new-3.png" alt="달빛유자 비타톤업 애플존 패드"></a>
                         <div class="text">
-                            <h4 class="new-name">달빛유자 비타톤업 애플존 패드</h4>
-                            <p class="new-en-name">HANYUL YUJA VITA-TONE UP PADS</p>
-                            <span class="tag preR-f">#애플존패드</span>
+                            <div class="t-box"><h4 class="new-name slide-txt">달빛유자 비타톤업 애플존 패드</h4></div>
+                            <div class="t-box"><p class="new-en-name slide-txt">HANYUL YUJA VITA-TONE UP PADS</p></div>
+                            <div class="t-box"><span class="tag preR-f slide-txt">#애플존패드</span></div>
                         </div>
                     </div>
                     <div class="swiper-slide slide-type-b">
-                        <div class="img"><img src="/img/renewal/hanyul/new-4.png" alt="백화고 기미탄력 비비 크림"></div>
+                        <a href="#none" class="img"><img src="/img/renewal/hanyul/new-4.png" alt="백화고 기미탄력 비비 크림"></a>
                         <div class="text">
-                            <h4 class="new-name">백화고 기미탄력 비비 크림</h4>
-                            <p class="new-en-name">HANYUL REBLOOM RADIANCE BRIGHTENING & FIRMING BB CREAM</p>
-                            <span class="tag preR-f">#메이크업 최초 기미 개선 기능 비비</span>
+                            <div class="t-box"><h4 class="new-name slide-txt">백화고 기미탄력 비비 크림</h4></div>
+                            <div class="t-box"><p class="new-en-name slide-txt">HANYUL REBLOOM RADIANCE BRIGHTENING & FIRMING BB CREAM</p></div>
+                            <div class="t-box"><span class="tag preR-f slide-txt">#메이크업 최초 기미 개선 기능 비비</span></div>
                         </div>
                     </div>
                     <div class="swiper-slide slide-type-a">
-                        <div class="img"><img src="/img/renewal/hanyul/new-5.png" alt="부들밤 모공수축 패드"></div>
+                        <a href="#none" class="img"><img src="/img/renewal/hanyul/new-5.png" alt="부들밤 모공수축 패드"></a>
                         <div class="text">
-                            <h4 class="new-name">부들밤 모공수축 패드</h4>
-                            <p class="new-en-name">CHESTNUT SHELL PORE-TIGHT PADS</p>
-                            <span class="tag preR-f">#나비존집중수축</span>
+                            <div class="t-box"><h4 class="new-name slide-txt">부들밤 모공수축 패드</h4></div>
+                            <div class="t-box"><p class="new-en-name slide-txt">CHESTNUT SHELL PORE-TIGHT PADS</p></div>
+                            <div class="t-box"><span class="tag preR-f slide-txt">#나비존집중수축</span></div>
                         </div>
                     </div>
                     <div class="swiper-slide slide-type-b">
-                        <div class="img"><img src="/img/renewal/hanyul/new-6.png" alt="어린쑥 클렌징 흡착 팩폼"></div>
+                        <a href="#none" class="img"><img src="/img/renewal/hanyul/new-6.png" alt="어린쑥 클렌징 흡착 팩폼"></a>
                         <div class="text">
-                            <h4 class="new-name">어린쑥 클렌징 흡착 팩폼</h4>
-                            <p class="new-en-name">PURE ARTEMISIA DEEP CLARIFYING MASK TO FOAM CLEANSER</p>
-                            <span class="tag preR-f">#피지흡착 클렌징</span>
+                            <div class="t-box"><h4 class="new-name slide-txt">어린쑥 클렌징 흡착 팩폼</h4></div>
+                            <div class="t-box"><p class="new-en-name slide-txt">PURE ARTEMISIA DEEP CLARIFYING MASK TO FOAM CLEANSER</p></div>
+                            <div class="t-box"><span class="tag preR-f slide-txt">#피지흡착 클렌징</span></div>
                         </div>
                     </div>
                     <div class="swiper-slide slide-type-a">
-                        <div class="img"><img src="/img/renewal/hanyul/new-7.png" alt="빨간쌀 보습탄력 에멀젼"></div>
+                        <a href="#none" class="img"><img src="/img/renewal/hanyul/new-7.png" alt="빨간쌀 보습탄력 에멀젼"></a>
                         <div class="text">
-                            <h4 class="new-name">빨간쌀 보습탄력 에멀젼</h4>
-                            <p class="new-en-name">HANYUL RED RICE MOISTURE FIRMING EMULSION</p>
-                            <span class="tag preR-f">#차오르는 물찬피부</span>
+                            <div class="t-box"><h4 class="new-name slide-txt">빨간쌀 보습탄력 에멀젼</h4></div>
+                            <div class="t-box"><p class="new-en-name slide-txt">HANYUL RED RICE MOISTURE FIRMING EMULSION</p></div>
+                            <div class="t-box"><span class="tag preR-f slide-txt">#차오르는 물찬피부</span></div>
                         </div>
                     </div>
                     <div class="swiper-slide slide-type-b">
-                        <div class="img"><img src="/img/renewal/hanyul/new-8.png" alt="빨간쌀 보습탄력 랩핑 마스크"></div>
+                        <a href="#none" class="img"><img src="/img/renewal/hanyul/new-8.png" alt="빨간쌀 보습탄력 랩핑 마스크"></a>
                         <div class="text">
-                            <h4 class="new-name">빨간쌀 보습탄력 랩핑 마스크</h4>
-                            <p class="new-en-name">HANYUL RED RICE MOISTURE FIRMING WRAPPING MASK</p>
-                            <span class="tag preR-f">#초밀착젤리랩핑마스크</span>
+                            <div class="t-box"><h4 class="new-name slide-txt">빨간쌀 보습탄력 랩핑 마스크</h4></div>
+                            <div class="t-box"><p class="new-en-name slide-txt">HANYUL RED RICE MOISTURE FIRMING WRAPPING MASK</p></div>
+                            <div class="t-box"><span class="tag preR-f slide-txt">#초밀착젤리랩핑마스크</span></div>
                         </div>
                     </div>
                 </div>
@@ -632,22 +662,20 @@
         </section>
         <section class="hanyul-sns">
             <div class="sns">
-                <div class="left con">
+                <div class="left con" data-aos="flip-left" data-aos-duration="800" data-aos-once="true">
                     <div class="sns-t">
                         <p class="ariBL-f">HANYUL Official <strong>Tiktok</strong></p>
                         <a href="#none"><img src="/img/renewal/hanyul/sns-1-1.jpg" alt="어린쑥 수분진정 크림"></a>
                     </div>
-                    <h4 class="sns-text ariBL-f">
-                        FOLLOW US<br><strong>@hanyulofficial</strong>
-                    </h4>
+                    <h4 class="sns-text ariBL-f">FOLLOW US<br><strong>@hanyulofficial</strong></h4>
                 </div>
-                <div class="right con">
+                <div class="right con" data-aos="flip-right" data-aos-duration="800" data-aos-once="true">
                     <ul class="sns-link">
-                        <li><a href="#none"><img src="/img/renewal/hanyul/icon/sns-1.svg" alt="인스타그램"></a></li>
-                        <li><a href="#none"><img src="/img/renewal/hanyul/icon/sns-2.svg" alt="틱톡"></a></li>
-                        <li><a href="#none"><img src="/img/renewal/hanyul/icon/sns-3.svg" alt="유튜브"></a></li>
-                        <li><a href="#none"><img src="/img/renewal/hanyul/icon/sns-4.svg" alt="트위터"></a></li>
-                        <li><a href="#none"><img src="/img/renewal/hanyul/icon/sns-5.svg" alt="페이스북"></a></li>
+                        <li data-aos="flip-right" data-aos-duration="900" data-aos-once="true"><a href="#none"><img src="/img/renewal/hanyul/icon/sns-1.svg" alt="인스타그램"></a></li>
+                        <li data-aos="flip-right" data-aos-duration="1000" data-aos-once="true"><a href="#none"><img src="/img/renewal/hanyul/icon/sns-2.svg" alt="틱톡"></a></li>
+                        <li data-aos="flip-right" data-aos-duration="1100" data-aos-once="true"><a href="#none"><img src="/img/renewal/hanyul/icon/sns-3.svg" alt="유튜브"></a></li>
+                        <li data-aos="flip-right" data-aos-duration="1200" data-aos-once="true"><a href="#none"><img src="/img/renewal/hanyul/icon/sns-4.svg" alt="트위터"></a></li>
+                        <li data-aos="flip-right" data-aos-duration="1300" data-aos-once="true"><a href="#none"><img src="/img/renewal/hanyul/icon/sns-5.svg" alt="페이스북"></a></li>
                     </ul>
                     <h4 class="sns-text ariBL-f">HANYUL Official <strong>Instagram</strong></h4>
                     <div class="swiper mySwiper hanyul-sns-i-swiper">
@@ -747,7 +775,9 @@
     <script src="/vendor/bootstrap/js/bootstrap.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="/js/plugin.js"></script>
-    <script type="text/javascript" src="/js/hanyul.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="/js/animation.js"></script>
+    <script src="/js/plugin.js"></script>
+    <script src="/js/hanyul.js"></script>
 </body>
 </html>
