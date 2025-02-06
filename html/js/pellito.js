@@ -3,8 +3,10 @@ $(function(){
     $(window).on('scroll', function(){
         if($(window).scrollTop() > 0){
             $('#pellito-header').addClass('fix');
+            $('.top-btn').addClass('show');
         }else{
             $('#pellito-header').removeClass('fix');
+            $('.top-btn').removeClass('show');
         }
     });
 
@@ -53,5 +55,4 @@ $(function(){
             $('.coll-right img').removeClass('hidden');
         }, ); // transition 시간과 일치
     });
-
 });
