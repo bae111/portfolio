@@ -65,25 +65,25 @@ $(".hollys-swiper").each(function() {
 });
 
 var hanyul_main_banner_swiper = new Swiper(".hanyul-main-banner-swiper", {
-    // autoplay: {
-    //     delay: 3000
-    // },
+    autoplay: {
+        delay: 3000
+    },
     loop: true
 });
 
 var hanyul_best_swiper = new Swiper(".hanyul-best-swiper", {
-    // autoplay: {
-    //     delay: 3000
-    // },
+    autoplay: {
+        delay: 3000
+    },
     slidesPerView: 1.5,
     loop: true,
     centeredSlides: true,
 });
 
 var hanyul_info_swiper = new Swiper(".hanyul-info-swiper", {
-    // autoplay: {
-    //     delay: 3000
-    // },
+    autoplay: {
+        delay: 3000
+    },
     loop: true,
     pagination: {
         el: ".swiper-pagination",
@@ -92,17 +92,14 @@ var hanyul_info_swiper = new Swiper(".hanyul-info-swiper", {
 
 var hanyul_new_swiper = new Swiper(".hanyul-new-swiper", {
     slidesPerView: "auto",
+    autoplay: false,
     loop: false,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    // },
 });
 
 var hanyul_sns_swiper = new Swiper(".hanyul-sns-i-swiper", {
     loop: true,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
 });
