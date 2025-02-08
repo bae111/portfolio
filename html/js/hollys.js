@@ -8,6 +8,12 @@ $(function() {
             if (typeof index === 'object') {
                 index = index.index;
             }
+            $('#fp-nav ul li a').removeClass('active');
+            if (index === 0) {
+                $('#fp-nav ul li:nth-child(1) a').addClass('active');
+            } else {
+                $('#fp-nav ul li:nth-child(' + (index + 1) + ') a').addClass('active');
+            }
             if (index === 7) {
                 $('#hollys-header').css('background', '#fff');
             } else {

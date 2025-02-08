@@ -1,18 +1,7 @@
-@font-face {
-    font-family: 'Cafe24ClassicType-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
 html,body{
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 400;
     font-size: 16px;
-}
-.en-f{
-    font-family: 'Cafe24ClassicType-Regular';
-    font-weight: normal;
-    font-style: normal;
 }
 .fp-warning, .fp-watermark{
     display: none;
@@ -76,6 +65,20 @@ section.active .masked-text-ani-ff{
 .transXR{
     transform: translateX(100%);
     opacity: 0;
+}
+#fp-nav ul li .fp-tooltip{
+    font-family: "Noto Sans KR", sans-serif;
+    background: #4f4c4b;
+    top: -5px;
+    padding: 0 .5rem;
+    border-radius: 12px;
+}
+#fp-nav ul li a span{
+    background: rgba(79,76,75,.5);
+}
+#fp-nav ul li:hover a span,
+#fp-nav ul li a.active span{
+    background: #4f4c4b;
 }
 @scope (#hollys-header){
     :scope{
