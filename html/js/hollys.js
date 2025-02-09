@@ -11,8 +11,10 @@ $(function() {
             $('#fp-nav ul li a').removeClass('active');
             if (index === 0) {
                 $('#fp-nav ul li:nth-child(1) a').addClass('active');
+                $('.top').removeClass('show');
             } else {
                 $('#fp-nav ul li:nth-child(' + (index + 1) + ') a').addClass('active');
+                $('.top').addClass('show');
             }
             if (index === 7) {
                 $('#hollys-header').css('background', '#fff');

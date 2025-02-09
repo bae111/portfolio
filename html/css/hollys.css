@@ -781,6 +781,71 @@ section.active .masked-text-ani-ff{
     }
 }
 
+@scope (#hollys-quick){
+    :scope{
+        position: fixed;
+        right: 24px;
+        bottom: 60px;
+        z-index: 11;
+    }
+    ul{
+        margin-bottom: 0;
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, .1);
+        border-radius: 15px;
+        background: #fff;
+        font-size: 14px;
+        text-align: center;
+        transition: all .6s ease;
+        height: auto;
+        li{
+            button{
+                border: none;
+                background: none;
+                transition: all .4s ease;
+                padding: 1rem;
+            }
+            &:nth-child(1){
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 80%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    background: #ba000d;
+                    height: 1px;
+                    transform: translateX(-50%);
+                }
+                button{
+                    border-radius: 15px 15px 0 0;
+                }
+            }
+        }
+        .qui{
+            position: relative;
+            button{
+                &:hover{
+                    background: rgba(186,0,13,.2);
+                }
+            }
+        }
+        .top{
+            display: none;
+            &.show{
+                display: block;
+            }
+            button{
+                background: #ba000d;
+                border-radius: 0 0 15px 15px;
+                width: 100%;
+                color: #fff;
+                &:hover{
+                    background: #4f4c4b;
+                }
+            }
+        }
+    }
+}
 @keyframes float{
     0%, 100% {
         transform: translateY(0);
