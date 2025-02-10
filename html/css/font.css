@@ -209,3 +209,85 @@ font-family: "Poppins", sans-serif;
 font-weight: 900;
 font-style: italic;
 }
+
+@font-face {
+    font-family: 'Cafe24ClassicType-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.en-f{
+    font-family: 'Cafe24ClassicType-Regular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+.preR-f{
+    font-family: 'Pretendard-Regular';
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AritaSansBold';
+    src: url('/font/AritaSansLTN-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AritaSansMedium';
+    src: url('/font/AritaSansLTN-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.ariSB-f{
+    font-family: 'AritaSansMedium';
+    font-weight: normal;
+    font-style: normal;
+}
+.ariB-f{
+    font-family: 'AritaSansBold';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AritaBuriKRBold';
+    src: url('/font/AritaBuriKR-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AritaBuriKRLight';
+    src: url('/font/AritaBuriKR-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.ariSB-f{
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.ariBB-f{
+    font-family: 'AritaBuriKRBold';
+    font-weight: normal;
+    font-style: normal;
+}
+.ariBL-f{
+    font-family: 'AritaBuriKRLight';
+    font-weight: normal;
+    font-style: normal;
+}
