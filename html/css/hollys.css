@@ -724,13 +724,22 @@ section.active .masked-text-ani-ff{
         background: #2e2f2e;
         display: flex;
         justify-content: space-between;
-        padding: 5rem;
+        padding: 5rem 8rem 5rem 5rem;
         max-height: 400px;
         flex-direction: row;
         article{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            ul{
+                li{
+                    color: #fff;
+                    font-size: .875rem;
+                    a{
+                        color: #fff;
+                    }
+                }
+            }
         }
         .left{
             gap: 2rem;
@@ -740,7 +749,6 @@ section.active .masked-text-ani-ff{
                 li{
                     a{
                         padding: .5rem;
-                        color: #fff;
                     }
                 }
             }
@@ -758,20 +766,16 @@ section.active .masked-text-ani-ff{
                     font-size: .75rem;
                 }
                 li{
-                    font-size: .875rem;
                     span{
-                        color: #fff;
                         padding: .5rem;
                     }
                 }
             }
         }
         .right{
-            li, a{
-                color: #fff;
-            }
             li{
-                font-size: .875rem;
+                display: flex;
+                flex-direction: column;
             }
             a{
                 font-size: 2.25rem;
