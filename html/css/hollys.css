@@ -801,6 +801,7 @@ section.active .masked-text-ani-ff{
         text-align: center;
         transition: all .6s ease;
         height: auto;
+        overflow: hidden;
         li{
             button{
                 border: none;
@@ -820,9 +821,6 @@ section.active .masked-text-ani-ff{
                     height: 1px;
                     transform: translateX(-50%);
                 }
-                button{
-                    border-radius: 15px 15px 0 0;
-                }
             }
         }
         .qui{
@@ -840,7 +838,6 @@ section.active .masked-text-ani-ff{
             }
             button{
                 background: #ba000d;
-                border-radius: 0 0 15px 15px;
                 width: 100%;
                 color: #fff;
                 &:hover{
