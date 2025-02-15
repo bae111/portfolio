@@ -460,9 +460,8 @@ section.active .masked-text-ani-ff{
                             color: #fff;
                             font-weight: 500;
                             background: #ba000d;
-                            padding: .5rem 2rem;
-                            border-top-left-radius: 100px;
-                            border-top-right-radius: 100px;
+                            padding: .5rem 1.5rem;
+                            border-radius: 100px 100px 0 0;
                         }
                         .name{
                             font-weight: 500;
