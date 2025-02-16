@@ -6,7 +6,7 @@ $(function(){
     });
 
     $(window).on('scroll', function() {
-        var scrollCollect = 0;
+        var scrollCollect = 500;
         var pos = $(window).scrollTop();
         
         if (pos > 0) {
@@ -43,12 +43,12 @@ $(function(){
                 "transform": "translateX(0px)",
                 "opacity": 1
             });
-        }, 100);
+        }, 0);
     
         // 인터렉션 2. 슬라이드 이미지(.item-thumbnail-img) 마스킹
         setTimeout(function () {
             $(".hanyul-new").addClass("on");
-        }, 2000);
+        }, 1000);
 
       // autoplay 재생
         setTimeout(function () {
@@ -56,7 +56,7 @@ $(function(){
                 hanyul_new_swiper.update();
                 hanyul_new_swiper.autoplay.start();
             }
-        }, 3000);
+        }, 2000);
     }
 
     // aos일시 swiper 작동
