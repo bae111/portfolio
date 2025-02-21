@@ -3,11 +3,17 @@ $(function(){
     $(window).on('scroll', function(){
         if($(window).scrollTop() > 0){
             $('#pellito-header').addClass('fix');
+            $('#pellito-m-header').addClass('fix');
             $('.top-btn').addClass('show');
         }else{
             $('#pellito-header').removeClass('fix');
+            $('#pellito-m-header').removeClass('fix');
             $('.top-btn').removeClass('show');
         }
+    });
+
+    $('.nav-btn').on('click', function(){
+        $(this).toggleClass('slideOn');
     });
 
     // 콜렉션 호버 텍스트, 이미지 교체
@@ -54,5 +60,27 @@ $(function(){
             $('.coll-title, .coll-sub').removeClass('hidden');
             $('.coll-right img').removeClass('hidden');
         }, ); // transition 시간과 일치
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // 모든 depth-01의 li 요소를 선택
+    const liElements = document.querySelectorAll('.depth-01 > li');
+
+    // 각 li에 대해 클릭 이벤트 리스너 추가
+    liElements.forEach(function (li) {
+        li.addEventListener('click', function (e) {
+            // depth-02에 포함된 li 클릭 시, 이벤트 전파 막기
+            if (e.target.closest('.depth-02')) return;
+
+            // 클릭된 li에 active 클래스 토글
+            li.classList.toggle('active');
+
+            // 해당 li 안의 토글 버튼도 같이 active 클래스 토글 (필요한 경우)
+            const toggleBtn = li.querySelector('.toggle-btn');
+            if (toggleBtn) {
+                toggleBtn.classList.toggle('active');
+            }
+        });
     });
 });
