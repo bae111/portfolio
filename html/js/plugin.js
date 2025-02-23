@@ -32,7 +32,17 @@ var main_shop_swiper = new Swiper("#pellito-shop-swiper", {
         keyboard: {
             enabled: true,
         },
-        
+    breakpoints: {
+        1280: { 
+            slidesPerView: 5, 
+        },
+        768: { 
+            slidesPerView: 3, 
+        },
+        320: {
+            slidesPerView: 2,
+        },
+    },
 });
 
 var hollys_season_swiper = new Swiper(".hollys-season-swiper", {
