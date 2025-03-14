@@ -43,6 +43,7 @@ var main_shop_swiper = new Swiper("#pellito-shop-swiper", {
             slidesPerView: 2,
         },
     },
+    autoplay: false
 });
 
 var hollys_season_swiper = new Swiper(".hollys-season-swiper", {
@@ -88,6 +89,7 @@ var hanyul_best_swiper = new Swiper(".hanyul-best-swiper", {
     slidesPerView: 1.5,
     loop: true,
     centeredSlides: true,
+    autoplay: false
 });
 
 var hanyul_info_swiper = new Swiper(".hanyul-info-swiper", {
@@ -98,6 +100,7 @@ var hanyul_info_swiper = new Swiper(".hanyul-info-swiper", {
     pagination: {
         el: ".swiper-pagination",
     },
+    autoplay: false
 });
 
 var hanyul_new_swiper = new Swiper(".hanyul-new-swiper", {
@@ -112,4 +115,25 @@ var hanyul_sns_swiper = new Swiper(".hanyul-sns-i-swiper", {
         delay: 3000,
         disableOnInteraction: false,
     },
+});
+
+const swiperElements = document.querySelectorAll('.swiper');
+
+swiperElements.forEach((swiperElement) => {
+    const swiperInstance = swiperElement.swiper;
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            if (swiperInstance && !swiperInstance.autoplay.running) {
+            swiperInstance.autoplay.start();
+            }
+            observer.unobserve(entry.target);
+        }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    observer.observe(swiperElement);
 });
