@@ -640,7 +640,7 @@
  .portfolio-carousel {
    padding: 0;
    color: white;
-   background-color: #222;
+   /* background-color: #222; */
  }
  .portfolio-carousel .item {
    background-color: #222;
@@ -649,7 +649,7 @@
    -moz-background-size: cover;
    background-size: cover;
    -o-background-size: cover;
-   padding: 50px 55px;
+   /* padding: 50px 55px; */
    text-align: center;
  }
  .portfolio-carousel .item .project-details {
@@ -705,7 +705,7 @@
  }
  @media (min-width: 992px) {
    .portfolio-carousel .item {
-     padding: 155px 55px 155px;
+     /* padding: 155px 55px 155px; */
      text-align: left;
      min-height: 100%;
    }
