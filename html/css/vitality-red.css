@@ -639,7 +639,7 @@
  }
  .portfolio-carousel {
    padding: 0;
-   color: white;
+   /* color: white; */
    /* background-color: #222; */
  }
  .portfolio-carousel .item {
