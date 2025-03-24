@@ -137,3 +137,16 @@ swiperElements.forEach((swiperElement) => {
 
     observer.observe(swiperElement);
 });
+
+var card_swiper = new Swiper(".card-swiper", {
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+    on: {
+        slideChange: function() {
+            $('.caption').css('bottom', '-100px');
+        }
+    },
+});

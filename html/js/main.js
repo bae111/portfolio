@@ -119,6 +119,17 @@ $(function () {
     //     $html.animate({ scrollTop: posTop }, 200); // 부드러운 스크롤 애니메이션
     //     e.preventDefault(); // 기본 스크롤 동작 방지
     // });
+    
+    $('.mix.card').off('click');
+
+    $('.cover').hover(
+        function() {
+            $(this).closest('.portfolio-wrapper').find('.caption').css('bottom', '0');
+        },
+        function() {
+            $(this).closest('.portfolio-wrapper').find('.caption').css('bottom', '-100px');
+        }
+    );
 });
 
 
