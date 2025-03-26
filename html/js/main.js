@@ -130,6 +130,13 @@ $(function () {
             $(this).closest('.portfolio-wrapper').find('.caption').css('bottom', '-100px');
         }
     );
+    $(window).on('scroll', function(){
+        if($(window).scrollTop() > 0){
+            $('.top-btn').addClass('show');
+        }else{
+            $('.top-btn').removeClass('show');
+        }
+    });
 });
 
 
