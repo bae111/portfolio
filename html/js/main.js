@@ -227,22 +227,22 @@ gsap.to("#design", {
 });
 
 // Project section - Right
-// gsap.set("#about", {  
-//     x: 500 
-// });
+gsap.set(".a-wrap", {  
+    x: 500 
+});
 
-// gsap.to("#about", {  
-//     duration: 2.2,
-//     x: 0,
-//     ease: "power2.inOut",
-//     yoyo: true,
-//     scrollTrigger: {
-//         trigger: "#about",
-//         start: "top center",
-//         end: "center",
-//         markers: false 
-//     } 
-// });
+gsap.to(".a-wrap", {  
+    duration: 2.2,
+    x: 0,
+    ease: "power2.inOut",
+    yoyo: true,
+    scrollTrigger: {
+        trigger: ".a-wrap",
+        start: "top center",
+        end: "center",
+        markers: false 
+    } 
+});
 // 
 // gsap.to("progress", {
 //     value: 100,
