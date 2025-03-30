@@ -2,6 +2,66 @@ AOS.init();
 
 gsap.registerPlugin(ScrollTrigger);
 
+// hd-title 애니메이션
+gsap.set(".hd-title", {
+    y: -100,
+    opacity: 0,
+});
+
+gsap.to(".hd-title", {
+    y: 0,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.3, // 각 요소마다 0.3초 간격으로 애니메이션
+    scrollTrigger: {
+        trigger: "#header",
+        start: "top center",
+        end: "center",
+        markers: false 
+    }
+});
+
+// Company Section - Title
+gsap.set("#personal .project-detail", {
+    opacity: 0,
+    y: -200 
+});
+
+gsap.to("#personal .project-detail", {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power2.inOut",
+    scrollTrigger: {
+        trigger: "#personal",
+        start: "top center",
+        end: "center",
+        markers: false 
+    } 
+});
+
+// Company section - Image
+gsap.set(".personal-box", {
+    opacity: 0,
+    scale: 0 
+});
+
+gsap.to(".personal-box", {
+    duration: 1.6,
+    delay: 0.1,
+    opacity: 1,
+    scale: 1,
+    transformOrigin: "top right",
+    ease: "power2.inOut",
+    scrollTrigger: {
+        trigger: "#personal",
+        start: "top center",
+        end: "center",
+        markers: false 
+    } 
+});
+
 const waveText = document.querySelector('#pellito-info em');
 waveText.innerHTML = waveText.textContent.split('').map(char => `<span>${char}</span>`).join('');
 
