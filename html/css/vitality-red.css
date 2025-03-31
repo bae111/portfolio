@@ -130,9 +130,9 @@
    text-transform: uppercase;
  }
  @media (min-width: 481px) {
-   h1 {
+   /* h1 {
      font-size: 52px;
-   }
+   } */
    h2 {
      font-size: 50px;
    }
