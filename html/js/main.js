@@ -35,6 +35,14 @@ $(function () {
             $('.top-btn').removeClass('show');
         }
     });
+
+    $('.more').on('click', function () {
+        $(this).toggleClass('toggle');
+    });
+
+    $('.nav-link').on('click', function () {
+        $('.more').removeClass('toggle');
+    });
 });
 
 document.querySelector(".progress-bar-one").style.width = "0%";
