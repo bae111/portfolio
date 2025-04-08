@@ -41,7 +41,7 @@
         <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
         <link href="vendor/formstone/background.css" rel="stylesheet" type="text/css">
-        <link href="vendor/animate.css/animate.min.css" rel="stylesheet" type="text/css">
+
         <link href="vendor/device-mockups/device-mockups.min.css" rel="stylesheet" type="text/css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -135,7 +135,7 @@
         </header>
 
         <main>
-            <section id="about" class="section sec2 position-relative wow fadeIn">
+            <section id="about" class="section sec2 position-relative">
                 <div class="a-wrap">
                     <div class="left con">
                         <h2 class="title">About</h2>
@@ -194,7 +194,7 @@
             </section>
             
             <section id="project" class="section sec3 position-relative mx-auto">
-                <article class="project-wrap position-relative wow fadeInLeft">
+                <article class="project-wrap position-relative" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
                     <span class="project-img team-img"></span>
                     <div class="project-detail d-flex flex-column justify-content-center">
                         <h3><em>team project</em></h3>
@@ -221,7 +221,7 @@
                     </div>
                 </article>
                 <div class="line"></div>
-                <article class="project-wrap position-relative flex-row-reverse wow fadeInRight">
+                <article class="project-wrap position-relative flex-row-reverse" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
                     <span class="project-img cafe-img"></span>
                     <div class="project-detail d-flex flex-column justify-content-center">
                         <h3><em>cms solution cafe24</em></h3>
@@ -246,7 +246,7 @@
                 </article>
             </section>
 
-            <section id="renewal" class="section sec4 portfolio-carousel wow fadeIn">
+            <section id="renewal" class="section sec4 portfolio-carousel">
                 <!-- NOTE: You can add more items to the carousel, or remove items you don't need! -->
                 <!-- item 1 -->
                 <div class="item project-wrap">
@@ -403,9 +403,9 @@
             </section>
 
             <section id="design" class="section sec6 position-relative">
-                <div class="container text-center wow pulse">
-                    <h2>DESIGN</h2>
-                    <div class="row">
+                <div class="container text-center">
+                    <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-once="true">DESIGN</h2>
+                    <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom" data-aos-once="true">
                         <div class="col-lg-12">
                             <div class="portfolio-filter">
                                     <ul id="filters" class="clearfix">
@@ -422,7 +422,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="zoom-out" data-aos-once="true" data-aos-duration="1000">
                         <div class="col-lg-12">
                             <div id="portfoliolist">
                                 <!-- NOTE: You can add more items to the grid, or remove items you don't need! -->
@@ -539,11 +539,11 @@
             </section>
 
             <section id="contact" class="section sec7 position-relative">
-                <div class="container text-center wow fadeIn">
-                    <h2>CONTACT</h2>
+                <div class="container text-center">
+                    <h2 class="split">CONTACT</h2>
                     <div class="t-wrap">
-                        <strong><a class="text email" href="mailto:sunmoneeee@gmail.com">sunmoneeee@gmail.com</a></strong>
-                        <div class="text">감사합니다.</div>
+                        <strong><a class="text email split" href="mailto:sunmoneeee@gmail.com">sunmoneeee@gmail.com</a></strong>
+                        <div class="text split">감사합니다.</div>
                     </div>
                 </div>
             </section>
@@ -574,10 +574,10 @@
         <script src="vendor/formstone/transition.js"></script>
         <script src="vendor/formstone/background.js"></script>
         <script src="vendor/mixitup/jquery.mixitup.js"></script>
-        <script src="vendor/wow/wow.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
         <script src="https://unpkg.com/split-type"></script>
         <!-- Contact Form Scripts -->
         <script src="js/contact_me.js"></script>

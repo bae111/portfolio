@@ -22,10 +22,60 @@ gsap.to(".hd-title", {
     }
 });
 
+gsap.set(".a-wrap", {  
+    opacity: 0,
+    scale: 0.8 
+});
+
+gsap.to(".a-wrap", {  
+    scale: 1,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: "#about",
+        start: "top center",
+        end: "center",
+        markers: false 
+    } 
+});
+
+gsap.set(".project-img", {  
+    opacity: 0,
+});
+
+gsap.to(".project-img", {  
+    opacity: 1,
+    duration: 3,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".project-wrap",
+        start: "top center",
+        end: "center",
+        markers: false 
+    } 
+});
+
+gsap.set("#renewal", {  
+    opacity: 0,
+});
+
+gsap.to("#renewal", {  
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: "#renewal",
+        start: "top center",
+        end: "center",
+        markers: false 
+    } 
+});
+
 // Company Section - Title
 gsap.set("#personal .project-detail", {
     opacity: 0,
-    y: -200 
+    y: -100 
 });
 
 gsap.to("#personal .project-detail", {
@@ -44,15 +94,13 @@ gsap.to("#personal .project-detail", {
 // Company section - Image
 gsap.set(".personal-box", {
     opacity: 0,
-    scale: 0 
+    scale: 0.8 
 });
 
 gsap.to(".personal-box", {
-    duration: 1.6,
-    delay: 0.1,
-    opacity: 1,
+    duration: 1,
+    opacity: 2,
     scale: 1,
-    transformOrigin: "top right",
     ease: "power2.inOut",
     scrollTrigger: {
         trigger: "#personal",
@@ -60,6 +108,33 @@ gsap.to(".personal-box", {
         end: "center",
         markers: false 
     } 
+});
+
+document.querySelectorAll(".split").forEach(text => {
+    let splitWrap = text.innerText.split('').map(char => `<span class="char">${char}</span>`).join('');
+    text.innerHTML = splitWrap;
+    text.setAttribute("aria-label", text.innerText);
+});
+
+const targets = gsap.utils.toArray(".split");
+
+targets.forEach(target => {
+    gsap.from(target.querySelectorAll(".char"), {
+        yPercent: 100,
+        autoAlpha: 0,
+        duration: 1,
+        ease: "circ.out",
+        stagger: {
+            amount: 1,
+            from: "random"
+        },
+        scrollTrigger: {
+            trigger: target,
+            start: "top bottom",
+            end: "+=400",
+            markers: false
+        }
+    });
 });
 
 const waveText = document.querySelector('#pellito-info em');
