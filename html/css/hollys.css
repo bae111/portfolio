@@ -192,7 +192,7 @@ section.active .masked-text-ani-ff{
         height: 100%;
     }
     section.sec1{
-        background: url('/img/renewal/hollys/banner.jpg');
+        background: url('/img/renewal/hollys/banner.jpg') no-repeat center / cover;
     }
     section.sec2{
         background: #fef4f6;
