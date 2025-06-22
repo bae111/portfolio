@@ -352,6 +352,7 @@ section.active .masked-text-ani-ff{
                     justify-content: center;
                     font-size: 5rem;
                     color: #ba000d;
+                    line-height: 1;
                 }
             }
         }
