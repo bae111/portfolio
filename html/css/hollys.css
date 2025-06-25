@@ -358,7 +358,7 @@ section.active .masked-text-ani-ff{
         }
     }
     section.sec3{
-        background: url('/img/renewal/hollys/season-bg.jpg');
+        background: url('/img/renewal/hollys/season-bg.jpg') no-repeat top center;
         &.active{
             animation: fadeIn 3s ease forwards;
         }
