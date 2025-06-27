@@ -201,7 +201,7 @@ section.active .masked-text-ani-ff{
             display: flex;
             justify-content: space-between;
             li{
-                justify-content: space-around;
+                justify-content: space-between;
             }
             .left{
                 display: flex;
@@ -309,7 +309,6 @@ section.active .masked-text-ani-ff{
             .right{
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
                 gap: 2rem;
                 .img{
                     position: relative;
