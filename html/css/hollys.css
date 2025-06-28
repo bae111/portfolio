@@ -426,6 +426,7 @@ section.active .masked-text-ani-ff{
             margin: 0 5rem;
             .h-tab-name{
                 justify-content: space-between;
+                flex-direction: column;
                 .nav-link.active{
                     background: #383838;
                     color: #fff;
