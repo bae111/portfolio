@@ -570,7 +570,7 @@ section.active .masked-text-ani-ff{
     }
     section.sec6{
         background: #fcdce1;
-        padding: 0 5rem;
+        padding: 0 7rem;
         &.active{
             h3{
                 animation: fadeInDown-1 2s forwards;
