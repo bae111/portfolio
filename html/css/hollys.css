@@ -159,7 +159,6 @@ section.active .masked-text-ani-ff{
             display: flex;
             gap: 1rem;
             align-items: center;
-            z-index: 99;
             li:last-child{
                 a{
                     font-size: 1.125rem;
