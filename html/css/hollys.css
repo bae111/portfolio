@@ -674,7 +674,7 @@ section.active .masked-text-ani-ff{
             padding: 0 5rem;
             gap: 1rem;
             dl{
-                min-width: 800px;
+                width: 80vw;
                 dt{
                     display: flex;
                     justify-content: space-between;
