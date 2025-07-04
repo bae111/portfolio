@@ -723,10 +723,17 @@ section.active .masked-text-ani-ff{
     }
     #hollys-footer{
         background: #2e2f2e;
-        justify-content: space-between;
         padding: 5rem 8rem 5rem 5rem;
         max-height: 400px;
-        flex-direction: row;
+        .f-wrap{
+            display: flex;
+            justify-content: space-between;
+        }
+        .portfolio-note{
+            margin: .5rem;
+            font-size: .75rem;
+            color: #fff;
+        }
         article{
             display: flex;
             flex-direction: column;
@@ -743,6 +750,7 @@ section.active .masked-text-ani-ff{
         }
         .left{
             gap: 2rem;
+            justify-content: space-around;
             ul{
                 display: flex;
                 gap: .5rem;
@@ -761,10 +769,6 @@ section.active .masked-text-ani-ff{
             }
             .info{
                 flex-direction: column;
-                .portfolio-note{
-                    margin-top: .5rem;
-                    font-size: .75rem;
-                }
                 li{
                     span{
                         padding: .5rem;
@@ -773,6 +777,7 @@ section.active .masked-text-ani-ff{
             }
         }
         .right{
+            gap: 2rem;
             li{
                 display: flex;
                 flex-direction: column;
