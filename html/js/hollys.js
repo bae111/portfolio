@@ -1,4 +1,18 @@
 $(function() {
+    $('.nav-btn').click(function() {
+        $(this).toggleClass('slideOn');
+        $('.m-gnb').css('transform', $(this).hasClass('slideOn') ? 'translateX(0)' : '');
+    });
+    $(".depth-01 > li > a").click(function() {
+        $(this).toggleClass("active");
+        const $subMenu = $(this).siblings(".depth-02");
+
+        if ($(this).hasClass("active")) {
+            $subMenu.slideDown("fast");
+        } else {
+            $subMenu.slideUp("fast");
+        }
+    });
     $('#fullpage').fullpage({
         anchors: ['sec1', 'sec2', 'sec3', 'sec4', 'sec5', 'sec6', 'sec7', 'sec8'],
         scrollingSpeed: 1000,
