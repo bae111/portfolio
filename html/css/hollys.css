@@ -720,21 +720,31 @@ section.active .masked-text-ani-ff{
         }
         .sns{
             display: flex;
+            flex-wrap: wrap;
             gap: 5px;
             .right{
-                display: flex;
-                flex-wrap: wrap;
+                display: grid;
+                flex: 2 1 600px;
+                grid-template-columns: repeat(4, 1fr);
                 gap: 5px;
+                padding: 0;
+                margin: 0;
             }
         }
         .left{
-            min-width: 600px;
+            flex: 1 1 300px;
+            img{
+                height: 100%;
+            }
         }
         .sns-box{
             position: relative;
             overflow: hidden;
             &:hover .in-go{
                 bottom: 0;
+            }
+            img{
+                max-width: 100%;
             }
         }
         .in-go{
