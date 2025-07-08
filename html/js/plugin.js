@@ -54,6 +54,24 @@ var hollys_season_swiper = new Swiper(".hollys-season-swiper", {
         delay: 2000,
         disableOnlnteraction: false,
     },
+    breakpoints: {
+        1400: { 
+            slidesPerView: 4, 
+        },
+        1200: { 
+            slidesPerView: 3, 
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        581: { 
+            slidesPerView: 1.5, 
+            centeredSlides: true,
+        },
+        320: {
+            slidesPerView: 1,
+        },
+    },
 });
 
 var hollys_tab_swiper = new Swiper(".hollys-tab-swiper", {
@@ -63,6 +81,21 @@ var hollys_tab_swiper = new Swiper(".hollys-tab-swiper", {
     autoplay: {
         delay: 2000,
         disableOnlnteraction: false,
+    },
+    breakpoints: {
+        1400: { 
+            slidesPerView: 3, 
+        },
+        850: { 
+            slidesPerView: 2, 
+        },
+        581: { 
+            slidesPerView: 1.5, 
+            centeredSlides: true,
+        },
+        320: {
+            slidesPerView: 1,
+        },
     },
 });
 
