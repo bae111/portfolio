@@ -48,3 +48,20 @@ $(function() {
         $(this).removeClass('flipped');
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const quickBtn = document.querySelector(".quick-btn");
+    const closeBtn = document.querySelector(".close-btn");
+    const quickList = document.querySelector("#hollys-quick ul");
+
+    quickBtn.addEventListener("click", () => {
+        quickList.classList.add("active");
+        quickBtn.style.display = "none";
+        closeBtn.style.display = "block";
+    });
+
+    closeBtn.addEventListener("click", () => {
+        quickList.classList.remove("active");
+        quickBtn.style.display = "block";
+        closeBtn.style.display = "none";
+    });
+});
