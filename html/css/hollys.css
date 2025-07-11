@@ -790,7 +790,7 @@ section.active .masked-text-ani-ff{
             display: flex;
             justify-content: space-between;
             padding: 0 5rem;
-            gap: 1rem;
+            gap: 3rem;
             dl{
                 width: 80vw;
                 dt{
