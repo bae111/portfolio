@@ -980,7 +980,7 @@ section.active .masked-text-ani-ff{
             padding: 0 7rem;
             .con-box{
                 .left{
-                    justify-content: space-around;
+                    justify-content: space-between;
                     .con-title-wrap{
                         .con-title{
                             margin-bottom: 1rem;
