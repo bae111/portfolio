@@ -841,7 +841,7 @@ section.active .masked-text-ani-ff{
     }
     #hollys-footer{
         background: #2e2f2e;
-        padding: 5rem 8rem 5rem 5rem;
+        padding: 0 8rem 0 5rem;
         max-height: 400px;
         .f-wrap{
             display: flex;
