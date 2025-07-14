@@ -313,6 +313,7 @@ section.active .masked-text-ani-ff{
             .left{
                 display: flex;
                 flex-direction: column;
+                justify-content: space-around;
                 gap: 2rem;
                 .con-title-wrap{
                     position: relative;
