@@ -128,10 +128,12 @@ section.active .masked-text-ani-ff{
                     position: relative;
                     padding: 1rem 2rem;
                     > a{
-                        display: block;
-                        line-height: 3;
                         font-size: 1.125rem;
                         font-weight: 500;
+                    }
+                    a{
+                        display: block;
+                        line-height: 3;
                         color: #4f4c4b;
                     }
                     .depth-02{
@@ -145,10 +147,7 @@ section.active .masked-text-ani-ff{
                         transition: all 0.4s ease-in-out;
                         li{
                             a{
-                                display: block;
-                                line-height: 3;
                                 font-size: .875rem;
-                                color: #4f4c4b;
                             }
                         }
                     }
