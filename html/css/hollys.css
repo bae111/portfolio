@@ -756,8 +756,7 @@ section.active .masked-text-ani-ff{
         .in-go{
             position: absolute;
             bottom: -100%;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 0;
             transition: all .3s ease;
             background: rgba(255, 255, 255, 0.4);
             backdrop-filter: blur(5px);
