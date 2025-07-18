@@ -595,7 +595,7 @@ section.active .masked-text-ani-ff{
             justify-content: space-around;
         }
         .left{
-            background: url('/img/renewal/hollys/membership-bg.jpg') no-repeat center;
+            background: url('/img/renewal/hollys/membership-bg.jpg') no-repeat center / cover;
             .text{
                 display: flex;
                 flex-direction: column;
