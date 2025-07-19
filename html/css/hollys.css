@@ -728,6 +728,12 @@ section.active .masked-text-ani-ff{
             display: flex;
             flex-wrap: wrap;
             gap: 5px;
+            .left{
+                flex: 1 1 300px;
+                img{
+                    height: 100%;
+                }
+            }
             .right{
                 display: grid;
                 flex: 2 1 600px;
@@ -735,12 +741,6 @@ section.active .masked-text-ani-ff{
                 gap: 5px;
                 padding: 0;
                 margin: 0;
-            }
-        }
-        .left{
-            flex: 1 1 300px;
-            img{
-                height: 100%;
             }
         }
         .sns-box{
