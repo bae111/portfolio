@@ -843,6 +843,45 @@ section.active .masked-text-ani-ff{
         .f-wrap{
             display: flex;
             justify-content: space-between;
+            .left{
+                gap: 2rem;
+                justify-content: space-around;
+                ul{
+                    display: flex;
+                    gap: .5rem;
+                    li{
+                        a{
+                            padding: .5rem;
+                        }
+                    }
+                }
+                .menu{
+                    li{
+                        a{
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .info{
+                    flex-direction: column;
+                    li{
+                        span{
+                            padding: .5rem;
+                        }
+                    }
+                }
+            }
+            .right{
+                gap: 2rem;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                }
+                a{
+                    font-size: 2.25rem;
+                    font-weight: 600;
+                }
+            }
         }
         .portfolio-note{
             margin: .5rem;
@@ -861,45 +900,6 @@ section.active .masked-text-ani-ff{
                         color: #fff;
                     }
                 }
-            }
-        }
-        .left{
-            gap: 2rem;
-            justify-content: space-around;
-            ul{
-                display: flex;
-                gap: .5rem;
-                li{
-                    a{
-                        padding: .5rem;
-                    }
-                }
-            }
-            .menu{
-                li{
-                    a{
-                        font-weight: 500;
-                    }
-                }
-            }
-            .info{
-                flex-direction: column;
-                li{
-                    span{
-                        padding: .5rem;
-                    }
-                }
-            }
-        }
-        .right{
-            gap: 2rem;
-            li{
-                display: flex;
-                flex-direction: column;
-            }
-            a{
-                font-size: 2.25rem;
-                font-weight: 600;
             }
         }
     }
