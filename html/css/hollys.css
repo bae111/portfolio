@@ -740,15 +740,15 @@ section.active .masked-text-ani-ff{
                 padding: 0;
                 margin: 0;
             }
-        }
-        .sns-box{
-            position: relative;
-            overflow: hidden;
-            &:hover .in-go{
-                bottom: 0;
-            }
-            img{
-                max-width: 100%;
+            .sns-box{
+                position: relative;
+                overflow: hidden;
+                &:hover .in-go{
+                    bottom: 0;
+                }
+                img{
+                    max-width: 100%;
+                }
             }
         }
         .in-go{
