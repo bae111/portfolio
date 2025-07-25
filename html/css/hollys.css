@@ -454,6 +454,7 @@ section.active .masked-text-ani-ff{
                     display: flex;
                     gap: 1.5rem;
                     justify-content: center;
+                    align-items: center;
                     font-size: 5rem;
                     color: #ba000d;
                     line-height: 1;
