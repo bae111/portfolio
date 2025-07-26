@@ -95,9 +95,6 @@ section.active .masked-text-ani-ff{
         }
     }
     .hd-container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         h1{
             z-index: 99;
             .blind{
@@ -118,8 +115,6 @@ section.active .masked-text-ani-ff{
             text-align: center;
             z-index: 99;
             .depth-01{
-                display: flex;
-                justify-content: space-between;
                 transition: all .3s ease-in-out;
                 &:hover .depth-02{
                     height: 260px;
@@ -155,12 +150,10 @@ section.active .masked-text-ani-ff{
             }
         }
         .util-wrap{
-            display: flex;
             gap: 1.5rem;
             .util-list{
                 display: flex;
                 gap: 1rem;
-                align-items: center;
                 li:last-child{
                     a{
                         font-size: 1.125rem;
@@ -174,9 +167,6 @@ section.active .masked-text-ani-ff{
             }
             .nav-btn{
                 display: none;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 position: relative;
                 width: 24px;
                 height: 24px;
