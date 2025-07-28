@@ -453,53 +453,53 @@ section.active .masked-text-ani-ff{
         }
         .swiper{
             margin: 21rem 11.25rem 0;
-        }
-        .swiper-slide{
-            text-align: center;
-            background: rgba(245,237,229, 0.4);
-            border: solid 8px #fcebd1;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: background .3s ease;
-            &:hover{
-                background: #fcebd1;
-            }
-            &:hover .info{
-                display: flex;
-                animation: fadeInDown-1 .5s forwards;
-            }
-            &:hover .img{
-                display: none;
-            }
-            div{
+            .swiper-slide{
+                text-align: center;
+                background: rgba(245,237,229, 0.4);
+                border: solid 8px #fcebd1;
+                box-sizing: border-box;
                 display: flex;
                 justify-content: center;
-                flex-direction: column;
-                min-height: 450px;
-            }
-            .name{
-                font-size: 1.5rem;
-                color: #383838;
-                font-weight: 500;
-            }
-            .text{
-                font-size: 1.125rem;
-                color: #383838;
-            }
-            .more{
-                background: #4f4c4b;
-                color: #fff;
-                font-size: .875rem;
-                font-weight: 500;
-                padding: .5rem 4rem;
-                border-radius: 50px;
-            }
-            .info{
-                display: none;
-                gap: 3rem;
                 align-items: center;
+                transition: background .3s ease;
+                &:hover{
+                    background: #fcebd1;
+                }
+                &:hover .info{
+                    display: flex;
+                    animation: fadeInDown-1 .5s forwards;
+                }
+                &:hover .img{
+                    display: none;
+                }
+                div{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    min-height: 450px;
+                }
+                .name{
+                    font-size: 1.5rem;
+                    color: #383838;
+                    font-weight: 500;
+                }
+                .text{
+                    font-size: 1.125rem;
+                    color: #383838;
+                }
+                .more{
+                    background: #4f4c4b;
+                    color: #fff;
+                    font-size: .875rem;
+                    font-weight: 500;
+                    padding: .5rem 4rem;
+                    border-radius: 50px;
+                }
+                .info{
+                    display: none;
+                    gap: 3rem;
+                    align-items: center;
+                }
             }
         }
     }
