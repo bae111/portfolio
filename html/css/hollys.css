@@ -289,10 +289,7 @@ section.active .masked-text-ani-ff{
         padding: 0 5rem;
         .con-box{
             display: flex;
-            justify-content: space-between;
             .left{
-                display: flex;
-                flex-direction: column;
                 justify-content: space-around;
                 gap: 2rem;
                 .con-title-wrap{
@@ -355,7 +352,6 @@ section.active .masked-text-ani-ff{
                 .con-text-wrap{
                     ul{
                         display: flex;
-                        flex-direction: column;
                         gap: .5rem;
                         margin-bottom: 2rem;
                         .one{
@@ -395,9 +391,6 @@ section.active .masked-text-ani-ff{
                 }
             }
             .right{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
                 gap: 2rem;
                 .img{
                     position: relative;
@@ -437,8 +430,6 @@ section.active .masked-text-ani-ff{
                 .tel{
                     display: flex;
                     gap: 1.5rem;
-                    justify-content: center;
-                    align-items: center;
                     font-size: 5rem;
                     color: #ba000d;
                     line-height: 1;
