@@ -293,8 +293,6 @@ section.active .masked-text-ani-ff{
                 justify-content: space-around;
                 gap: 2rem;
                 .con-title-wrap{
-                    position: relative;
-                    overflow: hidden;
                     .con-title{
                         margin-bottom: 5rem;
                         h2{
