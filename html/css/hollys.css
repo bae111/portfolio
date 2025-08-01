@@ -472,10 +472,6 @@ section.active .masked-text-ani-ff{
                     color: #383838;
                     font-weight: 500;
                 }
-                .text{
-                    font-size: 1.125rem;
-                    color: #383838;
-                }
                 .more{
                     background: #4f4c4b;
                     color: #fff;
@@ -488,6 +484,10 @@ section.active .masked-text-ani-ff{
                     display: none;
                     gap: 3rem;
                     align-items: center;
+                    .text{
+                        font-size: 1.125rem;
+                        color: #383838;
+                    }
                 }
             }
         }
