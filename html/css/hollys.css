@@ -698,7 +698,6 @@ section.active .masked-text-ani-ff{
         }
         .sns{
             display: flex;
-            flex-wrap: wrap;
             gap: 5px;
             .left{
                 flex: 1 1 300px;
