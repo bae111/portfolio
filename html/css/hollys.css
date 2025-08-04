@@ -556,7 +556,6 @@ section.active .masked-text-ani-ff{
     }
     section.sec5{
         display: flex;
-        flex-direction: row;
         article{
             width: 50%;
             display: flex;
@@ -568,8 +567,6 @@ section.active .masked-text-ani-ff{
         .left{
             background: url('/img/renewal/hollys/membership-bg.jpg') no-repeat center / cover;
             .text{
-                display: flex;
-                flex-direction: column;
                 gap: .5rem;
                 text-align: center;
                 h3{
@@ -599,7 +596,6 @@ section.active .masked-text-ani-ff{
                 border: none;
                 border-radius: 40px;
                 transition: all .3s ease;
-                display: block;
                 &:hover{
                     color: #ba000d;
                     background: #fff;
@@ -616,8 +612,6 @@ section.active .masked-text-ani-ff{
                 padding: .5rem 2rem;
             }
             .m-info{
-                display: flex;
-                flex-direction: column;
                 gap: 2rem;
                 background: #fff;
                 padding: 2rem 3rem;
