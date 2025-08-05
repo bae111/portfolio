@@ -690,7 +690,6 @@ section.active .masked-text-ani-ff{
             }
         }
         .sns{
-            display: flex;
             gap: 5px;
             .left{
                 flex: 1 1 300px;
@@ -699,7 +698,6 @@ section.active .masked-text-ani-ff{
                 }
             }
             .right{
-                display: grid;
                 flex: 2 1 600px;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 5px;
