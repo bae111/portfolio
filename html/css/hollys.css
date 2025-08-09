@@ -289,9 +289,12 @@ section.active .masked-text-ani-ff{
         padding: 0 5rem;
         .con-box{
             display: flex;
+            position: relative;
             .left{
                 justify-content: space-around;
                 gap: 2rem;
+                position: relative;
+                z-index: 2;
                 .con-title-wrap{
                     .con-title{
                         margin-bottom: 5rem;
@@ -1296,10 +1299,7 @@ section.active .masked-text-ani-ff{
     #fullpage{
         .sec2{
             .con-box{
-                position: relative;
                 li.left{
-                    position: relative;
-                    z-index: 10;
                     .con-text-wrap{
                         .pc-btn{
                             display: none;
