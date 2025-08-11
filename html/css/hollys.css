@@ -1653,7 +1653,6 @@ section.active .masked-text-ani-ff{
         .sec4{
             .h-tab-wrap{
                 .h-tab-name{
-                    flex-wrap: wrap;
                     justify-content: center;
                     .nav-link{
                         width: 30%;
