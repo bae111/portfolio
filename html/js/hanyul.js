@@ -77,5 +77,34 @@ $(function(){
             }
         }
     });
+    function handleMenuToggle($element, menuSelector) {
+        const $li = $element.closest("li");
+        const $subMenu = $li.children(menuSelector);
 
+        const $siblings = $li.siblings();
+
+        // 다른 형제 메뉴 닫기
+        $siblings.each(function () {
+            const $sibling = $(this);
+            const $siblingSubMenu = $sibling.children(menuSelector);
+            $siblingSubMenu.slideUp("fast"); // 해당 메뉴가 있어야만 닫힘
+            $sibling.find("> a").removeClass("active");
+        });
+
+        // 현재 메뉴 토글
+        if ($element.hasClass("active")) {
+            $element.removeClass("active");
+            $subMenu.slideUp("fast");
+        } else {
+            $element.addClass("active");
+            $subMenu.slideDown("fast");
+        }
+    }
+
+    $(".depth-01 > li > a").click(function() {
+        handleMenuToggle($(this), ".depth-02");
+    });
+    $(".depth-02 > li > a").click(function() {
+        handleMenuToggle($(this), ".depth-03");
+    });
 });
