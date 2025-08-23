@@ -122,7 +122,17 @@ var hanyul_best_swiper = new Swiper(".hanyul-best-swiper", {
     slidesPerView: 1.5,
     loop: true,
     centeredSlides: true,
-    autoplay: false
+    spaceBetween: 20,
+    spaceBetween: 80,
+    autoplay: false,
+    breakpoints: {
+        1401: { 
+            slidesPerView: 1.5,
+        },
+        320: { 
+            slidesPerView: 1,
+        },
+    },
 });
 
 var hanyul_info_swiper = new Swiper(".hanyul-info-swiper", {
